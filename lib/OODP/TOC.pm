@@ -3,7 +3,7 @@ our $VERSION = '0.01';
 
 =head1 NAME
 
-OODP - Design Patterns in Perl
+OODP - Object Oriented Design Patterns (with Moose)
 
 =head1 BEHAVIORAL PATTERNS
 
@@ -58,6 +58,16 @@ OODP - Design Patterns in Perl
 =item L<OODP::Structural::Bridge>
 
 =item L<OODP::Structural::Composite>
+
+=over 4
+
+=item L<OODP::Component>
+
+=item L<OODP::Composite>
+
+=item L<OODP::Leaf>
+
+=back
 
 =item L<OODP::Structural::Decorator>
 
