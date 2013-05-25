@@ -7,34 +7,34 @@ use Test::More;
 plan tests => 27;
 
 BEGIN {
-    use_ok( 'Pattern::TOC' )    || print "Bail out!\n";
+    use_ok( 'OODP::TOC' )    || print "Bail out!\n";
 
-    use_ok( 'Pattern::Creational::TOC' )                || print "Bail out!\n";
-    use_ok( 'Pattern::Creational::AbstractFactory' )    || print "Bail out!\n";
-    use_ok( 'Pattern::Creational::Builder' )            || print "Bail out!\n";
-    use_ok( 'Pattern::Creational::FactoryMethod' )      || print "Bail out!\n";
-    use_ok( 'Pattern::Creational::Prototype' )          || print "Bail out!\n";
-    use_ok( 'Pattern::Creational::Singleton' )          || print "Bail out!\n";
+    use_ok( 'OODP::Creational::TOC' )                || print "Bail out!\n";
+    use_ok( 'OODP::Creational::AbstractFactory' )    || print "Bail out!\n";
+    use_ok( 'OODP::Creational::Builder' )            || print "Bail out!\n";
+    use_ok( 'OODP::Creational::FactoryMethod' )      || print "Bail out!\n";
+    use_ok( 'OODP::Creational::Prototype' )          || print "Bail out!\n";
+    use_ok( 'OODP::Creational::Singleton' )          || print "Bail out!\n";
 
-    use_ok( 'Pattern::Structural::TOC' )                || print "Bail out!\n";
-    use_ok( 'Pattern::Structural::Adapter' )            || print "Bail out!\n";
-    use_ok( 'Pattern::Structural::Bridge' )             || print "Bail out!\n";
-    use_ok( 'Pattern::Structural::Composite' )          || print "Bail out!\n";
-    use_ok( 'Pattern::Structural::Decorator' )          || print "Bail out!\n";
-    use_ok( 'Pattern::Structural::Facade' )             || print "Bail out!\n";
-    use_ok( 'Pattern::Structural::Flyweight' )          || print "Bail out!\n";
-    use_ok( 'Pattern::Structural::Proxy' )              || print "Bail out!\n";
+    use_ok( 'OODP::Structural::TOC' )                || print "Bail out!\n";
+    use_ok( 'OODP::Structural::Adapter' )            || print "Bail out!\n";
+    use_ok( 'OODP::Structural::Bridge' )             || print "Bail out!\n";
+    use_ok( 'OODP::Structural::Composite' )          || print "Bail out!\n";
+    use_ok( 'OODP::Structural::Decorator' )          || print "Bail out!\n";
+    use_ok( 'OODP::Structural::Facade' )             || print "Bail out!\n";
+    use_ok( 'OODP::Structural::Flyweight' )          || print "Bail out!\n";
+    use_ok( 'OODP::Structural::Proxy' )              || print "Bail out!\n";
 
-    use_ok( 'Pattern::Behavioral::TOC' )                    || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::ChainOfResponsibility' )  || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::Command' )                || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::Interpreter' )            || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::Iterator' )               || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::Mediator' )               || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::Memento' )                || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::Observer' )               || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::State' )                  || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::Strategy' )               || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::TemplateMethod' )         || print "Bail out!\n";
-    use_ok( 'Pattern::Behavioral::Visitor' )                || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::TOC' )                    || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::ChainOfResponsibility' )  || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::Command' )                || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::Interpreter' )            || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::Iterator' )               || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::Mediator' )               || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::Memento' )                || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::Observer' )               || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::State' )                  || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::Strategy' )               || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::TemplateMethod' )         || print "Bail out!\n";
+    use_ok( 'OODP::Behavioral::Visitor' )                || print "Bail out!\n";
 }
