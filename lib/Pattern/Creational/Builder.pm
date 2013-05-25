@@ -1,17 +1,17 @@
-package Pattern::Builder;
+package Pattern::Creational::Builder;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Builder - Separate the construction of a complex object
+Pattern::Creational::Builder - Separate the construction of a complex object
 from its representation so that the same construction process can
 create different representations.
 
 =head1 SYNOPSIS
 
-Pattern::Builder is a design pattern useful keeping the creation of
+Pattern::Creational::Builder is a design pattern useful keeping the creation of
 the object independent from the parts that make up the object. It also
 allows different representations for the constructed objects.
 
@@ -33,7 +33,7 @@ allows different representations for the constructed objects.
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Creational::TOC>
 
 =back
 

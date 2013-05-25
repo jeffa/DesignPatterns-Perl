@@ -1,15 +1,15 @@
-package Pattern::State;
+package Pattern::Behavioral::State;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::State - 
+Pattern::Behavioral::State - 
 
 =head1 SYNOPSIS
 
-Pattern::State is a design pattern
+Pattern::Behavioral::State is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::State is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Behavioral::TOC>
 
 =back
 

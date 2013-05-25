@@ -1,4 +1,4 @@
-package Pattern::TOC;
+package Pattern::Creational::TOC;
 our $VERSION = '0.01';
 
 =head1 NAME
@@ -13,7 +13,7 @@ A whole lot of messing things up.
 
 =over 4
 
-=item L<Pattern::Composite>
+=item L<Pattern::Creational::Composite>
 
 =back
 

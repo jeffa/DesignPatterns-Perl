@@ -1,15 +1,15 @@
-package Pattern::Observer;
+package Pattern::Behavioral::Observer;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Observer - 
+Pattern::Behavioral::Observer - 
 
 =head1 SYNOPSIS
 
-Pattern::Observer is a design pattern
+Pattern::Behavioral::Observer is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Observer is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Behavioral::TOC>
 
 =back
 

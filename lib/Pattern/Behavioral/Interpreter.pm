@@ -1,15 +1,15 @@
-package Pattern::Interpreter;
+package Pattern::Behavioral::Interpreter;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Interpreter - 
+Pattern::Behavioral::Interpreter - 
 
 =head1 SYNOPSIS
 
-Pattern::Interpreter is a design pattern
+Pattern::Behavioral::Interpreter is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Interpreter is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Behavioral::TOC>
 
 =back
 

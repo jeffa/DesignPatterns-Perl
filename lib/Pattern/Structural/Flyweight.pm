@@ -1,15 +1,15 @@
-package Pattern::Flyweight;
+package Pattern::Structural::Flyweight;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Flyweight - 
+Pattern::Structural::Flyweight - 
 
 =head1 SYNOPSIS
 
-Pattern::Flyweight is a design pattern
+Pattern::Structural::Flyweight is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Flyweight is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Structural::TOC>
 
 =back
 

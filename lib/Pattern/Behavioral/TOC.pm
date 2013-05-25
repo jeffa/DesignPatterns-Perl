@@ -1,9 +1,9 @@
-package Pattern::TOC;
+package Pattern::Behavioral::TOC;
 our $VERSION = '0.01';
 
 =head1 NAME
 
-Pattern::TOC - Table of Contents for Behavioral Design Patterns
+Pattern::Behavioral::TOC - Table of Contents for Behavioral Design Patterns
 
 =head1 SYNOPSIS
 
@@ -13,7 +13,7 @@ A whole lot of messing things up.
 
 =over 4
 
-=item L<Pattern::Composite>
+=item L<Pattern::Behavioral::Composite>
 
 =back
 

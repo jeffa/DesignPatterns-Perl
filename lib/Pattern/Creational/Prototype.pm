@@ -1,15 +1,15 @@
-package Pattern::Prototype;
+package Pattern::Creational::Prototype;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Prototype - provides a blueprint for creating objects.
+Pattern::Creational::Prototype - provides a blueprint for creating objects.
 
 =head1 SYNOPSIS
 
-Pattern::Prototype is a design pattern that is useful for systems that
+Pattern::Creational::Prototype is a design pattern that is useful for systems that
 should be independent of product creation, composition and representation.
 Useful when instatiated classes are specified at run-time (dynamic loading).
 
@@ -27,7 +27,7 @@ Useful when instatiated classes are specified at run-time (dynamic loading).
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Creational::TOC>
 
 =back
 

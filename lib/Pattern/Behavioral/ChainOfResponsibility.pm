@@ -1,15 +1,15 @@
-package Pattern::ChainOfResponsibility;
+package Pattern::Behavioral::ChainOfResponsibility;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::ChainOfResponsibility - 
+Pattern::Behavioral::ChainOfResponsibility - 
 
 =head1 SYNOPSIS
 
-Pattern::ChainOfResponsibility is a design pattern
+Pattern::Behavioral::ChainOfResponsibility is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::ChainOfResponsibility is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Behavioral::TOC>
 
 =back
 

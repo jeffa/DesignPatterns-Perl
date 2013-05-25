@@ -1,15 +1,15 @@
-package Pattern::Facade;
+package Pattern::Structural::Facade;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Facade - 
+Pattern::Structural::Facade - 
 
 =head1 SYNOPSIS
 
-Pattern::Facade is a design pattern
+Pattern::Structural::Facade is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Facade is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Structural::TOC>
 
 =back
 

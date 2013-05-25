@@ -1,15 +1,15 @@
-package Pattern::Proxy;
+package Pattern::Structural::Proxy;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Proxy - 
+Pattern::Structural::Proxy - 
 
 =head1 SYNOPSIS
 
-Pattern::Proxy is a design pattern
+Pattern::Structural::Proxy is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Proxy is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Structural::TOC>
 
 =back
 

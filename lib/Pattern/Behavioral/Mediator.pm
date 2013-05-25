@@ -1,15 +1,15 @@
-package Pattern::Mediator;
+package Pattern::Behavioral::Mediator;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Mediator - 
+Pattern::Behavioral::Mediator - 
 
 =head1 SYNOPSIS
 
-Pattern::Mediator is a design pattern
+Pattern::Behavioral::Mediator is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Mediator is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Behavioral::TOC>
 
 =back
 

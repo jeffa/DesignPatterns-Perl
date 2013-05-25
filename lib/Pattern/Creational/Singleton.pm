@@ -1,15 +1,15 @@
-package Pattern::Singleton;
+package Pattern::Creational::Singleton;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Singleton - ensures one and only one instance with global access.
+Pattern::Creational::Singleton - ensures one and only one instance with global access.
 
 =head1 SYNOPSIS
 
-Pattern::Singleton is a design pattern that is useful when there must be
+Pattern::Creational::Singleton is a design pattern that is useful when there must be
 exactly one instance of a class and it must be accessible to clients from
 a well-known point of access. Additionally, clients can use an extended
 instance (subclass) without modifying their code.
@@ -26,7 +26,7 @@ instance (subclass) without modifying their code.
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Creational::TOC>
 
 =back
 

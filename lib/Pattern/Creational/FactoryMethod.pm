@@ -1,15 +1,15 @@
-package Pattern::FactoryMethod;
+package Pattern::Creational::FactoryMethod;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::FactoryMethod - allows classes to defer their instantiation to subclasses.
+Pattern::Creational::FactoryMethod - allows classes to defer their instantiation to subclasses.
 
 =head1 SYNOPSIS
 
-Pattern::FactoryMethod is a design pattern that is useful when a class cannot
+Pattern::Creational::FactoryMethod is a design pattern that is useful when a class cannot
 anticipate the class of objects it must create.
 
 =head1 PARTICIPANTS
@@ -30,7 +30,7 @@ anticipate the class of objects it must create.
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Creational::TOC>
 
 =back
 

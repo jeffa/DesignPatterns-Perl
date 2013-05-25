@@ -1,15 +1,15 @@
-package Pattern::Strategy;
+package Pattern::Behavioral::Strategy;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Strategy - 
+Pattern::Behavioral::Strategy - 
 
 =head1 SYNOPSIS
 
-Pattern::Strategy is a design pattern
+Pattern::Behavioral::Strategy is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Strategy is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Behavioral::TOC>
 
 =back
 

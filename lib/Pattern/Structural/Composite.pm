@@ -1,14 +1,14 @@
-package Pattern::Composite;
+package Pattern::Structural::Composite;
 our $VERSION = '0.01';
 
 =head1 NAME
 
-Pattern::Composite - Represents part-whole hierarchies of objects without regard to
+Pattern::Structural::Composite - Represents part-whole hierarchies of objects without regard to
 distinction between those objects' compositions.
 
 =head1 SYNOPSIS
 
-Pattern::Composite is a design pattern and is not meant to be used directly by a client.
+Pattern::Structural::Composite is a design pattern and is not meant to be used directly by a client.
 This package defines only Moose roles that are to be consumed by the CPAN user's own
 classes, which are in turn used directly by a client.
 
@@ -16,7 +16,7 @@ classes, which are in turn used directly by a client.
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Structural::TOC>
 
 =item L<Object::Leaf>
 

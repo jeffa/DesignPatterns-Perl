@@ -1,15 +1,15 @@
-package Pattern::Decorator;
+package Pattern::Structural::Decorator;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Decorator - 
+Pattern::Structural::Decorator - 
 
 =head1 SYNOPSIS
 
-Pattern::Decorator is a design pattern
+Pattern::Structural::Decorator is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Decorator is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Structural::TOC>
 
 =back
 

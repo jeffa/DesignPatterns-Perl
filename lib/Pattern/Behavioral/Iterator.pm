@@ -1,15 +1,15 @@
-package Pattern::Iterator;
+package Pattern::Behavioral::Iterator;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Iterator - 
+Pattern::Behavioral::Iterator - 
 
 =head1 SYNOPSIS
 
-Pattern::Iterator is a design pattern
+Pattern::Behavioral::Iterator is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Iterator is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Behavioral::TOC>
 
 =back
 

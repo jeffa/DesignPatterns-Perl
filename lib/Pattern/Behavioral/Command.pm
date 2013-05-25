@@ -1,15 +1,15 @@
-package Pattern::Command;
+package Pattern::Behavioral::Command;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Command - 
+Pattern::Behavioral::Command - 
 
 =head1 SYNOPSIS
 
-Pattern::Command is a design pattern
+Pattern::Behavioral::Command is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Command is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Behavioral::TOC>
 
 =back
 

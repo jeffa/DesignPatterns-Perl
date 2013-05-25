@@ -1,16 +1,16 @@
-package Pattern::AbstractFactory;
+package Pattern::Creational::AbstractFactory;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::AbstractFactory - provides interface for creating objects without
+Pattern::Creational::AbstractFactory - provides interface for creating objects without
 specifying their concrete classes.
 
 =head1 SYNOPSIS
 
-Pattern::AbstractFactory is a design pattern that can be used for systems
+Pattern::Creational::AbstractFactory is a design pattern that can be used for systems
 that should be independent of how their products are created, composed and
 represented. 
 
@@ -32,7 +32,7 @@ represented.
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Creational::TOC>
 
 =back
 

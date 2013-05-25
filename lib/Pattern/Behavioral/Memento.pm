@@ -1,15 +1,15 @@
-package Pattern::Memento;
+package Pattern::Behavioral::Memento;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Memento - 
+Pattern::Behavioral::Memento - 
 
 =head1 SYNOPSIS
 
-Pattern::Memento is a design pattern
+Pattern::Behavioral::Memento is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Memento is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Behavioral::TOC>
 
 =back
 

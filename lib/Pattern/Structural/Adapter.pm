@@ -1,15 +1,15 @@
-package Pattern::Adapter;
+package Pattern::Structural::Adapter;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Adapter - 
+Pattern::Structural::Adapter - 
 
 =head1 SYNOPSIS
 
-Pattern::Adapter is a design pattern
+Pattern::Structural::Adapter is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Adapter is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Structural::TOC>
 
 =back
 

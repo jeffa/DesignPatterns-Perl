@@ -1,15 +1,15 @@
-package Pattern::Bridge;
+package Pattern::Structural::Bridge;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Pattern::Bridge - 
+Pattern::Structural::Bridge - 
 
 =head1 SYNOPSIS
 
-Pattern::Bridge is a design pattern
+Pattern::Structural::Bridge is a design pattern
 
 =head1 PARTICIPANTS
 
@@ -27,7 +27,7 @@ Pattern::Bridge is a design pattern
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Structural::TOC>
 
 =back
 
