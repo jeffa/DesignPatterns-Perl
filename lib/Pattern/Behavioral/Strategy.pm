@@ -5,21 +5,24 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Behavioral::Strategy - 
+Pattern::Behavioral::Strategy - defines a family of algorithms,
+encapsulates each one and makes them interchangeable.
 
 =head1 SYNOPSIS
 
-Pattern::Behavioral::Strategy is a design pattern
+Pattern::Behavioral::Strategy is a design pattern that is useful
+when you need an algorithm that varies independently from clients
+that use it.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::Strategy>
 
-=item L<Object::>
+=item L<Object::ConcreteStrategy>
 
-=item L<Object::>
+=item L<Object::Context>
 
 =back
 

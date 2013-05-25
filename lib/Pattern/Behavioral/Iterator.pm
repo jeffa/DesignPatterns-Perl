@@ -5,21 +5,27 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Behavioral::Iterator - 
+Pattern::Behavioral::Iterator - provides a way to
+access elements of an aggregate object sequentially
+without exposing its underlying representation.
 
 =head1 SYNOPSIS
 
-Pattern::Behavioral::Iterator is a design pattern
+Pattern::Behavioral::Iterator is a design pattern that is useful
+for supporting multiple traversals of aggregate objects and provides
+a uniform interface that supports polymorphic iteration.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::Iterator>
 
-=item L<Object::>
+=item L<Object::ConcreteIterator>
 
-=item L<Object::>
+=item L<Object::Aggregate>
+
+=item L<Object::ConcreteAggregate>
 
 =back
 

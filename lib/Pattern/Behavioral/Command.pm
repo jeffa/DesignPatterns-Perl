@@ -5,21 +5,25 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Behavioral::Command - 
+Pattern::Behavioral::Command - encapsulates reuqests as objects.
 
 =head1 SYNOPSIS
 
-Pattern::Behavioral::Command is a design pattern
+Pattern::Behavioral::Command is a design pattern that allows you
+to parameterize clients with different requests and support
+undoable opertations.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::Command>
 
-=item L<Object::>
+=item L<Object::ConcreteCommand>
 
-=item L<Object::>
+=item L<Object::Invoker>
+
+=item L<Object::Receiver>
 
 =back
 

@@ -5,7 +5,9 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Behavioral::Memento - 
+Pattern::Behavioral::Memento - captures and externalizes an
+object's internal state without violating encapsulation, for
+the purpose of serializing the state for later object restoral.
 
 =head1 SYNOPSIS
 
@@ -15,11 +17,11 @@ Pattern::Behavioral::Memento is a design pattern
 
 =over 4
 
-=item L<Object::>
+=item L<Object::Memento>
 
-=item L<Object::>
+=item L<Object::Originator>
 
-=item L<Object::>
+=item L<Object::Caretaker>
 
 =back
 

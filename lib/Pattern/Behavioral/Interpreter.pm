@@ -5,21 +5,30 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Behavioral::Interpreter - 
+Pattern::Behavioral::Interpreter - defines a representation for a given
+language's grammar along with an interpreter that uses this representation
+to interpret sentences in the language.
 
 =head1 SYNOPSIS
 
-Pattern::Behavioral::Interpreter is a design pattern
+Pattern::Behavioral::Interpreter is a design pattern that is useful for
+interpreting languages whose statements can be represented as abstract
+syntax trees. This pattern works best with simple grammars is not known
+for its efficiency, unless something such as a state machine is utilizied.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::AbstractExpression>
 
-=item L<Object::>
+=item L<Object::TerminalExpression>
 
-=item L<Object::>
+=item L<Object::NonterminalExpression>
+
+=item L<Object::Expression>
+
+=item L<Object::Context>
 
 =back
 

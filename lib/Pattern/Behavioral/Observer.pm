@@ -5,21 +5,28 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Behavioral::Observer - 
+Pattern::Behavioral::Observer - defines a one-to-many dependency
+between objects so that when one object changes state, all its
+dependents are notified and updated automatically.
 
 =head1 SYNOPSIS
 
-Pattern::Behavioral::Observer is a design pattern
+Pattern::Behavioral::Observer is a design pattern that is useful
+when a change to one object requires changing others without knowing
+how many objects need to be changed and no assumptions about who
+the objects are needs to be made. Promotes loose coupling.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::Subject>
 
-=item L<Object::>
+=item L<Object::Observer>
 
-=item L<Object::>
+=item L<Object::ConcreteSubject>
+
+=item L<Object::ConcreteObserver>
 
 =back
 

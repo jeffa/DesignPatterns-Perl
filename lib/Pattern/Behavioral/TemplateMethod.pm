@@ -5,21 +5,23 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Behavioral::TemplateMethod - 
+Pattern::Behavioral::TemplateMethod - allows subclasses to
+redefine certain steps of an algorithm without changing the
+algorithm's structure.
 
 =head1 SYNOPSIS
 
-Pattern::Behavioral::TemplateMethod is a design pattern
+Pattern::Behavioral::TemplateMethod is a design pattern the is useful
+for implementing the invariant parts of an algorithm once and letting
+subclasses implement variant behavior.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::AbstractClass>
 
-=item L<Object::>
-
-=item L<Object::>
+=item L<Object::ConcreteClass>
 
 =back
 
