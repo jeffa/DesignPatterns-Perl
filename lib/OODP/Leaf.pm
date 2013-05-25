@@ -2,21 +2,29 @@ package OODP::Leaf;
 use Moose::Role;
 our $VERSION = '0.01';
 
+with 'OODP::Component';
+
+sub add             {} 
+sub remove          {} 
+sub get_child       {} 
+sub is_composite    {}
+
 1;
 __END__
 =head1 NAME
 
-OODP::Leaf - Represents and defines behavior for primitive objects in the
-composition. A leaf has no children (e.g. Rectangle, Line, Text, etc.).
+OODP::Leaf - represents primitive objects in the composition.
+etc.).
 
 =head1 SYNOPSIS
 
-OODP::Leaf is a role to be consumed by an object.
+OODP::Leaf is a role that represents and defines behavior for
+primitive objects in the composition. A leaf has no children
+(e.g. Rectangle, Line, Text, etc.).
 
   package Line;
-  use OODP::Composite;
-
-  with 'OODP::Leaf';
+  use Moose;
+  extends 'OODP::Leaf';
 
   sub draw {
     my ($self) = @_;
@@ -26,17 +34,29 @@ OODP::Leaf is a role to be consumed by an object.
 
   1;
 
+=head1 METHODS
+
+=over 4
+
+=item add()
+
+=item remove()
+
+=item get_child()
+
+=item is_composite()
+
+=back
+
 =head1 SEE ALSO
 
 =over 4
 
-=item L<OODP::TOC>
-
-=item L<OODP::Composite>
-
-=item L<OODP::Composite>
+=item L<OODP::Structural::Component>
 
 =item L<OODP::Component>
+
+=item L<OODP::Composite>
 
 =back
 
