@@ -1,35 +1,40 @@
-package Pattern::Singleton;
+package Pattern::TOC;
 our $VERSION = '0.01';
 
-1;
-__END__
 =head1 NAME
 
-Pattern::Singleton - 
+Pattern::TOC - Table of Contents for Behavioral Design Patterns
 
 =head1 SYNOPSIS
 
-Pattern::Singleton is a design pattern
-
-=head1 PARTICIPANTS
-
-=over 4
-
-=item L<Object::>
-
-=item L<Object::>
-
-=item L<Object::>
-
-=back
+A whole lot of messing things up.
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<Pattern::Composite>
 
 =back
+
+=head1 AUTHOR
+
+Jeffrey Hayes Anderson, C<< <info+cpan at unlocalhost.com> >>
+
+=head1 BUGS
+
+Please report any bugs or feature requests to C<bug-pattern at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Pattern>.  I will be notified, and then you'll
+automatically be notified of progress on your bug as I make changes.
+
+=head1 SUPPORT
+
+You can find documentation for this module with the perldoc command.
+
+    perldoc Pattern
+
+=head1 ACKNOWLEDGEMENTS
+
 
 =head1 LICENSE AND COPYRIGHT
 
