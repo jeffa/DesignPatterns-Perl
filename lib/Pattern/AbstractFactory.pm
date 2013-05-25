@@ -1,33 +1,40 @@
-package Pattern;
-use Moose;
+package Pattern::AbstractFactory;
 our $VERSION = '0.01';
 
+1;
+__END__
 =head1 NAME
 
-Pattern - Design Patterns in Perl
+Pattern::AbstractFactory - provides interface for creating objects without
+specifying their concrete classes.
 
 =head1 SYNOPSIS
 
-A whole lot of messing things up.
+Pattern::AbstractFactory is a design pattern that can be used for systems
+that should be independent of how their products are created, composed and
+represented. 
 
-=head1 AUTHOR
+=head1 PARTICIPANTS
 
-Jeffrey Hayes Anderson, C<< <info+cpan at unlocalhost.com> >>
+=over 4
 
-=head1 BUGS
+=item L<Object::AbstractFactory>
 
-Please report any bugs or feature requests to C<bug-pattern at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Pattern>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
+=item L<Object::ConcreteFactory>
 
-=head1 SUPPORT
+=item L<Object::AbstractProduct>
 
-You can find documentation for this module with the perldoc command.
+=item L<Object::ConcreteProduct>
 
-    perldoc Pattern
+=back
 
-=head1 ACKNOWLEDGEMENTS
+=head1 SEE ALSO
 
+=over 4
+
+=item L<Pattern::TOC>
+
+=back
 
 =head1 LICENSE AND COPYRIGHT
 

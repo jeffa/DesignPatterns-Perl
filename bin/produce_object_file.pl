@@ -1,4 +1,18 @@
-package Object::Leaf;
+#!/usr/bin/perl
+use strict;
+use warnings;
+use Text::Template;
+
+my $object = shift || 'Foo';
+
+my $tmpl = Text::Template->new(TYPE => 'FILEHANDLE', SOURCE => \*DATA );
+my $text = $tmpl->fill_in( HASH => { object => $object } );
+
+print $text;
+
+
+__DATA__
+package Object::{$object};
 use Moose::Role;
 our $VERSION = '0.01';
 
@@ -6,19 +20,18 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Object::Leaf - Represents and defines behavior for primitive objects in the
-composition. A leaf has no children (e.g. Rectangle, Line, Text, etc.).
+Object::{$object} - Represents and defines behavior for 
 
 =head1 SYNOPSIS
 
-Object::Leaf is a role to be consumed by an object.
+Object::{$object} is a role to be consumed by an object.
 
-  package Line;
-  use Pattern::Composite;
+  package ____;
+  use Pattern::____;
 
-  with 'Object::Leaf';
+  with 'Object::{$object}';    
 
-  sub draw {
+  sub ____ {
     my ($self) = @_;
 
     # magic!
@@ -31,12 +44,6 @@ Object::Leaf is a role to be consumed by an object.
 =over 4
 
 =item L<Pattern::TOC>
-
-=item L<Pattern::Composite>
-
-=item L<Object::Composite>
-
-=item L<Object::Component>
 
 =back
 
@@ -80,3 +87,5 @@ CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
 CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 =cut
+
+1;

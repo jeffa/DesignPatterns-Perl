@@ -1,44 +1,40 @@
-package Object::Leaf;
-use Moose::Role;
+package Pattern::TOC;
 our $VERSION = '0.01';
 
-1;
-__END__
 =head1 NAME
 
-Object::Leaf - Represents and defines behavior for primitive objects in the
-composition. A leaf has no children (e.g. Rectangle, Line, Text, etc.).
+Pattern - Design Patterns in Perl
 
 =head1 SYNOPSIS
 
-Object::Leaf is a role to be consumed by an object.
-
-  package Line;
-  use Pattern::Composite;
-
-  with 'Object::Leaf';
-
-  sub draw {
-    my ($self) = @_;
-
-    # magic!
-  } 
-
-  1;
+A whole lot of messing things up.
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<Pattern::TOC>
-
 =item L<Pattern::Composite>
 
-=item L<Object::Composite>
-
-=item L<Object::Component>
-
 =back
+
+=head1 AUTHOR
+
+Jeffrey Hayes Anderson, C<< <info+cpan at unlocalhost.com> >>
+
+=head1 BUGS
+
+Please report any bugs or feature requests to C<bug-pattern at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Pattern>.  I will be notified, and then you'll
+automatically be notified of progress on your bug as I make changes.
+
+=head1 SUPPORT
+
+You can find documentation for this module with the perldoc command.
+
+    perldoc Pattern
+
+=head1 ACKNOWLEDGEMENTS
+
 
 =head1 LICENSE AND COPYRIGHT
 
@@ -80,3 +76,5 @@ CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
 CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 =cut
+
+1;

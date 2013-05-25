@@ -16,6 +16,8 @@ classes, which are in turn used directly by a client.
 
 =over 4
 
+=item L<Pattern::TOC>
+
 =item L<Object::Leaf>
 
 =item L<Object::Composite>

@@ -1,42 +1,39 @@
-package Object::Leaf;
-use Moose::Role;
+package Pattern::Builder;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-Object::Leaf - Represents and defines behavior for primitive objects in the
-composition. A leaf has no children (e.g. Rectangle, Line, Text, etc.).
+Pattern::Builder - Separate the construction of a complex object
+from its representation so that the same construction process can
+create different representations.
 
 =head1 SYNOPSIS
 
-Object::Leaf is a role to be consumed by an object.
+Pattern::Builder is a design pattern useful keeping the creation of
+the object independent from the parts that make up the object. It also
+allows different representations for the constructed objects.
 
-  package Line;
-  use Pattern::Composite;
+=head1 PARTICIPANTS
 
-  with 'Object::Leaf';
+=over 4
 
-  sub draw {
-    my ($self) = @_;
+=item L<Object::Builder>
 
-    # magic!
-  } 
+=item L<Object::ConcreteBuilder>
 
-  1;
+=item L<Object::Director>
+
+=item L<Object::Product>
+
+=back
 
 =head1 SEE ALSO
 
 =over 4
 
 =item L<Pattern::TOC>
-
-=item L<Pattern::Composite>
-
-=item L<Object::Composite>
-
-=item L<Object::Component>
 
 =back
 
@@ -80,3 +77,5 @@ CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
 CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 =cut
+
+1;
