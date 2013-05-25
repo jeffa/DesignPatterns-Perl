@@ -3,26 +3,33 @@ our $VERSION = '0.01';
 
 =head1 NAME
 
-Pattern::Structural::Composite - Represents part-whole hierarchies of objects without regard to
-distinction between those objects' compositions.
+Pattern::Structural::Composite - Represents part-whole hierarchies of
+objects without regard to distinction between those objects' compositions.
 
 =head1 SYNOPSIS
 
-Pattern::Structural::Composite is a design pattern and is not meant to be used directly by a client.
-This package defines only Moose roles that are to be consumed by the CPAN user's own
-classes, which are in turn used directly by a client.
+Pattern::Structural::Composite is a design pattern that is useful when you
+want clients to be able to ignore the difference between compositions of
+objects and individual objects. Clients will treat all objects in the
+composite structure uniformly.
+
+=head1 PARTICIPANTS
+
+=over 4
+
+=item L<Object::Component>
+
+=item L<Object::Leaf>
+
+=item L<Object::Composite>
+
+=back
 
 =head1 SEE ALSO
 
 =over 4
 
 =item L<Pattern::Structural::TOC>
-
-=item L<Object::Leaf>
-
-=item L<Object::Composite>
-
-=item L<Object::Component>
 
 =back
 

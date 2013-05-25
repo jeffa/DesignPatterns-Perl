@@ -5,21 +5,28 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Structural::Flyweight - 
+Pattern::Structural::Flyweight - supports large numbers of fine-grained
+objects efficiently via sharing.
 
 =head1 SYNOPSIS
 
-Pattern::Structural::Flyweight is a design pattern
+Pattern::Structural::Flyweight is a design pattern that is useful when you:
+
+  - have an application that uses a large number of objects
+  - have high storage costs due to sheer quantity of objects
+  - have a majority of objects whose state can be made extrinsic
+  - have many groups of objects that may be replaced by few shared objects
+  - have an application that does not depend on object identity
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::ConcreteFlyweight>
 
-=item L<Object::>
+=item L<Object::UnsharedConcreteFlyweight>
 
-=item L<Object::>
+=item L<Object::FlyweightFactory>
 
 =back
 

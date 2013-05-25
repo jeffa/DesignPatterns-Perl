@@ -5,21 +5,27 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Structural::Bridge - 
+Pattern::Structural::Bridge - decouples an abstraction from its implementation
+so that the two can vary independently.
 
 =head1 SYNOPSIS
 
-Pattern::Structural::Bridge is a design pattern
+Pattern::Structural::Bridge is a design pattern that is useful when an abstraction
+needs to be unbounded by its implementation. This is useful for hiding the implementation
+of an abstraction completely from clients and changes in that implementation should
+have no impact on clients (i.e. no need to recompile their code).
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::Abstraction>
 
-=item L<Object::>
+=item L<Object::RefinedAbstraction>
 
-=item L<Object::>
+=item L<Object::Implementor>
+
+=item L<Object::ConcreteImplementor>
 
 =back
 

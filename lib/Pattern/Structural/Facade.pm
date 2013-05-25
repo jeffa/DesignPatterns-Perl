@@ -5,21 +5,21 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Structural::Facade - 
+Pattern::Structural::Facade - provides a high-level, unified interface to 
+a set of interfaces in a subsystem that makes the subsystem easier to use.
 
 =head1 SYNOPSIS
 
-Pattern::Structural::Facade is a design pattern
+Pattern::Structural::Facade is a design pattern that is useful for providing
+a single simple interface to a complex subsystem. Also useful for decoupling
+subsystems from clients and other subsystems, thereby promoting independence
+and portability.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
-
-=item L<Object::>
-
-=item L<Object::>
+=item L<Object::Facade>
 
 =back
 

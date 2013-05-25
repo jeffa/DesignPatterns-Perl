@@ -5,21 +5,24 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Structural::Proxy - 
+Pattern::Structural::Proxy - provides a surrogate or placeholder
+for another object to control access to it.
 
 =head1 SYNOPSIS
 
-Pattern::Structural::Proxy is a design pattern
+Pattern::Structural::Proxy is a design pattern that is useful when there
+is a need for a more versatile or sophisticated reference to an object
+than a simple pointer.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::Proxy>
 
-=item L<Object::>
+=item L<Object::Subject>
 
-=item L<Object::>
+=item L<Object::RealSubject>
 
 =back
 

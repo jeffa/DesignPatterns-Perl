@@ -5,21 +5,27 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Structural::Decorator - 
+Pattern::Structural::Decorator - attaches additional responsibilites to
+an object dynamically. Provides a flexible alternative to subclassing.
 
 =head1 SYNOPSIS
 
-Pattern::Structural::Decorator is a design pattern
+Pattern::Structural::Decorator is a design pattern that is useful for
+adding responsibilities to individual objects dynamically and transparently.
+Assigned responsibilities can also be withdrawn dynamically. Also useful
+when extension by subclassing is impractical or even impossible.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::Component>
 
-=item L<Object::>
+=item L<Object::ConcreteComponent>
 
-=item L<Object::>
+=item L<Object::Decorator>
+
+=item L<Object::ConcreteDecorator>
 
 =back
 

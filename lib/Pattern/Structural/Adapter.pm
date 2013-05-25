@@ -5,21 +5,25 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Pattern::Structural::Adapter - 
+Pattern::Structural::Adapter - converts the interface of a class into another
+interface clients expect. Overcomes incompatible interfaces to allow classes
+to work together that otherwise could not.
 
 =head1 SYNOPSIS
 
-Pattern::Structural::Adapter is a design pattern
+Pattern::Structural::Adapter is a design pattern that is useful when you want
+to use an existing class but its interface does not match the one you need or
+you want to create a class that will cooperate with unrelated or unforeseen classes.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<Object::>
+=item L<Object::Target>
 
-=item L<Object::>
+=item L<Object::Adaptee>
 
-=item L<Object::>
+=item L<Object::Adapter>
 
 =back
 
