@@ -3,7 +3,7 @@ our $VERSION = '0.01';
 
 =head1 NAME
 
-Pattern - Design Patterns in Perl
+OODP - Design Patterns in Perl
 
 =head1 SYNOPSIS
 
@@ -28,14 +28,14 @@ Jeffrey Hayes Anderson, C<< <info+cpan at unlocalhost.com> >>
 =head1 BUGS
 
 Please report any bugs or feature requests to C<bug-pattern at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Pattern>.  I will be notified, and then you'll
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=OODP>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Pattern
+    perldoc OODP::TOC
 
 =head1 ACKNOWLEDGEMENTS
 

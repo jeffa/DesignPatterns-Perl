@@ -3,7 +3,7 @@ our $VERSION = '0.01';
 
 =head1 NAME
 
-Pattern - Design Patterns in Perl
+OODP::Creational::TOC - Table of Contents for Creational Design Patterns.
 
 =head1 SYNOPSIS
 
@@ -13,28 +13,13 @@ A whole lot of messing things up.
 
 =over 4
 
-=item L<OODP::Creational::Composite>
+=item L<OODP::TOC>
 
 =back
 
 =head1 AUTHOR
 
 Jeffrey Hayes Anderson, C<< <info+cpan at unlocalhost.com> >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to C<bug-pattern at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Pattern>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc Pattern
-
-=head1 ACKNOWLEDGEMENTS
-
 
 =head1 LICENSE AND COPYRIGHT
 

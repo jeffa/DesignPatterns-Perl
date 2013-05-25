@@ -4,10 +4,10 @@ use warnings FATAL => 'all';
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME             => 'Pattern',
+    NAME             => 'OODP',
     AUTHOR           => q{Jeffrey Hayes Anderson <info+cpan@unlocalhost.com>},
-    VERSION_FROM     => 'lib/Pattern.pm',
-    ABSTRACT_FROM    => 'lib/Pattern.pm',
+    VERSION_FROM     => 'lib/OODP/TOC.pm',
+    ABSTRACT_FROM    => 'lib/OODP/TOC.pm',
     LICENSE          => 'Artistic_2_0',
     PL_FILES         => {},
     MIN_PERL_VERSION => 5.006,
@@ -22,5 +22,5 @@ WriteMakefile(
         #'Foo::Bar::Module' => 5.0401,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean => { FILES => 'Pattern-*' },
+    clean => { FILES => 'OODP-*' },
 );
