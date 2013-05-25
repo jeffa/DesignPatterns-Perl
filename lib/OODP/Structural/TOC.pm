@@ -5,15 +5,69 @@ our $VERSION = '0.01';
 
 OODP::Structural::TOC - Table of Contents for Structural Design Patterns.
 
-=head1 SYNOPSIS
+=head1 Adapter
 
-A whole lot of messing things up.
+=over 4
+
+=item L<OODP::Structural::Adapter>
+
+=back
+
+=head1 Bridge
+
+=over 4
+
+=item L<OODP::Structural::Bridge>
+
+=back
+
+=head1 Composite
+
+=over 4
+
+=item L<OODP::Structural::Composite>
+
+=back
+
+=head1 Decorator
+
+=over 4
+
+=item L<OODP::Structural::Decorator>
+
+=back
+
+=head1 Facade
+
+=over 4
+
+=item L<OODP::Structural::Facade>
+
+=back
+
+=head1 Flyweight
+
+=over 4
+
+=item L<OODP::Structural::Flyweight>
+
+=back
+
+=head1 Proxy
+
+=over 4
+
+=item L<OODP::Structural::Proxy>
+
+=back
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<OODP::TOC>
+=item L<OODP::TOC::Behavioral>
+
+=item L<OODP::TOC::Creational>
 
 =back
 

@@ -5,15 +5,101 @@ our $VERSION = '0.01';
 
 OODP::Behavioral::TOC - Table of Contents for Behavioral Design Patterns
 
-=head1 SYNOPSIS
+=head1 Chain Of Responsibility
 
-A whole lot of messing things up.
+=over 4
+
+=item L<OODP::Behavioral::ChainOfResponsibility>
+
+=back
+
+=head1 Command
+
+=over 4
+
+=item L<OODP::Behavioral::Command>
+
+=back
+
+=head1 Interpreter
+
+=over 4
+
+=item L<OODP::Behavioral::Interpreter>
+
+=back
+
+=head1 Iterator
+
+=over 4
+
+=item L<OODP::Behavioral::Iterator>
+
+=back
+
+=head1 Mediator
+
+=over 4
+
+=item L<OODP::Behavioral::Mediator>
+
+=back
+
+=head1 Memento
+
+=over 4
+
+=item L<OODP::Behavioral::Memento>
+
+=back
+
+=head1 Observer
+
+=over 4
+
+=item L<OODP::Behavioral::Observer>
+
+=back
+
+=head1 State
+
+=over 4
+
+=item L<OODP::Behavioral::State>
+
+=back
+
+=head1 Strategy
+
+=over 4
+
+=item L<OODP::Behavioral::Strategy>
+
+=back
+
+=head1 Template Method
+
+=over 4
+
+=item L<OODP::Behavioral::TemplateMethod>
+
+=back
+
+=head1 Vistor
+
+=over 4
+
+=item L<OODP::Behavioral::Visitor>
+
+=back
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<OODP::TOC>
+=item L<OODP::TOC::Creational>
+
+=item L<OODP::TOC::Structural>
 
 =back
 

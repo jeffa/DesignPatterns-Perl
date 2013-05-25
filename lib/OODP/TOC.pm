@@ -5,9 +5,69 @@ our $VERSION = '0.01';
 
 OODP - Design Patterns in Perl
 
-=head1 SYNOPSIS
+=head1 BEHAVIORAL PATTERNS
 
-A whole lot of messing things up.
+=over 4
+
+=item L<OODP::Behavioral::ChainOfResponsibility>
+
+=item L<OODP::Behavioral::Command>
+
+=item L<OODP::Behavioral::Interpreter>
+
+=item L<OODP::Behavioral::Iterator>
+
+=item L<OODP::Behavioral::Mediator>
+
+=item L<OODP::Behavioral::Memento>
+
+=item L<OODP::Behavioral::Observer>
+
+=item L<OODP::Behavioral::State>
+
+=item L<OODP::Behavioral::Strategy>
+
+=item L<OODP::Behavioral::TemplateMethod>
+
+=item L<OODP::Behavioral::Visitor>
+
+=back
+
+=head1 CREATIONAL PATTERNS
+
+=over 4
+
+=item L<OODP::Creational::AbstractFactory>
+
+=item L<OODP::Creational::Builder>
+
+=item L<OODP::Creational::FactoryMethod>
+
+=item L<OODP::Creational::Prototype>
+
+=item L<OODP::Creational::Singleton>
+
+=back
+
+=head1 STRUCTURAL PATTERNS
+
+=over 4
+
+=item L<OODP::Structural::Adapter>
+
+=item L<OODP::Structural::Bridge>
+
+=item L<OODP::Structural::Composite>
+
+=item L<OODP::Structural::Decorator>
+
+=item L<OODP::Structural::Facade>
+
+=item L<OODP::Structural::Flyweight>
+
+=item L<OODP::Structural::Proxy>
+
+=back
 
 =head1 SEE ALSO
 

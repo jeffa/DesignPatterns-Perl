@@ -5,15 +5,53 @@ our $VERSION = '0.01';
 
 OODP::Creational::TOC - Table of Contents for Creational Design Patterns.
 
-=head1 SYNOPSIS
+=head1 Abstract Factory
 
-A whole lot of messing things up.
+=over 4
+
+=item L<OODP::Creational::AbstractFactory>
+
+=back
+
+=head1 Builder
+
+=over 4
+
+=item L<OODP::Creational::Builder>
+
+=back
+
+=head1 Factory Method
+
+=over 4
+
+=item L<OODP::Creational::FactoryMethod>
+
+=back
+
+=head1 Prototype
+
+=over 4
+
+=item L<OODP::Creational::Prototype>
+
+=back
+
+=head1 Singleton
+
+=over 4
+
+=item L<OODP::Creational::Singleton>
+
+=back
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<OODP::TOC>
+=item L<OODP::TOC::Behavioral>
+
+=item L<OODP::TOC::Structural>
 
 =back
 
