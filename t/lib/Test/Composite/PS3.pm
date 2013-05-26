@@ -1,9 +1,9 @@
-package Test::PS3;
-use Moose::Role;
-use MooseX::FollowPBP;
-our $VERSION = '0.01';
+package Test::Composite::PS3;
+use Moose;
+with 'Test::Composite::Device';
 
-with 'OODP::Leaf';
-
+has '+power'          => ( default => 40 );
+has '+net_price'      => ( default => 600 );
+has '+discount_price' => ( default => 300 );
 
 1;
