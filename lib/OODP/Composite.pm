@@ -1,5 +1,6 @@
 package OODP::Composite;
 use Moose::Role;
+use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;
 
@@ -17,9 +18,9 @@ sub add {
         croak "cannot add child: existing name '$name'";
     }
 
-    my $children = $self->children;
+    my $children = $self->get_children;
     $children->{$name} = $component;
-    $self->children( $children );
+    $self->set_children( $children );
 
     return $children;
 }
@@ -28,10 +29,10 @@ sub remove {
     my ($self,$name) = @_;
 
     my $component;
-    my $children = $self->children;
+    my $children = $self->get_children;
 
     if ($component = delete $children->{$name}) {
-        $self->children( $children );
+        $self->set_children( $children );
     }
     
     return $component;
@@ -40,7 +41,7 @@ sub remove {
 sub get_child {
     my ($self,$name) = @_;
 
-    return $self->children->{$name};
+    return $self->get_children->{$name};
 }
 
 sub is_composite { $_[0] }
@@ -64,7 +65,7 @@ child-related operations are implemented in the Component interface.
   sub draw {
     my ($self) = @_;
 
-    $_->draw for $self->get_children();
+    $_->draw for @{ $self->get_children() };
   } 
 
 =head1 METHODS
