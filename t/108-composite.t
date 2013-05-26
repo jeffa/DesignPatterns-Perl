@@ -4,7 +4,7 @@ use warnings FATAL => 'all';
 use Test::More;
 use Test::Exception;
 
-plan tests => 16;
+plan tests => 17;
 
 use lib 't/lib';
 use_ok( 'Test::Composite::Chassis' )    || print "Bail out!\n";
@@ -31,4 +31,5 @@ is $ps3->get_discount_price, 300,       "default discount_price";
 $cab->add( Test::Composite::PS3->new( name => 'shaggy', power => 30 ) );
 $cab->add( $ps3 );
 
-is scalar keys %{ $cab->get_children }, 2,   "cabinate contains 2 consoles";
+is scalar keys %{ $cab->get_children }, 2,  "cabinate contains 2 consoles";
+is $cab->get_total_net_price, 1000,         "correct total net price";
