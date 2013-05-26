@@ -55,18 +55,25 @@ OODP::Composite - defines behavior for components having children.
 
 =head1 SYNOPSIS
 
-OODP::Composite is a role that stores child comonents. The
-child-related operations are implemented in the Component interface.
+OODP::Composite is a role that stores child components. The child
+related operations are implemented in the Component interface.
 
-  package Picture;
-  use Moose;
-  extends 'OODP::Composite';
+  package MyCompositeInterface;
+    use Moose::Role;
+    with 'OODP::Composite';
+    has attribute ( is => 'rw', isa => 'Any' );
 
-  sub draw {
-    my ($self) = @_;
+  package MyComposite;
+    use Moose;
+    with 'MyCompositeInterface';
+    has attribute ( default => 'some value' );
 
-    $_->draw for @{ $self->get_children() };
-  } 
+  package main;
+    use MyLeaf;
+    use MyComposite;
+    my $obj = MyComposite->new;
+    $obj->add( MyLeaf->new, MyLeaf->new );
+    $obj->draw;
 
 =head1 METHODS
 

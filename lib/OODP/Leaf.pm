@@ -23,17 +23,21 @@ OODP::Leaf is a role that represents and defines behavior for
 primitive objects in the composition. A leaf has no children
 (e.g. Rectangle, Line, Text, etc.).
 
-  package Line;
-  use Moose;
-  extends 'OODP::Leaf';
+  package MyLeafInterface;
+    use Moose::Role;
+    with 'OODP::Leaf';
+    has attribute ( is => 'rw', isa => 'Any' );
+    sub draw { "magic" } 
 
-  sub draw {
-    my ($self) = @_;
+  package MyLeaf;
+    use Moose;
+    with 'MyLeafInterface';
+    has attribute ( default => 'some value' );
 
-    # magic!
-  } 
-
-  1;
+  package main;
+    use MyLeaf;
+    my $obj = MyLeaf->new;
+    $obj->draw;
 
 =head1 METHODS
 

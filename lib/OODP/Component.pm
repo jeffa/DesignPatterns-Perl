@@ -19,16 +19,10 @@ in the composition.
 
 =head1 SYNOPSIS
 
-OODP::Component declares an interface for accessing and manaing its
-child components and implements default behavior for the
-interface common to all classes.
-
-  package Graphic;
-  use Moose::Role;
-  with 'OODP::Component';
-  use Carp;
-
-  sub draw { croak "must be implemented by consumer" } 
+OODP::Component declares the interface and implements default
+behavior for the interface common to all classes. It is not
+meant to be implemented by the client, by rather by the L<OODP::Leaf>
+and L<OODP::Composite> interfaces themselves.
 
 =head1 SEE ALSO
 
