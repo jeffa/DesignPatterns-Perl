@@ -6,7 +6,7 @@ use Carp;
 
 has children => ( is => 'rw', isa => 'Any' );
 has parent   => ( is => 'rw', isa => 'OODP::Composite' );
-has name     => ( is => 'ro', isa => 'Str', reader => 'get_name', required => 1 );
+has name     => ( is => 'ro', isa => 'Str', required => 1 );
 
 requires qw( add remove get_child is_composite );
 
