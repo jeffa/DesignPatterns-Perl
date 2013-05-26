@@ -21,7 +21,6 @@ sub log { $_[0]->get_name }
 
 #======================================================
 package main;
-use 5.006;
 use strict;
 use warnings FATAL => 'all';
 use Test::More;
