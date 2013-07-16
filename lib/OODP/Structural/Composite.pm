@@ -13,6 +13,26 @@ want clients to be able to ignore the difference between compositions of
 objects and individual objects. Clients will treat all objects in the
 composite structure uniformly.
 
+=head1 STRUCTURE
+
+       +------+     +---------------+
+       |client|---->|   Component   |
+       +------+     +---------------+-----+
+                    | add()         |     |
+                    | remove()      |     |
+                    | get_child()   |     |
+                    | is_composite()|     |
+                    +-----+---------+     |
+                          |               |
+                         / \              |
+           +-------------------+          |
+           |                   |          |
+       +--------+      +-------------+    |
+       |  Leaf  |      |  Composite  |    |
+       +--------+      +-------------+----+
+       |        |      |             | children
+       +------+-+      +-------------+
+
 =head1 PARTICIPANTS
 
 =over 4
