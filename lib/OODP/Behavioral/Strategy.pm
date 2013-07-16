@@ -14,6 +14,24 @@ OODP::Behavioral::Strategy is a design pattern that is useful
 when you need an algorithm that varies independently from clients
 that use it.
 
+=head1 STRUCTURE
+
+    +------------+             +-------------+
+    | Context    |             | Strategy    |
+    +------------+<>---------->+-------------+
+    | context()  |             | algorithm() |
+    +------------+             +------+------+
+                                      |
+                                     / \
+              +------------------------------------+
+              |                 |                  |
+              |                 |                  |
+       +------+------+   +------+------+   +-------+-----+
+       | ConcreteS.  |   | ConcreteS.  |   | ConcreteS.  |
+       +-------------+   +-------------+   +-------------+
+       | algorithm() |   | algorithm() |   | algorithm() |
+       +-------------+   +-------------+   +-------------+
+
 =head1 PARTICIPANTS
 
 =over 4
