@@ -1,122 +1,27 @@
-package OODP::TOC;
+package OODP::Context;
+use Moose::Role;
+use MooseX::FollowPBP;
 our $VERSION = '0.01';
+use Carp;
 
+1;
+__END__
 =head1 NAME
 
-OODP - Object Oriented Design Patterns (with Moose)
+OODP::Context - declares the interface used by the client to
+defer the decision to the Strategy.
 
-=head1 BEHAVIORAL PATTERNS
+=head1 SYNOPSIS
 
-=over 4
-
-=item L<OODP::Behavioral::ChainOfResponsibility>
-
-=item L<OODP::Behavioral::Command>
-
-=item L<OODP::Behavioral::Interpreter>
-
-=item L<OODP::Behavioral::Iterator>
-
-=item L<OODP::Behavioral::Mediator>
-
-=item L<OODP::Behavioral::Memento>
-
-=item L<OODP::Behavioral::Observer>
-
-=item L<OODP::Behavioral::State>
-
-=item L<OODP::Behavioral::Strategy>
-
-=over 4
-
-=item * L<OODP::Context>
-
-=item * L<OODP::Strategy>
-
-=back
-
-=item L<OODP::Behavioral::TemplateMethod>
-
-=item L<OODP::Behavioral::Visitor>
-
-=back
-
-=head1 CREATIONAL PATTERNS
-
-=over 4
-
-=item L<OODP::Creational::AbstractFactory>
-
-=item L<OODP::Creational::Builder>
-
-=item L<OODP::Creational::FactoryMethod>
-
-=item L<OODP::Creational::Prototype>
-
-=item L<OODP::Creational::Singleton>
-
-=back
-
-=head1 STRUCTURAL PATTERNS
-
-=over 4
-
-=item L<OODP::Structural::Adapter>
-
-=item L<OODP::Structural::Bridge>
-
-=item L<OODP::Structural::Composite>
-
-=over 4
-
-=item * L<OODP::Component>
-
-=item * L<OODP::Composite>
-
-=item * L<OODP::Leaf>
-
-=back
-
-=item L<OODP::Structural::Decorator>
-
-=item L<OODP::Structural::Facade>
-
-=item L<OODP::Structural::Flyweight>
-
-=item L<OODP::Structural::Proxy>
-
-=back
+OODP::Context ...
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<OODP::Behavioral::TOC>
-
-=item L<OODP::Creational::TOC>
-
-=item L<OODP::Structural::TOC>
+=item L<OODP::Context>
 
 =back
-
-=head1 AUTHOR
-
-Jeffrey Hayes Anderson, C<< <info+cpan at unlocalhost.com> >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to C<bug-pattern at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=OODP>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc OODP::TOC
-
-=head1 ACKNOWLEDGEMENTS
-
 
 =head1 LICENSE AND COPYRIGHT
 
@@ -158,5 +63,3 @@ CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
 CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 =cut
-
-1;
