@@ -3,8 +3,9 @@ use Moose::Role;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 
-with 'OODP::Composite';
 use List::Util;
+
+with 'OODP::Composite';
 
 has power          => ( is => 'ro', isa => 'Int' );
 has net_price      => ( is => 'ro', isa => 'Int' );
