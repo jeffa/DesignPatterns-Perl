@@ -1,4 +1,4 @@
-package Test::Composite::PS3;
+package Test::Composite::Console;
 use Moose;
 with 'Test::Composite::Device';
 
