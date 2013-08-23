@@ -1,10 +1,10 @@
 package OODP::ConcreteStrategy;
-use Moose;
+use Moose::Role;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;
 
-extends 'OODP::Strategy';
+with 'OODP::Strategy';
 
 
 1;
