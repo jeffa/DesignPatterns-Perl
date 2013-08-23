@@ -30,7 +30,7 @@ composite structure uniformly.
        +--------+      +-------------+    |
        |  Leaf  |      |  Composite  |    |
        +--------+      +-------------+----+
-       |        |      |             | children
+       | draw() |      | draw()      | children
        +------+-+      +-------------+
 
 =head1 PARTICIPANTS
