@@ -4,6 +4,10 @@ use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;
 
+use OODP::Strategy;
+
+has strategy => ( is => 'ro', isa => 'OODP::Strategy' );
+
 1;
 __END__
 =head1 NAME
