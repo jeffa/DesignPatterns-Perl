@@ -20,6 +20,8 @@ OODP::Strategy ...
 
 =over 4
 
+=item L<OODP::ConcreteStrategy>
+
 =item L<OODP::Context>
 
 =back

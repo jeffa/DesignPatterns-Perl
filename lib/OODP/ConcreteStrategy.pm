@@ -1,25 +1,27 @@
-package OODP::Context;
-use Moose::Role;
+package OODP::ConcreteStrategy;
+use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;
+
+extends 'OODP::Strategy';
+
 
 1;
 __END__
 =head1 NAME
 
-OODP::Context - declares the interface used by the client to
-defer the decision to the Strategy.
+OODP::ConcreteStrategy - implements the algorithm using the OODP::Strategy object.
 
 =head1 SYNOPSIS
 
-OODP::Context ...
+OODP::ConcreteStrategy ...
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<OODP::ConcreteStrategy>
+=item L<OODP::Context>
 
 =item L<OODP::Strategy>
 
