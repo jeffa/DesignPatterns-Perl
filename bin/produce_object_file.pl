@@ -12,7 +12,7 @@ print $text;
 
 
 __DATA__
-package Object::{$object};
+package OODP::{$object};
 use Moose::Role;
 our $VERSION = '0.01';
 
@@ -20,16 +20,16 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-Object::{$object} - Represents and defines behavior for 
+OODP::{$object} - Represents and defines behavior for 
 
 =head1 SYNOPSIS
 
-Object::{$object} is a role to be consumed by an object.
+OODP::{$object} is a role to be consumed by an object.
 
   package ____;
   use Pattern::____;
 
-  with 'Object::{$object}';    
+  with 'OODP::{$object}';    
 
   sub ____ {
     my ($self) = @_;
