@@ -1,31 +1,60 @@
 package OODP::ConcreteSubject;
 use Moose::Role;
+use MooseX::FollowPBP;
 our $VERSION = '0.01';
+
+use FreezeThaw qw(freeze);
+
+with 'OODP::Subject';
+
+has state     => ( is => 'rw', isa => 'Any' );
+has observers => ( is => 'ro', isa => 'ArrayRef', default => sub {[]} );
+
+sub attach {
+    my ($self, $observer) = @_;
+    $observer->set_subject( $self );
+    push @{ $self->{observers} }, $observer;
+}
+
+sub detach {
+    my ($self, $observer) = @_;
+    my $comp = freeze( $self );
+    for (0 .. $#{ $self->{observers} }) {
+        if ($comp eq freeze( $self->{observers}[$_] )) {
+            splice @{ $self->{observers} }, $_, 1;
+            last;
+        }
+    }
+}
+
+sub notify {
+    my $self = shift;
+    $_->update for @{ $self->get_observers };
+}
+
 
 1;
 __END__
 =head1 NAME
 
-OODP::ConcreteSubject - Represents and defines behavior for 
+OODP::ConcreteSubject - interface to be consumed by client subjects.
 
 =head1 SYNOPSIS
 
-OODP::ConcreteSubject is a role to be consumed by an object.
-
-  package ____;
-  use Pattern::____;
-
-  with 'OODP::ConcreteSubject';    
-
-  sub ____ 2 
-
-  1;
+OODP::ConcreteSubject stores the state of interest to observer objects
+and sends notification to its observers when its state changes.
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<OODP::Behavioral::Observer>
+
+=item L<OODP::Observer>
+
+=item L<OODP::Subject>
+
+=item L<OODP::ConcreteObserver>
 
 =back
 

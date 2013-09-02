@@ -2,24 +2,26 @@ package OODP::Subject;
 use Moose::Role;
 our $VERSION = '0.01';
 
+requires qw( attach detach notify );
+
 1;
 __END__
 =head1 NAME
 
-OODP::Subject - can attach any number of OODP::Observer objects
+OODP::Subject - can attach any number of observer objects
 and receive notifications.
 
 =head1 SYNOPSIS
 
-An OODP::Subject object knows its observers. Any number of OODP::Observer
-objects may observe an OODP::Subject. Also provides an interface for
-attaching and detaching OODP::Observer objects.
+OODP::Subject knows its observers. Any number of observer objects
+may observe a subject. Also provides an interface for attaching
+and detaching observer objects.
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<OODP::TOC>
+=item L<OODP::Behavioral::Observer>
 
 =item L<OODP::Observer>
 

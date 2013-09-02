@@ -2,6 +2,8 @@ package OODP::Observer;
 use Moose::Role;
 our $VERSION = '0.01';
 
+requires qw( update );
+
 1;
 __END__
 =head1 NAME
@@ -17,7 +19,7 @@ that should be notified of changes in a subject.
 
 =over 4
 
-=item L<OODP::TOC>
+=item L<OODP::Behavioral::Observer>
 
 =item L<OODP::Subject>
 

@@ -1,31 +1,40 @@
 package OODP::ConcreteObserver;
 use Moose::Role;
+use MooseX::FollowPBP;
 our $VERSION = '0.01';
+
+has state   => ( is => 'rw', isa => 'Any' );
+has subject => ( is => 'rw', isa => 'Any' );
+
+sub update {
+    my $self = shift;
+    $self->set_state( $self->get_subject->get_state ); 
+}
 
 1;
 __END__
 =head1 NAME
 
-OODP::ConcreteObserver - Represents and defines behavior for 
+OODP::ConcreteObserver - interface to be consumed by client subjects.
 
 =head1 SYNOPSIS
 
-OODP::ConcreteObserver is a role to be consumed by an object.
-
-  package ____;
-  use Pattern::____;
-
-  with 'OODP::ConcreteObserver';    
-
-  sub ____ 2 
-
-  1;
+OODP::ConcreteObserver maintains a reference to an OODP::ConcreteSubject
+object; stores a state that remains consistent with the subject's state;
+implements the observer updating interface to keep that state consistent.
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<OODP::Behavioral::Observer>
+
+=item L<OODP::Observer>
+
+=item L<OODP::Subject>
+
+=item L<OODP::ConcreteSubject>
+
 
 =back
 
