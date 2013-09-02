@@ -3,8 +3,6 @@ use Moose::Role;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 
-use FreezeThaw qw(freeze);
-
 with 'OODP::Subject';
 
 has state     => ( is => 'rw', isa => 'Any' );
@@ -18,9 +16,8 @@ sub attach {
 
 sub detach {
     my ($self, $observer) = @_;
-    my $comp = freeze( $self );
     for (0 .. $#{ $self->{observers} }) {
-        if ($comp eq freeze( $self->{observers}[$_] )) {
+        if ($observer == $self->{observers}[$_] ) {
             splice @{ $self->{observers} }, $_, 1;
             last;
         }
