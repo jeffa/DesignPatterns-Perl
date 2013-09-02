@@ -23,6 +23,18 @@ OODP - Object Oriented Design Patterns (with Moose)
 
 =item L<OODP::Behavioral::Observer>
 
+=over 4
+
+=item * L<OODP::Observer>
+
+=item * L<OODP::Subject>
+
+=item * L<OODP::ConcreteObserver>
+
+=item * L<OODP::ConcreteSubject>
+
+=back
+
 =item L<OODP::Behavioral::State>
 
 =item L<OODP::Behavioral::Strategy>
@@ -32,6 +44,8 @@ OODP - Object Oriented Design Patterns (with Moose)
 =item * L<OODP::Context>
 
 =item * L<OODP::Strategy>
+
+=item * L<OODP::ConcreteStrategy>
 
 =back
 

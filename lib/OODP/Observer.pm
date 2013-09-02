@@ -1,61 +1,29 @@
-package OODP::Behavioral::Observer;
+package OODP::Observer;
+use Moose::Role;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Behavioral::Observer - defines a one-to-many dependency
-between objects so that when one object changes state, all its
-dependents are notified and updated automatically.
+OODP::Observer - Defines interface for notifying OODP::Subject objects.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Observer is a design pattern that is useful
-when a change to one object requires changing others without knowing
-how many objects need to be changed and no assumptions about who
-the objects are needs to be made. Promotes loose coupling.
-
-=head1 STRUCTURE
-
-
-   +-----------+  observers              +-----------+
-   |  Subject  |----------------------->>| Observer  |
-   +-----------+                         +-----------+
-   |  attach() |                         | update()  |
-   |  detach() |                         +-----+-----+
-   |  notify() |                               ^
-   +------+----+                               |
-          ^                            +-------+----------+
-          |                            | ConcreteObserver |
-          |                            +------------------+
-   +------+-----------+        subject | update()         |
-   |  ConcreteSubject |<<--------------| observer_state() |
-   +------------------+                +------------------+
-   |  get_state()     |
-   |  set_state()     |
-   +------------------+
-
-
-=head1 PARTICIPANTS
-
-=over 4
-
-=item L<OODP::Subject>
-
-=item L<OODP::Observer>
-
-=item L<OODP::ConcreteSubject>
-
-=item L<OODP::ConcreteObserver>
-
-=back
+An OODP::Observer object defines the updating interfce for objects
+that should be notified of changes in a subject.
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<OODP::Behavioral::TOC>
+=item L<OODP::TOC>
+
+=item L<OODP::Subject>
+
+=item L<OODP::ConcreteObserver>
+
+=item L<OODP::ConcreteSubject>
 
 =back
 
