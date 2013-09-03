@@ -12,7 +12,7 @@ has hour => ( is => 'rw', isa => 'Int', default => 0 );
 
 sub update {
     my $self = shift;
-    ($self->{sec}, $self->{min}, $self->{hour}) = localtime( $self->get_subject->get_time );
+    ($self->{sec}, $self->{min}, $self->{hour}) = gmtime( $self->get_subject->get_time );
     $self->draw;
 }
     

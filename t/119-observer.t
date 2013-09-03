@@ -24,12 +24,12 @@ $subject->attach( $clock_a );
 is $clock_a->draw, '00:00:00', "analog clock has not been updated";
 
 $subject->notify;
-is $clock_a->draw, '07:33:50', "analog clock has been updated";
+is $clock_a->draw, '14:33:50', "analog clock has been updated";
 
 is $clock_d->draw,
-" 000  77777    333  333     5555  000  
-0  00    7  ::    3    3 :: 5    0  00 
-0 0 0   7       33   33     555  0 0 0 
-00  0   7   ::    3    3 ::    5 00  0 
- 000    7      333  333     555   000  
+" 11  4  4    333  333     5555  000  
+111  4  4 ::    3    3 :: 5    0  00 
+ 11  4444     33   33     555  0 0 0 
+ 11     4 ::    3    3 ::    5 00  0 
+1111    4    333  333     555   000  
 ", "digital clock has been updated";
