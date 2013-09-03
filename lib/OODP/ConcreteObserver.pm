@@ -3,6 +3,8 @@ use Moose::Role;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 
+with 'OODP::Observer';
+
 has state   => ( is => 'rw', isa => 'Any' );
 has subject => ( is => 'rw', isa => 'Any' );
 
