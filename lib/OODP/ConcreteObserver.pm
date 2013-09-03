@@ -11,6 +11,13 @@ sub update {
     $self->set_state( $self->get_subject->get_state ); 
 }
 
+sub BUILD {
+    my $self = shift;
+    if ($self->get_subject) {
+        $self->get_subject->attach( $self );
+    }
+}
+
 1;
 __END__
 =head1 NAME

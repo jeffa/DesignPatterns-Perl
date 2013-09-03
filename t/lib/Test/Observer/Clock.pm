@@ -18,11 +18,4 @@ sub update {
     
 sub draw { croak "Subclass " . __PACKAGE__ . " must implement draw()" }
 
-sub BUILD {
-    my $self = shift;
-    if ($self->get_subject) {
-        $self->get_subject->attach( $self );
-    }
-}
-
 1;

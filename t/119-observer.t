@@ -37,5 +37,3 @@ is $clock_d->draw,
  11     4 ::    3    3 ::    5 00  0 
 1111    4    333  333     555   000  
 ", "digital clock has been updated";
-
-
