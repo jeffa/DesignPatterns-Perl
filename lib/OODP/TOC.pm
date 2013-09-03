@@ -9,19 +9,19 @@ OODP - Object Oriented Design Patterns (with Moose)
 
 =over 4
 
-=item L<OODP::Behavioral::ChainOfResponsibility>
+=item * L<OODP::Behavioral::ChainOfResponsibility>
 
-=item L<OODP::Behavioral::Command>
+=item * L<OODP::Behavioral::Command>
 
-=item L<OODP::Behavioral::Interpreter>
+=item * L<OODP::Behavioral::Interpreter>
 
-=item L<OODP::Behavioral::Iterator>
+=item * L<OODP::Behavioral::Iterator>
 
-=item L<OODP::Behavioral::Mediator>
+=item * L<OODP::Behavioral::Mediator>
 
-=item L<OODP::Behavioral::Memento>
+=item * L<OODP::Behavioral::Memento>
 
-=item L<OODP::Behavioral::Observer>
+=item * L<OODP::Behavioral::Observer>
 
 =over 4
 
@@ -35,9 +35,9 @@ OODP - Object Oriented Design Patterns (with Moose)
 
 =back
 
-=item L<OODP::Behavioral::State>
+=item * L<OODP::Behavioral::State>
 
-=item L<OODP::Behavioral::Strategy>
+=item * L<OODP::Behavioral::Strategy>
 
 =over 4
 
@@ -49,9 +49,9 @@ OODP - Object Oriented Design Patterns (with Moose)
 
 =back
 
-=item L<OODP::Behavioral::TemplateMethod>
+=item * L<OODP::Behavioral::TemplateMethod>
 
-=item L<OODP::Behavioral::Visitor>
+=item * L<OODP::Behavioral::Visitor>
 
 =back
 
@@ -59,15 +59,15 @@ OODP - Object Oriented Design Patterns (with Moose)
 
 =over 4
 
-=item L<OODP::Creational::AbstractFactory>
+=item * L<OODP::Creational::AbstractFactory>
 
-=item L<OODP::Creational::Builder>
+=item * L<OODP::Creational::Builder>
 
-=item L<OODP::Creational::FactoryMethod>
+=item * L<OODP::Creational::FactoryMethod>
 
-=item L<OODP::Creational::Prototype>
+=item * L<OODP::Creational::Prototype>
 
-=item L<OODP::Creational::Singleton>
+=item * L<OODP::Creational::Singleton>
 
 =back
 
@@ -75,11 +75,11 @@ OODP - Object Oriented Design Patterns (with Moose)
 
 =over 4
 
-=item L<OODP::Structural::Adapter>
+=item * L<OODP::Structural::Adapter>
 
-=item L<OODP::Structural::Bridge>
+=item * L<OODP::Structural::Bridge>
 
-=item L<OODP::Structural::Composite>
+=item * L<OODP::Structural::Composite>
 
 =over 4
 
@@ -91,13 +91,13 @@ OODP - Object Oriented Design Patterns (with Moose)
 
 =back
 
-=item L<OODP::Structural::Decorator>
+=item * L<OODP::Structural::Decorator>
 
-=item L<OODP::Structural::Facade>
+=item * L<OODP::Structural::Facade>
 
-=item L<OODP::Structural::Flyweight>
+=item * L<OODP::Structural::Flyweight>
 
-=item L<OODP::Structural::Proxy>
+=item * L<OODP::Structural::Proxy>
 
 =back
 
@@ -105,11 +105,11 @@ OODP - Object Oriented Design Patterns (with Moose)
 
 =over 4
 
-=item L<OODP::Behavioral::TOC>
+=item * L<OODP::Behavioral::TOC>
 
-=item L<OODP::Creational::TOC>
+=item * L<OODP::Creational::TOC>
 
-=item L<OODP::Structural::TOC>
+=item * L<OODP::Structural::TOC>
 
 =back
 
