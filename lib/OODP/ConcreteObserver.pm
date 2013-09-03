@@ -32,6 +32,20 @@ OODP::ConcreteObserver maintains a reference to an OODP::ConcreteSubject
 object; stores a state that remains consistent with the subject's state;
 implements the observer updating interface to keep that state consistent.
 
+=head1 METHODS
+
+=over 4
+
+=item update()
+
+Updates self's state to the state of its subject.
+
+=item BUILD
+
+Used to attach self to any subject passed in via construction.
+
+=back
+
 =head1 SEE ALSO
 
 =over 4
@@ -43,7 +57,6 @@ implements the observer updating interface to keep that state consistent.
 =item L<OODP::Subject>
 
 =item L<OODP::ConcreteSubject>
-
 
 =back
 

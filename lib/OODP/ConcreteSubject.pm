@@ -41,6 +41,24 @@ OODP::ConcreteSubject - interface to be consumed by client subjects.
 OODP::ConcreteSubject stores the state of interest to observer objects
 and sends notification to its observers when its state changes.
 
+=head1 METHODS
+
+=over 4
+
+=item attach()
+
+Adds observer to observers.
+
+=item detach()
+
+Removes observer from observers.
+
+=item notify()
+
+Calls each observer's update() method.
+
+=back
+
 =head1 SEE ALSO
 
 =over 4

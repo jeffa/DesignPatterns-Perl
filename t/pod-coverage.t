@@ -3,7 +3,7 @@ use strict;
 use warnings FATAL => 'all';
 use Test::More;
 
-plan skip_all => 'el yucko test';
+# plan skip_all => 'el yucko test';
 
 # Ensure a recent version of Test::Pod::Coverage
 my $min_tpc = 1.08;
