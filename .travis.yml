@@ -1,6 +1,6 @@
 language: perl
 before_install:
-    - cpanm MooseX::FollowPBP
+    - cpanm --notest MooseX::FollowPBP
 perl:
   - "5.16"
   - "5.14"
