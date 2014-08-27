@@ -1,28 +1,28 @@
-package OODP::Creational::FactoryMethod;
+package OODP::TOC::Proxy;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Creational::FactoryMethod - allows classes to defer their instantiation to subclasses.
+OODP::Structural::Proxy - provides a surrogate or placeholder
+for another object to control access to it.
 
 =head1 SYNOPSIS
 
-OODP::Creational::FactoryMethod is a design pattern that is useful when a class cannot
-anticipate the class of objects it must create.
+OODP::Structural::Proxy is a design pattern that is useful when there
+is a need for a more versatile or sophisticated reference to an object
+than a simple pointer.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Product>
+=item L<OODP::Proxy>
 
-=item L<OODP::ConcreteProduct>
+=item L<OODP::Subject>
 
-=item L<OODP::Creator>
-
-=item L<OODP::ConcreteCreator>
+=item L<OODP::RealSubject>
 
 =back
 
@@ -30,7 +30,7 @@ anticipate the class of objects it must create.
 
 =over 4
 
-=item L<OODP::Creational::TOC>
+=item L<OODP::Structural::TOC>
 
 =back
 

@@ -1,31 +1,53 @@
-package OODP::Behavioral::Iterator;
+package OODP::TOC::Observer;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Behavioral::Iterator - provides a way to
-access elements of an aggregate object sequentially
-without exposing its underlying representation.
+OODP::Behavioral::Observer - defines a one-to-many dependency
+between objects so that when one object changes state, all its
+dependents are notified and updated automatically.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Iterator is a design pattern that is useful
-for supporting multiple traversals of aggregate objects and provides
-a uniform interface that supports polymorphic iteration.
+OODP::Behavioral::Observer is a design pattern that is useful
+when a change to one object requires changing others without knowing
+how many objects need to be changed and no assumptions about who
+the objects are needs to be made. Promotes loose coupling.
+
+=head1 STRUCTURE
+
+
+   +-----------+  observers              +-----------+
+   |  Subject  |----------------------->>| Observer  |
+   +-----------+                         +-----------+
+   |  attach() |                         | update()  |
+   |  detach() |                         +-----+-----+
+   |  notify() |                               ^
+   +------+----+                               |
+          ^                            +-------+----------+
+          |                            | ConcreteObserver |
+          |                            +------------------+
+   +------+-----------+        subject | update()         |
+   |  ConcreteSubject |<<--------------| observer_state() |
+   +------------------+                +------------------+
+   |  get_state()     |
+   |  set_state()     |
+   +------------------+
+
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Iterator>
+=item L<OODP::Subject>
 
-=item L<OODP::ConcreteIterator>
+=item L<OODP::Observer>
 
-=item L<OODP::Aggregate>
+=item L<OODP::ConcreteSubject>
 
-=item L<OODP::ConcreteAggregate>
+=item L<OODP::ConcreteObserver>
 
 =back
 

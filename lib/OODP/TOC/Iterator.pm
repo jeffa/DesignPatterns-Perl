@@ -1,34 +1,31 @@
-package OODP::Behavioral::Interpreter;
+package OODP::TOC::Iterator;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Behavioral::Interpreter - defines a representation for a given
-language's grammar along with an interpreter that uses this representation
-to interpret sentences in the language.
+OODP::Behavioral::Iterator - provides a way to
+access elements of an aggregate object sequentially
+without exposing its underlying representation.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Interpreter is a design pattern that is useful for
-interpreting languages whose statements can be represented as abstract
-syntax trees. This pattern works best with simple grammars is not known
-for its efficiency, unless something such as a state machine is utilizied.
+OODP::Behavioral::Iterator is a design pattern that is useful
+for supporting multiple traversals of aggregate objects and provides
+a uniform interface that supports polymorphic iteration.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::AbstractExpression>
+=item L<OODP::Iterator>
 
-=item L<OODP::TerminalExpression>
+=item L<OODP::ConcreteIterator>
 
-=item L<OODP::NonterminalExpression>
+=item L<OODP::Aggregate>
 
-=item L<OODP::Expression>
-
-=item L<OODP::Context>
+=item L<OODP::ConcreteAggregate>
 
 =back
 

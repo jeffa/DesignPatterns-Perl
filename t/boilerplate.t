@@ -50,9 +50,9 @@ TODO: {
   );
 
   module_boilerplate_ok('lib/OODP/TOC.pm');
-  module_boilerplate_ok('lib/OODP/Behavioral/TOC.pm');
-  module_boilerplate_ok('lib/OODP/Creational/TOC.pm');
-  module_boilerplate_ok('lib/OODP/Structural/TOC.pm');
+  module_boilerplate_ok('lib/OODP/TOC/Behavioral.pm');
+  module_boilerplate_ok('lib/OODP/TOC/Creational.pm');
+  module_boilerplate_ok('lib/OODP/TOC/Structural.pm');
 
 
 }

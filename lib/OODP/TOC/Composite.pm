@@ -1,25 +1,47 @@
-package OODP::Creational::Prototype;
+package OODP::TOC::Composite;
 our $VERSION = '0.01';
 
-1;
-__END__
 =head1 NAME
 
-OODP::Creational::Prototype - provides a blueprint for creating objects.
+OODP::Structural::Composite - Represents part-whole hierarchies of
+objects without regard to distinction between those objects' compositions.
 
 =head1 SYNOPSIS
 
-OODP::Creational::Prototype is a design pattern that is useful for systems that
-should be independent of product creation, composition and representation.
-Useful when instatiated classes are specified at run-time (dynamic loading).
+OODP::Structural::Composite is a design pattern that is useful when you
+want clients to be able to ignore the difference between compositions of
+objects and individual objects. Clients will treat all objects in the
+composite structure uniformly.
+
+=head1 STRUCTURE
+
+       +------+     +---------------+
+       |client|---->|   Component   |
+       +------+     +---------------+-----+
+                    | add()         |     |
+                    | remove()      |     |
+                    | get_child()   |     |
+                    | is_composite()|     |
+                    +-----+---------+     |
+                          |               |
+                         / \              |
+           +-------------------+          |
+           |                   |          |
+       +--------+      +-------------+    |
+       |  Leaf  |      |  Composite  |    |
+       +--------+      +-------------+----+
+       | draw() |      | draw()      | children
+       +------+-+      +-------------+
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Prototype>
+=item L<OODP::Component>
 
-=item L<OODP::ConcretePrototype>
+=item L<OODP::Leaf>
+
+=item L<OODP::Composite>
 
 =back
 
@@ -27,7 +49,7 @@ Useful when instatiated classes are specified at run-time (dynamic loading).
 
 =over 4
 
-=item L<OODP::Creational::TOC>
+=item L<OODP::Structural::TOC>
 
 =back
 

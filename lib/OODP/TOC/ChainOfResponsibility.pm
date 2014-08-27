@@ -1,28 +1,26 @@
-package OODP::Structural::Proxy;
+package OODP::TOC::ChainOfResponsibility;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Structural::Proxy - provides a surrogate or placeholder
-for another object to control access to it.
+OODP::Behavioral::ChainOfResponsibility - chains receiving objects
+and passes the request along the chain until an object handles it.
 
 =head1 SYNOPSIS
 
-OODP::Structural::Proxy is a design pattern that is useful when there
-is a need for a more versatile or sophisticated reference to an object
-than a simple pointer.
+OODP::Behavioral::ChainOfResponsibility is a design pattern that is
+useful for avoiding coupling the sender of a request to its receiver
+by giving more than one object a chance to handle the request.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Proxy>
+=item L<OODP::Handler>
 
-=item L<OODP::Subject>
-
-=item L<OODP::RealSubject>
+=item L<OODP::ConcreteHandler>
 
 =back
 
@@ -30,7 +28,7 @@ than a simple pointer.
 
 =over 4
 
-=item L<OODP::Structural::TOC>
+=item L<OODP::Behavioral::TOC>
 
 =back
 

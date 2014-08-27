@@ -1,47 +1,24 @@
-package OODP::Structural::Composite;
+package OODP::TOC::Singleton;
 our $VERSION = '0.01';
 
+1;
+__END__
 =head1 NAME
 
-OODP::Structural::Composite - Represents part-whole hierarchies of
-objects without regard to distinction between those objects' compositions.
+OODP::Creational::Singleton - ensures one and only one instance with global access.
 
 =head1 SYNOPSIS
 
-OODP::Structural::Composite is a design pattern that is useful when you
-want clients to be able to ignore the difference between compositions of
-objects and individual objects. Clients will treat all objects in the
-composite structure uniformly.
-
-=head1 STRUCTURE
-
-       +------+     +---------------+
-       |client|---->|   Component   |
-       +------+     +---------------+-----+
-                    | add()         |     |
-                    | remove()      |     |
-                    | get_child()   |     |
-                    | is_composite()|     |
-                    +-----+---------+     |
-                          |               |
-                         / \              |
-           +-------------------+          |
-           |                   |          |
-       +--------+      +-------------+    |
-       |  Leaf  |      |  Composite  |    |
-       +--------+      +-------------+----+
-       | draw() |      | draw()      | children
-       +------+-+      +-------------+
+OODP::Creational::Singleton is a design pattern that is useful when there must be
+exactly one instance of a class and it must be accessible to clients from
+a well-known point of access. Additionally, clients can use an extended
+instance (subclass) without modifying their code.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Component>
-
-=item L<OODP::Leaf>
-
-=item L<OODP::Composite>
+=item L<OODP::Singleton>
 
 =back
 
@@ -49,7 +26,7 @@ composite structure uniformly.
 
 =over 4
 
-=item L<OODP::Structural::TOC>
+=item L<OODP::Creational::TOC>
 
 =back
 

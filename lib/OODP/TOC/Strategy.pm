@@ -1,31 +1,46 @@
-package OODP::Behavioral::State;
+package OODP::TOC::Strategy;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Behavioral::State - allows objects to alter their
-behavior when their internal state changes.
+OODP::Behavioral::Strategy - defines a family of algorithms,
+encapsulates each one and makes them interchangeable.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::State is a design pattern that is useful for
-operations that have large, multpart conditional statements that
-depend on the object's state, which is usually represented by one
-or more enumarated constants. The State pattern puts each branch
-of a conditional into a separate class, allowing you to treat the
-object's state as an object itself.
+OODP::Behavioral::Strategy is a design pattern that is useful
+when you need an algorithm that varies independently from clients
+that use it.
+
+=head1 STRUCTURE
+
+    +------------+             +-------------+
+    | Context    |             | Strategy    |
+    +------------+<>---------->+-------------+
+    | context()  |             | algorithm() |
+    +------------+             +------+------+
+                                      |
+                                     / \
+              +------------------------------------+
+              |                 |                  |
+              |                 |                  |
+       +------+------+   +------+------+   +-------+-----+
+       | ConcreteS.  |   | ConcreteS.  |   | ConcreteS.  |
+       +-------------+   +-------------+   +-------------+
+       | algorithm() |   | algorithm() |   | algorithm() |
+       +-------------+   +-------------+   +-------------+
 
 =head1 PARTICIPANTS
 
 =over 4
 
+=item L<OODP::Strategy>
+
+=item L<OODP::ConcreteStrategy>
+
 =item L<OODP::Context>
-
-=item L<OODP::State>
-
-=item L<OODP::ConcreteState>
 
 =back
 

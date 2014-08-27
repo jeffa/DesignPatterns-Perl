@@ -1,63 +1,31 @@
-package OODP::Structural::TOC;
+package OODP::TOC::Bridge;
 our $VERSION = '0.01';
 
+1;
+__END__
 =head1 NAME
 
-OODP::Structural::TOC - Table of Contents for Structural Design Patterns.
+OODP::Structural::Bridge - decouples an abstraction from its implementation
+so that the two can vary independently.
 
-=head1 Adapter
+=head1 SYNOPSIS
 
-=over 4
+OODP::Structural::Bridge is a design pattern that is useful when an abstraction
+needs to be unbounded by its implementation. This is useful for hiding the implementation
+of an abstraction completely from clients and changes in that implementation should
+have no impact on clients (i.e. no need to recompile their code).
 
-=item L<OODP::Structural::Adapter>
-
-=back
-
-=head1 Bridge
-
-=over 4
-
-=item L<OODP::Structural::Bridge>
-
-=back
-
-=head1 Composite
+=head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Structural::Composite>
+=item L<OODP::Abstraction>
 
-=back
+=item L<OODP::RefinedAbstraction>
 
-=head1 Decorator
+=item L<OODP::Implementor>
 
-=over 4
-
-=item L<OODP::Structural::Decorator>
-
-=back
-
-=head1 Facade
-
-=over 4
-
-=item L<OODP::Structural::Facade>
-
-=back
-
-=head1 Flyweight
-
-=over 4
-
-=item L<OODP::Structural::Flyweight>
-
-=back
-
-=head1 Proxy
-
-=over 4
-
-=item L<OODP::Structural::Proxy>
+=item L<OODP::ConcreteImplementor>
 
 =back
 
@@ -65,15 +33,9 @@ OODP::Structural::TOC - Table of Contents for Structural Design Patterns.
 
 =over 4
 
-=item L<OODP::TOC::Behavioral>
-
-=item L<OODP::TOC::Creational>
+=item L<OODP::Structural::TOC>
 
 =back
-
-=head1 AUTHOR
-
-Jeffrey Hayes Anderson, C<< <info+cpan at unlocalhost.com> >>
 
 =head1 LICENSE AND COPYRIGHT
 

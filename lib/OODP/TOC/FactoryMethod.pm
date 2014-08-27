@@ -1,46 +1,28 @@
-package OODP::Behavioral::Strategy;
+package OODP::TOC::FactoryMethod;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Behavioral::Strategy - defines a family of algorithms,
-encapsulates each one and makes them interchangeable.
+OODP::Creational::FactoryMethod - allows classes to defer their instantiation to subclasses.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Strategy is a design pattern that is useful
-when you need an algorithm that varies independently from clients
-that use it.
-
-=head1 STRUCTURE
-
-    +------------+             +-------------+
-    | Context    |             | Strategy    |
-    +------------+<>---------->+-------------+
-    | context()  |             | algorithm() |
-    +------------+             +------+------+
-                                      |
-                                     / \
-              +------------------------------------+
-              |                 |                  |
-              |                 |                  |
-       +------+------+   +------+------+   +-------+-----+
-       | ConcreteS.  |   | ConcreteS.  |   | ConcreteS.  |
-       +-------------+   +-------------+   +-------------+
-       | algorithm() |   | algorithm() |   | algorithm() |
-       +-------------+   +-------------+   +-------------+
+OODP::Creational::FactoryMethod is a design pattern that is useful when a class cannot
+anticipate the class of objects it must create.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Strategy>
+=item L<OODP::Product>
 
-=item L<OODP::ConcreteStrategy>
+=item L<OODP::ConcreteProduct>
 
-=item L<OODP::Context>
+=item L<OODP::Creator>
+
+=item L<OODP::ConcreteCreator>
 
 =back
 
@@ -48,7 +30,7 @@ that use it.
 
 =over 4
 
-=item L<OODP::Behavioral::TOC>
+=item L<OODP::Creational::TOC>
 
 =back
 

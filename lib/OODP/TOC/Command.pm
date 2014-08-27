@@ -1,27 +1,29 @@
-package OODP::Behavioral::Memento;
+package OODP::TOC::Command;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Behavioral::Memento - captures and externalizes an
-object's internal state without violating encapsulation, for
-the purpose of serializing the state for later object restoral.
+OODP::Behavioral::Command - encapsulates reuqests as objects.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Memento is a design pattern
+OODP::Behavioral::Command is a design pattern that allows you
+to parameterize clients with different requests and support
+undoable opertations.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Memento>
+=item L<OODP::Command>
 
-=item L<OODP::Originator>
+=item L<OODP::ConcreteCommand>
 
-=item L<OODP::Caretaker>
+=item L<OODP::Invoker>
+
+=item L<OODP::Receiver>
 
 =back
 

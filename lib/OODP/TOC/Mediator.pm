@@ -1,24 +1,26 @@
-package OODP::Creational::Singleton;
+package OODP::TOC::Mediator;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Creational::Singleton - ensures one and only one instance with global access.
+OODP::Behavioral::Mediator - defines an object that
+encapsulates how a set of objects interact.
 
 =head1 SYNOPSIS
 
-OODP::Creational::Singleton is a design pattern that is useful when there must be
-exactly one instance of a class and it must be accessible to clients from
-a well-known point of access. Additionally, clients can use an extended
-instance (subclass) without modifying their code.
+OODP::Behavioral::Mediator is a design pattern that promotes
+loose coupling by preventing objects from referring to each other
+explicitly while allowing their interactions to vary independently.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Singleton>
+=item L<OODP::Mediator>
+
+=item L<OODP::ConcreteMediator>
 
 =back
 
@@ -26,7 +28,7 @@ instance (subclass) without modifying their code.
 
 =over 4
 
-=item L<OODP::Creational::TOC>
+=item L<OODP::Behavioral::TOC>
 
 =back
 

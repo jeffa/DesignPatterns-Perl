@@ -1,25 +1,30 @@
-package OODP::Structural::Facade;
+package OODP::TOC::AbstractFactory;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Structural::Facade - provides a high-level, unified interface to 
-a set of interfaces in a subsystem that makes the subsystem easier to use.
+OODP::Creational::AbstractFactory - provides interface for creating objects without
+specifying their concrete classes.
 
 =head1 SYNOPSIS
 
-OODP::Structural::Facade is a design pattern that is useful for providing
-a single simple interface to a complex subsystem. Also useful for decoupling
-subsystems from clients and other subsystems, thereby promoting independence
-and portability.
+OODP::Creational::AbstractFactory is a design pattern that can be used for systems
+that should be independent of how their products are created, composed and
+represented. 
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Facade>
+=item L<OODP::AbstractFactory>
+
+=item L<OODP::ConcreteFactory>
+
+=item L<OODP::AbstractProduct>
+
+=item L<OODP::ConcreteProduct>
 
 =back
 
@@ -27,7 +32,7 @@ and portability.
 
 =over 4
 
-=item L<OODP::Structural::TOC>
+=item L<OODP::Creational::TOC>
 
 =back
 

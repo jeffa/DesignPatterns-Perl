@@ -1,31 +1,31 @@
-package OODP::Structural::Bridge;
+package OODP::TOC::State;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Structural::Bridge - decouples an abstraction from its implementation
-so that the two can vary independently.
+OODP::Behavioral::State - allows objects to alter their
+behavior when their internal state changes.
 
 =head1 SYNOPSIS
 
-OODP::Structural::Bridge is a design pattern that is useful when an abstraction
-needs to be unbounded by its implementation. This is useful for hiding the implementation
-of an abstraction completely from clients and changes in that implementation should
-have no impact on clients (i.e. no need to recompile their code).
+OODP::Behavioral::State is a design pattern that is useful for
+operations that have large, multpart conditional statements that
+depend on the object's state, which is usually represented by one
+or more enumarated constants. The State pattern puts each branch
+of a conditional into a separate class, allowing you to treat the
+object's state as an object itself.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Abstraction>
+=item L<OODP::Context>
 
-=item L<OODP::RefinedAbstraction>
+=item L<OODP::State>
 
-=item L<OODP::Implementor>
-
-=item L<OODP::ConcreteImplementor>
+=item L<OODP::ConcreteState>
 
 =back
 
@@ -33,7 +33,7 @@ have no impact on clients (i.e. no need to recompile their code).
 
 =over 4
 
-=item L<OODP::Structural::TOC>
+=item L<OODP::Behavioral::TOC>
 
 =back
 

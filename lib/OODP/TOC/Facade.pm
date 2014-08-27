@@ -1,29 +1,25 @@
-package OODP::Structural::Adapter;
+package OODP::TOC::Facade;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Structural::Adapter - converts the interface of a class into another
-interface clients expect. Overcomes incompatible interfaces to allow classes
-to work together that otherwise could not.
+OODP::Structural::Facade - provides a high-level, unified interface to 
+a set of interfaces in a subsystem that makes the subsystem easier to use.
 
 =head1 SYNOPSIS
 
-OODP::Structural::Adapter is a design pattern that is useful when you want
-to use an existing class but its interface does not match the one you need or
-you want to create a class that will cooperate with unrelated or unforeseen classes.
+OODP::Structural::Facade is a design pattern that is useful for providing
+a single simple interface to a complex subsystem. Also useful for decoupling
+subsystems from clients and other subsystems, thereby promoting independence
+and portability.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Target>
-
-=item L<OODP::Adaptee>
-
-=item L<OODP::Adapter>
+=item L<OODP::Facade>
 
 =back
 

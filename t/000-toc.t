@@ -9,35 +9,34 @@ BEGIN {
     use_ok( $_ ) or die "Bail out!\n" for (qw(
 
         OODP::TOC
+            OODP::TOC::Creational
+                OODP::TOC::AbstractFactory
+                OODP::TOC::Builder
+                OODP::TOC::FactoryMethod
+                OODP::TOC::Prototype
+                OODP::TOC::Singleton
 
-        OODP::Creational::TOC
-        OODP::Creational::AbstractFactory
-        OODP::Creational::Builder
-        OODP::Creational::FactoryMethod
-        OODP::Creational::Prototype
-        OODP::Creational::Singleton
+            OODP::TOC::Structural
+                OODP::TOC::Adapter
+                OODP::TOC::Bridge
+                OODP::TOC::Composite
+                OODP::TOC::Decorator
+                OODP::TOC::Facade
+                OODP::TOC::Flyweight
+                OODP::TOC::Proxy
 
-        OODP::Structural::TOC
-        OODP::Structural::Adapter
-        OODP::Structural::Bridge
-        OODP::Structural::Composite
-        OODP::Structural::Decorator
-        OODP::Structural::Facade
-        OODP::Structural::Flyweight
-        OODP::Structural::Proxy
-
-        OODP::Behavioral::TOC
-        OODP::Behavioral::ChainOfResponsibility
-        OODP::Behavioral::Command
-        OODP::Behavioral::Interpreter
-        OODP::Behavioral::Iterator
-        OODP::Behavioral::Mediator
-        OODP::Behavioral::Memento
-        OODP::Behavioral::Observer
-        OODP::Behavioral::State
-        OODP::Behavioral::Strategy
-        OODP::Behavioral::TemplateMethod
-        OODP::Behavioral::Visitor
+            OODP::TOC::Behavioral
+                OODP::TOC::ChainOfResponsibility
+                OODP::TOC::Command
+                OODP::TOC::Interpreter
+                OODP::TOC::Iterator
+                OODP::TOC::Mediator
+                OODP::TOC::Memento
+                OODP::TOC::Observer
+                OODP::TOC::State
+                OODP::TOC::Strategy
+                OODP::TOC::TemplateMethod
+                OODP::TOC::Visitor
 
         OODP::Component
         OODP::Composite

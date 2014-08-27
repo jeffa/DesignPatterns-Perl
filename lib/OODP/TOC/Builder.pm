@@ -1,26 +1,31 @@
-package OODP::Behavioral::ChainOfResponsibility;
+package OODP::TOC::Builder;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Behavioral::ChainOfResponsibility - chains receiving objects
-and passes the request along the chain until an object handles it.
+OODP::Creational::Builder - Separate the construction of a complex object
+from its representation so that the same construction process can
+create different representations.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::ChainOfResponsibility is a design pattern that is
-useful for avoiding coupling the sender of a request to its receiver
-by giving more than one object a chance to handle the request.
+OODP::Creational::Builder is a design pattern useful keeping the creation of
+the object independent from the parts that make up the object. It also
+allows different representations for the constructed objects.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Handler>
+=item L<OODP::Builder>
 
-=item L<OODP::ConcreteHandler>
+=item L<OODP::ConcreteBuilder>
+
+=item L<OODP::Director>
+
+=item L<OODP::Product>
 
 =back
 
@@ -28,7 +33,7 @@ by giving more than one object a chance to handle the request.
 
 =over 4
 
-=item L<OODP::Behavioral::TOC>
+=item L<OODP::Creational::TOC>
 
 =back
 

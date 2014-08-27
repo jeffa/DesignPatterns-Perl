@@ -1,95 +1,34 @@
-package OODP::Behavioral::TOC;
+package OODP::TOC::Interpreter;
 our $VERSION = '0.01';
 
+1;
+__END__
 =head1 NAME
 
-OODP::Behavioral::TOC - Table of Contents for Behavioral Design Patterns
+OODP::Behavioral::Interpreter - defines a representation for a given
+language's grammar along with an interpreter that uses this representation
+to interpret sentences in the language.
 
-=head1 Chain Of Responsibility
+=head1 SYNOPSIS
 
-=over 4
+OODP::Behavioral::Interpreter is a design pattern that is useful for
+interpreting languages whose statements can be represented as abstract
+syntax trees. This pattern works best with simple grammars is not known
+for its efficiency, unless something such as a state machine is utilizied.
 
-=item L<OODP::Behavioral::ChainOfResponsibility>
-
-=back
-
-=head1 Command
-
-=over 4
-
-=item L<OODP::Behavioral::Command>
-
-=back
-
-=head1 Interpreter
+=head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Behavioral::Interpreter>
+=item L<OODP::AbstractExpression>
 
-=back
+=item L<OODP::TerminalExpression>
 
-=head1 Iterator
+=item L<OODP::NonterminalExpression>
 
-=over 4
+=item L<OODP::Expression>
 
-=item L<OODP::Behavioral::Iterator>
-
-=back
-
-=head1 Mediator
-
-=over 4
-
-=item L<OODP::Behavioral::Mediator>
-
-=back
-
-=head1 Memento
-
-=over 4
-
-=item L<OODP::Behavioral::Memento>
-
-=back
-
-=head1 Observer
-
-=over 4
-
-=item L<OODP::Behavioral::Observer>
-
-=back
-
-=head1 State
-
-=over 4
-
-=item L<OODP::Behavioral::State>
-
-=back
-
-=head1 Strategy
-
-=over 4
-
-=item L<OODP::Behavioral::Strategy>
-
-=back
-
-=head1 Template Method
-
-=over 4
-
-=item L<OODP::Behavioral::TemplateMethod>
-
-=back
-
-=head1 Vistor
-
-=over 4
-
-=item L<OODP::Behavioral::Visitor>
+=item L<OODP::Context>
 
 =back
 
@@ -97,15 +36,9 @@ OODP::Behavioral::TOC - Table of Contents for Behavioral Design Patterns
 
 =over 4
 
-=item L<OODP::TOC::Creational>
-
-=item L<OODP::TOC::Structural>
+=item L<OODP::Behavioral::TOC>
 
 =back
-
-=head1 AUTHOR
-
-Jeffrey Hayes Anderson, C<< <info+cpan at unlocalhost.com> >>
 
 =head1 LICENSE AND COPYRIGHT
 

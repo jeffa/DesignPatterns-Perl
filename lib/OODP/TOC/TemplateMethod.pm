@@ -1,4 +1,4 @@
-package OODP::Behavioral::TemplateMethod;
+package OODP::TOC::TemplateMethod;
 our $VERSION = '0.01';
 
 1;

@@ -1,53 +1,33 @@
-package OODP::Behavioral::Observer;
+package OODP::TOC::Visitor;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Behavioral::Observer - defines a one-to-many dependency
-between objects so that when one object changes state, all its
-dependents are notified and updated automatically.
+OODP::Behavioral::Visitor - represents an operation
+to be performed on the elements of an object structure.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Observer is a design pattern that is useful
-when a change to one object requires changing others without knowing
-how many objects need to be changed and no assumptions about who
-the objects are needs to be made. Promotes loose coupling.
-
-=head1 STRUCTURE
-
-
-   +-----------+  observers              +-----------+
-   |  Subject  |----------------------->>| Observer  |
-   +-----------+                         +-----------+
-   |  attach() |                         | update()  |
-   |  detach() |                         +-----+-----+
-   |  notify() |                               ^
-   +------+----+                               |
-          ^                            +-------+----------+
-          |                            | ConcreteObserver |
-          |                            +------------------+
-   +------+-----------+        subject | update()         |
-   |  ConcreteSubject |<<--------------| observer_state() |
-   +------------------+                +------------------+
-   |  get_state()     |
-   |  set_state()     |
-   +------------------+
-
+OODP::Behavioral::Visitor is a design pattern that is useful
+when you have an object structure that contains many objects with
+differing interfaces and operations need to be performed on these
+objects that depend on their concrete classes.
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Subject>
+=item L<OODP::Visitor>
 
-=item L<OODP::Observer>
+=item L<OODP::ConcreteVisitor>
 
-=item L<OODP::ConcreteSubject>
+=item L<OODP::Element>
 
-=item L<OODP::ConcreteObserver>
+=item L<OODP::ConcreteElement>
+
+=item L<OODP::Structure>
 
 =back
 

@@ -1,30 +1,59 @@
-package OODP::Creational::AbstractFactory;
+package OODP::TOC::Decorator;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Creational::AbstractFactory - provides interface for creating objects without
-specifying their concrete classes.
+OODP::Structural::Decorator - attaches additional responsibilites to
+an object dynamically. Provides a flexible alternative to subclassing.
 
 =head1 SYNOPSIS
 
-OODP::Creational::AbstractFactory is a design pattern that can be used for systems
-that should be independent of how their products are created, composed and
-represented. 
+OODP::Structural::Decorator is a design pattern that is useful for
+adding responsibilities to individual objects dynamically and transparently.
+Assigned responsibilities can also be withdrawn dynamically. Also useful
+when extension by subclassing is impractical or even impossible.
+
+=head1 STRUCTURE
+
+                +-------------+
+                | Component   |
+                +-------------+<-------------+
+                | operation() |              |
+                +------+------+              |
+                       |                     |
+                      / \                    |
+           +--------------------+            |
+           |                    |            |
+  +------------------+    +--------------+   |
+  | ConcreteCompoment|    | Decorator    |   |
+  +------------------+    +--------------<>--+
+  | opertation()     |    | opertation() |   component
+  +------------------+    +-------+------+
+                                  |
+                                 / \
+                        +------------------+
+                        |                  |
+            +-----------+--------+  +------+-------------+
+            | ConcreteDecoratorA |  | ConcreteDecoratorB |
+            +--------------------+  +--------------------+
+            | opertation()       |  | operation()        |
+            +--------------------+  | added_behavior()   |
+            | addedState         |  +--------------------+
+            +--------------------+
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::AbstractFactory>
+=item L<OODP::Component>
 
-=item L<OODP::ConcreteFactory>
+=item L<OODP::ConcreteComponent>
 
-=item L<OODP::AbstractProduct>
+=item L<OODP::Decorator>
 
-=item L<OODP::ConcreteProduct>
+=item L<OODP::ConcreteDecorator>
 
 =back
 
@@ -32,7 +61,7 @@ represented.
 
 =over 4
 
-=item L<OODP::Creational::TOC>
+=item L<OODP::Structural::TOC>
 
 =back
 

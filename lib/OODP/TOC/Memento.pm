@@ -1,31 +1,27 @@
-package OODP::Creational::Builder;
+package OODP::TOC::Memento;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Creational::Builder - Separate the construction of a complex object
-from its representation so that the same construction process can
-create different representations.
+OODP::Behavioral::Memento - captures and externalizes an
+object's internal state without violating encapsulation, for
+the purpose of serializing the state for later object restoral.
 
 =head1 SYNOPSIS
 
-OODP::Creational::Builder is a design pattern useful keeping the creation of
-the object independent from the parts that make up the object. It also
-allows different representations for the constructed objects.
+OODP::Behavioral::Memento is a design pattern
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Builder>
+=item L<OODP::Memento>
 
-=item L<OODP::ConcreteBuilder>
+=item L<OODP::Originator>
 
-=item L<OODP::Director>
-
-=item L<OODP::Product>
+=item L<OODP::Caretaker>
 
 =back
 
@@ -33,7 +29,7 @@ allows different representations for the constructed objects.
 
 =over 4
 
-=item L<OODP::Creational::TOC>
+=item L<OODP::Behavioral::TOC>
 
 =back
 

@@ -1,59 +1,25 @@
-package OODP::Structural::Decorator;
+package OODP::TOC::Prototype;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::Structural::Decorator - attaches additional responsibilites to
-an object dynamically. Provides a flexible alternative to subclassing.
+OODP::Creational::Prototype - provides a blueprint for creating objects.
 
 =head1 SYNOPSIS
 
-OODP::Structural::Decorator is a design pattern that is useful for
-adding responsibilities to individual objects dynamically and transparently.
-Assigned responsibilities can also be withdrawn dynamically. Also useful
-when extension by subclassing is impractical or even impossible.
-
-=head1 STRUCTURE
-
-                +-------------+
-                | Component   |
-                +-------------+<-------------+
-                | operation() |              |
-                +------+------+              |
-                       |                     |
-                      / \                    |
-           +--------------------+            |
-           |                    |            |
-  +------------------+    +--------------+   |
-  | ConcreteCompoment|    | Decorator    |   |
-  +------------------+    +--------------<>--+
-  | opertation()     |    | opertation() |   component
-  +------------------+    +-------+------+
-                                  |
-                                 / \
-                        +------------------+
-                        |                  |
-            +-----------+--------+  +------+-------------+
-            | ConcreteDecoratorA |  | ConcreteDecoratorB |
-            +--------------------+  +--------------------+
-            | opertation()       |  | operation()        |
-            +--------------------+  | added_behavior()   |
-            | addedState         |  +--------------------+
-            +--------------------+
+OODP::Creational::Prototype is a design pattern that is useful for systems that
+should be independent of product creation, composition and representation.
+Useful when instatiated classes are specified at run-time (dynamic loading).
 
 =head1 PARTICIPANTS
 
 =over 4
 
-=item L<OODP::Component>
+=item L<OODP::Prototype>
 
-=item L<OODP::ConcreteComponent>
-
-=item L<OODP::Decorator>
-
-=item L<OODP::ConcreteDecorator>
+=item L<OODP::ConcretePrototype>
 
 =back
 
@@ -61,7 +27,7 @@ when extension by subclassing is impractical or even impossible.
 
 =over 4
 
-=item L<OODP::Structural::TOC>
+=item L<OODP::Creational::TOC>
 
 =back
 
