@@ -2,12 +2,12 @@
 #------------------------------------------------------
 package MyObserver;
 use Moose;
-with 'OODP::ConcreteObserver';
+extends 'OODP::ConcreteObserver';
 
 #------------------------------------------------------
 package MySubject;
 use Moose;
-with 'OODP::ConcreteSubject';
+extends 'OODP::ConcreteSubject';
 
 #======================================================
 package main;

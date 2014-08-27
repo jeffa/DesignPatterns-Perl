@@ -2,7 +2,7 @@
 #------------------------------------------------------
 package MyComposite;
 use Moose;
-with 'OODP::Composite';
+extends 'OODP::Composite';
 sub render {
     my ($self) = @_;
     my %children = %{ $self->get_children };
@@ -12,7 +12,7 @@ sub render {
 #------------------------------------------------------
 package MyLeaf;
 use Moose;
-with 'OODP::Leaf';
+extends 'OODP::Leaf';
 sub render { $_[0]->get_name }
 
 #======================================================

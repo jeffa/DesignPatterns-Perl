@@ -1,5 +1,5 @@
 package OODP::Context;
-use Moose::Role;
+use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;

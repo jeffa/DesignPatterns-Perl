@@ -1,9 +1,9 @@
 package OODP::Leaf;
-use Moose::Role;
+use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 
-with 'OODP::Component';
+extends 'OODP::Component';
 
 sub add             {} 
 sub remove          {} 
@@ -19,19 +19,19 @@ etc.).
 
 =head1 SYNOPSIS
 
-OODP::Leaf is a role that represents and defines behavior for
+OODP::Leaf is a class that represents and defines behavior for
 primitive objects in the composition. A leaf has no children
 (e.g. Rectangle, Line, Text, etc.).
 
   package MyLeafInterface;
-    use Moose::Role;
-    with 'OODP::Leaf';
+    use Moose;
+    extends 'OODP::Leaf';
     has attribute ( is => 'rw', isa => 'Any' );
     sub draw { "magic" } 
 
   package MyLeaf;
     use Moose;
-    with 'MyLeafInterface';
+    extends 'MyLeafInterface';
     has attribute ( default => 'some value' );
 
   package main;

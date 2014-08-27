@@ -1,6 +1,6 @@
 package Test::Composite::Cabinet;
 use Moose;
-with 'Test::Composite::Chassis';
+extends 'Test::Composite::Chassis';
 
 has '+power'          => ( default => 1 );
 has '+net_price'      => ( default => 50 );

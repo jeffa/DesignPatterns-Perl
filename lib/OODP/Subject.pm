@@ -1,8 +1,11 @@
 package OODP::Subject;
-use Moose::Role;
+use Moose;
+use Carp;
 our $VERSION = '0.01';
 
-requires qw( attach detach notify );
+sub attach { croak "Must implement attach()" }
+sub detach { croak "Must implement detach()" }
+sub notify { croak "Must implement notify()" }
 
 1;
 __END__
@@ -16,6 +19,18 @@ and receive notifications.
 OODP::Subject knows its observers. Any number of observer objects
 may observe a subject. Also provides an interface for attaching
 and detaching observer objects.
+
+=head1 METHODS
+
+=over 4
+
+=item attach()
+
+=item detach()
+
+=item notify()
+
+=back
 
 =head1 SEE ALSO
 

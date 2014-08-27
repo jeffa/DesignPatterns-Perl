@@ -1,8 +1,9 @@
 package OODP::Observer;
-use Moose::Role;
+use Moose;
+use Carp;
 our $VERSION = '0.01';
 
-requires qw( update );
+sub update { croak "Must implement update()" }
 
 1;
 __END__
@@ -14,6 +15,15 @@ OODP::Observer - Defines interface for notifying OODP::Subject objects.
 
 An OODP::Observer object defines the updating interfce for objects
 that should be notified of changes in a subject.
+
+=head1 METHODS
+
+=over 4
+
+=item update()
+
+=back
+
 
 =head1 SEE ALSO
 

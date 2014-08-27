@@ -1,10 +1,10 @@
 package OODP::Composite;
-use Moose::Role;
+use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;
 
-with 'OODP::Component';
+extends 'OODP::Component';
 
 # TODO: replace with OODP::Iterator
 has children => ( is => 'rw', isa => 'HashRef', default => sub { {} } );
@@ -55,17 +55,17 @@ OODP::Composite - defines behavior for components having children.
 
 =head1 SYNOPSIS
 
-OODP::Composite is a role that stores child components. The child
+OODP::Composite is a class that stores child components. The child
 related operations are implemented in the Component interface.
 
   package MyCompositeInterface;
-    use Moose::Role;
-    with 'OODP::Composite';
+    use Moose;
+    extends 'OODP::Composite';
     has attribute ( is => 'rw', isa => 'Any' );
 
   package MyComposite;
     use Moose;
-    with 'MyCompositeInterface';
+    extends 'MyCompositeInterface';
     has attribute ( default => 'some value' );
 
   package main;

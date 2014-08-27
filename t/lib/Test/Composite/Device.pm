@@ -1,9 +1,9 @@
 package Test::Composite::Device;
-use Moose::Role;
+use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 
-with 'OODP::Leaf';
+extends 'OODP::Leaf';
 
 has power           => ( is => 'ro', isa => 'Int' );
 has net_price       => ( is => 'ro', isa => 'Int' );

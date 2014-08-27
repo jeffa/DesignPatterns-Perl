@@ -20,7 +20,7 @@ the objects are needs to be made. Promotes loose coupling.
 
 
    +-----------+  observers              +-----------+
-   |  Subject  |----------------------->>| Observer  |
+   |  Subject  |------------------------>* Observer  |
    +-----------+                         +-----------+
    |  attach() |                         | update()  |
    |  detach() |                         +-----+-----+
@@ -30,7 +30,7 @@ the objects are needs to be made. Promotes loose coupling.
           |                            | ConcreteObserver |
           |                            +------------------+
    +------+-----------+        subject | update()         |
-   |  ConcreteSubject |<<--------------| observer_state() |
+   |  ConcreteSubject |<---------------| observer_state() |
    +------------------+                +------------------+
    |  get_state()     |
    |  set_state()     |

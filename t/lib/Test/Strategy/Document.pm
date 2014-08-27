@@ -3,7 +3,7 @@ use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 
-with 'OODP::Context';
+extends 'OODP::Context';
 
 has data => ( is => 'ro', isa => 'ArrayRef', required => 1 );
 

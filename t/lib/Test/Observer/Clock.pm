@@ -4,7 +4,7 @@ use Carp;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 
-with 'OODP::ConcreteObserver';
+extends 'OODP::ConcreteObserver';
 
 has sec  => ( is => 'rw', isa => 'Int', default => 0 );
 has min  => ( is => 'rw', isa => 'Int', default => 0 );

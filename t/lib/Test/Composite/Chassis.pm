@@ -1,11 +1,11 @@
 package Test::Composite::Chassis;
-use Moose::Role;
+use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 
 use List::Util;
 
-with 'OODP::Composite';
+extends 'OODP::Composite';
 
 has power          => ( is => 'ro', isa => 'Int' );
 has net_price      => ( is => 'ro', isa => 'Int' );

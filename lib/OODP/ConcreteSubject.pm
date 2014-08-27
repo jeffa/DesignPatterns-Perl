@@ -1,9 +1,9 @@
 package OODP::ConcreteSubject;
-use Moose::Role;
+use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 
-with 'OODP::Subject';
+extends 'OODP::Subject';
 
 has state     => ( is => 'rw', isa => 'Any' );
 has observers => ( is => 'ro', isa => 'ArrayRef', default => sub {[]} );

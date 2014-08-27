@@ -5,14 +5,13 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Behavioral::Strategy - defines a family of algorithms,
-encapsulates each one and makes them interchangeable.
+Strategy - defines a family of algorithms, encapsulates each one and makes
+them interchangeable.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Strategy is a design pattern that is useful
-when you need an algorithm that varies independently from clients
-that use it.
+Strategy is a design pattern that is useful when you need an algorithm that
+varies independently from clients that use it.
 
 =head1 STRUCTURE
 

@@ -2,7 +2,7 @@
 #------------------------------------------------------
 package MyContext;
 use Moose;
-with 'OODP::Context';
+extends 'OODP::Context';
 sub algorithm {
     my ($self) = @_;
     return $self->get_strategy->get_data;
@@ -12,7 +12,7 @@ sub algorithm {
 package MyStrategy;
 use Moose;
 use MooseX::FollowPBP;
-with 'OODP::ConcreteStrategy';
+extends 'OODP::ConcreteStrategy';
 has data => ( is => 'ro', isa => 'Str' );
 
 #------------------------------------------------------

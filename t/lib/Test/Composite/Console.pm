@@ -1,6 +1,6 @@
 package Test::Composite::Console;
 use Moose;
-with 'Test::Composite::Device';
+extends 'Test::Composite::Device';
 
 has '+power'          => ( default => 40 );
 has '+net_price'      => ( default => 600 );
