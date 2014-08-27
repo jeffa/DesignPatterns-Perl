@@ -21,8 +21,8 @@ in the composition.
 
 OODP::Component declares the interface and implements default
 behavior for the interface common to all classes. It is not
-meant to be implemented by the client, by rather by the L<OODP::Leaf>
-and L<OODP::Composite> interfaces themselves.
+meant to be implemented by the client, but rather by concrete
+interfaces themselves (e.g. Leaf, Composite, ConcreteComponent).
 
 =head1 SEE ALSO
 
