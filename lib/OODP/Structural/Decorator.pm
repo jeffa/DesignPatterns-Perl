@@ -15,6 +15,34 @@ adding responsibilities to individual objects dynamically and transparently.
 Assigned responsibilities can also be withdrawn dynamically. Also useful
 when extension by subclassing is impractical or even impossible.
 
+=head1 STRUCTURE
+
+                +-------------+
+                | Component   |
+                +-------------+<-------------+
+                | operation() |              |
+                +------+------+              |
+                       |                     |
+                      / \                    |
+           +--------------------+            |
+           |                    |            |
+  +------------------+    +--------------+   |
+  | ConcreteCompoment|    | Decorator    |   |
+  +------------------+    +--------------<>--+
+  | opertation()     |    | opertation() |   component
+  +------------------+    +-------+------+
+                                  |
+                                 / \
+                        +------------------+
+                        |                  |
+            +-----------+--------+  +------+-------------+
+            | ConcreteDecoratorA |  | ConcreteDecoratorB |
+            +--------------------+  +--------------------+
+            | opertation()       |  | operation()        |
+            +--------------------+  | added_behavior()   |
+            | addedState         |  +--------------------+
+            +--------------------+
+
 =head1 PARTICIPANTS
 
 =over 4
