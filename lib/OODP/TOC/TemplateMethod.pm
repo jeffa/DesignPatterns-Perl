@@ -29,7 +29,7 @@ subclasses implement variant behavior.
 
 =over 4
 
-=item L<OODP::Behavioral::TOC>
+=item L<OODP::TOC::Behavioral>
 
 =back
 

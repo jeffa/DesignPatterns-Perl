@@ -33,7 +33,7 @@ have no impact on clients (i.e. no need to recompile their code).
 
 =over 4
 
-=item L<OODP::Structural::TOC>
+=item L<OODP::TOC::Structural>
 
 =back
 

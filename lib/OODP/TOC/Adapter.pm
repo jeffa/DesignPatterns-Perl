@@ -31,7 +31,7 @@ you want to create a class that will cooperate with unrelated or unforeseen clas
 
 =over 4
 
-=item L<OODP::Structural::TOC>
+=item L<OODP::TOC::Structural>
 
 =back
 

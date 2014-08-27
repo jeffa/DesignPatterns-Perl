@@ -28,7 +28,7 @@ by giving more than one object a chance to handle the request.
 
 =over 4
 
-=item L<OODP::Behavioral::TOC>
+=item L<OODP::TOC::Behavioral>
 
 =back
 

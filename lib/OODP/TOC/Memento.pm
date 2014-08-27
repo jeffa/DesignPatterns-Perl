@@ -29,7 +29,7 @@ OODP::Behavioral::Memento is a design pattern
 
 =over 4
 
-=item L<OODP::Behavioral::TOC>
+=item L<OODP::TOC::Behavioral>
 
 =back
 

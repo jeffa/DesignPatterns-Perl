@@ -105,11 +105,11 @@ OODP - Object Oriented Design Patterns (with Moose)
 
 =over 4
 
-=item * L<OODP::Behavioral::TOC>
+=item * L<OODP::TOC::Behavioral>
 
-=item * L<OODP::Creational::TOC>
+=item * L<OODP::TOC::Creational>
 
-=item * L<OODP::Structural::TOC>
+=item * L<OODP::TOC::Structural>
 
 =back
 

@@ -26,7 +26,7 @@ instance (subclass) without modifying their code.
 
 =over 4
 
-=item L<OODP::Creational::TOC>
+=item L<OODP::TOC::Creational>
 
 =back
 

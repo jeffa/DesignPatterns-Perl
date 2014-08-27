@@ -34,7 +34,7 @@ OODP::Structural::Flyweight is a design pattern that is useful when you:
 
 =over 4
 
-=item L<OODP::Structural::TOC>
+=item L<OODP::TOC::Structural>
 
 =back
 

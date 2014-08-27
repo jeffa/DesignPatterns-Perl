@@ -32,7 +32,7 @@ represented.
 
 =over 4
 
-=item L<OODP::Creational::TOC>
+=item L<OODP::TOC::Creational>
 
 =back
 

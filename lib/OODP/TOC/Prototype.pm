@@ -27,7 +27,7 @@ Useful when instatiated classes are specified at run-time (dynamic loading).
 
 =over 4
 
-=item L<OODP::Creational::TOC>
+=item L<OODP::TOC::Creational>
 
 =back
 

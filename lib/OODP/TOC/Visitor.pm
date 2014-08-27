@@ -35,7 +35,7 @@ objects that depend on their concrete classes.
 
 =over 4
 
-=item L<OODP::Behavioral::TOC>
+=item L<OODP::TOC::Behavioral>
 
 =back
 

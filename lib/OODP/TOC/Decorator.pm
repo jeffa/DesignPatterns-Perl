@@ -61,7 +61,7 @@ when extension by subclassing is impractical or even impossible.
 
 =over 4
 
-=item L<OODP::Structural::TOC>
+=item L<OODP::TOC::Structural>
 
 =back
 
