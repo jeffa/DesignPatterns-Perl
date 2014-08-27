@@ -3,7 +3,7 @@ use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 
-extends 'OODP::ConcreteSubject';
+extends 'OODP::Subject';
 
 has time => ( is => 'rw', isa => 'Int', default => 0 );
 

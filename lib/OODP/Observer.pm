@@ -1,20 +1,35 @@
 package OODP::Observer;
 use Moose;
+use MooseX::FollowPBP;
 use Carp;
 our $VERSION = '0.01';
 
-sub update { croak "Must implement update()" }
+has state   => ( is => 'rw', isa => 'Any' );
+has subject => ( is => 'rw', isa => 'Any' );
+
+sub update {
+    my $self = shift;
+    $self->set_state( $self->get_subject->get_state ); 
+}
+
+sub BUILD {
+    my $self = shift;
+    if ($self->get_subject) {
+        $self->get_subject->attach( $self );
+    }
+}
 
 1;
 __END__
 =head1 NAME
 
-OODP::Observer - Defines interface for notifying OODP::Subject objects.
+OODP::Observer - class to be inherited by client subjects.
 
 =head1 SYNOPSIS
 
-An OODP::Observer object defines the updating interfce for objects
-that should be notified of changes in a subject.
+OODP::Observer maintains a reference to an OODP::Subject object;
+stores a state that remains consistent with the subject's state;
+implements the observer updating interface to keep that state consistent.
 
 =head1 METHODS
 
@@ -22,8 +37,13 @@ that should be notified of changes in a subject.
 
 =item update()
 
-=back
+Updates self's state to the state of its subject.
 
+=item BUILD
+
+Used to attach self to any subject passed in via construction.
+
+=back
 
 =head1 SEE ALSO
 
@@ -31,11 +51,9 @@ that should be notified of changes in a subject.
 
 =item L<OODP::Behavioral::Observer>
 
+=item L<OODP::Observer>
+
 =item L<OODP::Subject>
-
-=item L<OODP::ConcreteObserver>
-
-=item L<OODP::ConcreteSubject>
 
 =back
 

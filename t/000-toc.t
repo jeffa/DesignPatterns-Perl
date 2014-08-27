@@ -3,7 +3,7 @@ use strict;
 use warnings FATAL => 'all';
 use Test::More;
 
-plan tests => 37;
+plan tests => 34;
 
 BEGIN {
     use_ok( $_ ) or die "Bail out!\n" for (qw(
@@ -40,9 +40,6 @@ BEGIN {
 
         OODP::Component
         OODP::Composite
-        OODP::ConcreteObserver
-        OODP::ConcreteStrategy
-        OODP::ConcreteSubject
         OODP::Context
         OODP::Leaf
         OODP::Observer

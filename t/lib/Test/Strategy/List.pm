@@ -4,7 +4,7 @@ use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;
 
-extends 'OODP::ConcreteStrategy';
+extends 'OODP::Strategy';
 
 has markup => ( is => 'rw', isa => 'Str' );
 

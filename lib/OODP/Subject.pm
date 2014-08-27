@@ -1,24 +1,44 @@
 package OODP::Subject;
 use Moose;
+use MooseX::FollowPBP;
 use Carp;
 our $VERSION = '0.01';
 
-sub attach { croak "Must implement attach()" }
-sub detach { croak "Must implement detach()" }
-sub notify { croak "Must implement notify()" }
+has state     => ( is => 'rw', isa => 'Any' );
+has observers => ( is => 'ro', isa => 'ArrayRef', default => sub {[]} );
+
+sub attach {
+    my ($self, $observer) = @_;
+    $observer->set_subject( $self );
+    push @{ $self->{observers} }, $observer;
+}
+
+sub detach {
+    my ($self, $observer) = @_;
+    for (0 .. $#{ $self->{observers} }) {
+        if ($observer == $self->{observers}[$_] ) {
+            splice @{ $self->{observers} }, $_, 1;
+            last;
+        }
+    }
+}
+
+sub notify {
+    my $self = shift;
+    $_->update for @{ $self->get_observers };
+}
+
 
 1;
 __END__
 =head1 NAME
 
-OODP::Subject - can attach any number of observer objects
-and receive notifications.
+OODP::Subject - class to be inherited by client subjects.
 
 =head1 SYNOPSIS
 
-OODP::Subject knows its observers. Any number of observer objects
-may observe a subject. Also provides an interface for attaching
-and detaching observer objects.
+OODP::Subject stores the state of interest to observer objects
+and sends notification to its observers when its state changes.
 
 =head1 METHODS
 
@@ -26,9 +46,15 @@ and detaching observer objects.
 
 =item attach()
 
+Adds observer to observers.
+
 =item detach()
 
+Removes observer from observers.
+
 =item notify()
+
+Calls each observer's update() method.
 
 =back
 
@@ -40,9 +66,7 @@ and detaching observer objects.
 
 =item L<OODP::Observer>
 
-=item L<OODP::ConcreteObserver>
-
-=item L<OODP::ConcreteSubject>
+=item L<OODP::Subject>
 
 =back
 
