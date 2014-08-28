@@ -5,7 +5,7 @@ our $VERSION = '0.01';
 
 extends 'OODP::Component';
 
-has buffer => ( is => 'rw', isa => 'Str', default => '', reader => 'output' );
+has buffer => ( is => 'ro', isa => 'Str', default => '', reader => 'output' );
 has limit  => ( is => 'rw', isa => 'Int', default => 256 );
 
 sub append      { $_[0]->{buffer} .= $_[1]; $_[0]->dump_buffer if $_[0]->buffer_full }
