@@ -7,6 +7,6 @@ use Compress::Zlib;
 
 extends 'Test::Decorator::StreamDecorator';
 
-sub output { uc( $_[0]->get_stream->output ) }
+sub output { uc( $_[0]->get_component->output ) }
 
 1;

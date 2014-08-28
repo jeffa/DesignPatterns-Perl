@@ -34,10 +34,10 @@ is $mem_stream->output, 'Hello World',      "correct MS buffer";
 is $mem_stream->buffer_size, 11,            "correct MS buffer size";
 is $overflow, '',                           "correct empty overflow";
 
-my $uc_stream = new_ok 'Test::Decorator::UpperCasingFilter' => [ name => 'TD-UCF1', stream => $mem_stream ];
+my $uc_stream = new_ok 'Test::Decorator::UpperCasingFilter' => [ name => 'TD-UCF1', component => $mem_stream ];
 is $uc_stream->output, 'HELLO WORLD',      "correct UC buffer";
 is $uc_stream->buffer_size, 11,            "correct UC buffer size";
 
-my $lc_stream = new_ok 'Test::Decorator::LowerCasingFilter' => [ name => 'TD-UCF1', stream => $uc_stream ];
+my $lc_stream = new_ok 'Test::Decorator::LowerCasingFilter' => [ name => 'TD-UCF1', component => $uc_stream ];
 is $lc_stream->output, 'hello world',      "correct LC buffer";
 is $lc_stream->buffer_size, 11,            "correct LC buffer size";
