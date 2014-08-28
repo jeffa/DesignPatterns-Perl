@@ -13,37 +13,25 @@ print $text;
 
 __DATA__
 package OODP::{$object};
-use Moose::Role;
+use Moose;
+use Carp;
 our $VERSION = '0.01';
 
 1;
 __END__
 =head1 NAME
 
-OODP::{$object} - Represents and defines behavior for 
+OODP::{$object} - 
 
 =head1 SYNOPSIS
 
-OODP::{$object} is a role to be consumed by an object.
-
-  package ____;
-  use Pattern::____;
-
-  with 'OODP::{$object}';    
-
-  sub ____ {
-    my ($self) = @_;
-
-    # magic!
-  } 
-
-  1;
+OODP::{$object} is
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<Pattern::TOC>
+=item L<OODP::TOC>
 
 =back
 
