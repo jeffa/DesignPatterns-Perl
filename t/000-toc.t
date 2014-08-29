@@ -3,11 +3,10 @@ use strict;
 use warnings FATAL => 'all';
 use Test::More;
 
-plan tests => 34;
+plan tests => 27;
 
 BEGIN {
     use_ok( $_ ) or die "Bail out!\n" for (qw(
-
         OODP::TOC
             OODP::TOC::Creational
                 OODP::TOC::AbstractFactory
@@ -37,14 +36,5 @@ BEGIN {
                 OODP::TOC::Strategy
                 OODP::TOC::TemplateMethod
                 OODP::TOC::Visitor
-
-        OODP::Component
-        OODP::Composite
-        OODP::Context
-        OODP::Leaf
-        OODP::Observer
-        OODP::Strategy
-        OODP::Subject
-
     ));
 }
