@@ -14,6 +14,7 @@ print $text;
 __DATA__
 package OODP::{$object};
 use Moose;
+use MooseX::FollowPBP;
 use Carp;
 our $VERSION = '0.01';
 
