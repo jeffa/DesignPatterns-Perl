@@ -12,21 +12,12 @@ has tmp_filename => ( is => 'rw', isa => 'Any', default => '' );
 sub dump_buffer {
     my ($self) = @_;
 
-    my ( $fh, $fname ) = tempfile( UNLINK => 0 );
+    my ( $fh, $fname ) = tempfile( UNLINK => 1 );
     print $fh $self->{buffer} or croak "Cannot write to $fname";
     close $fh;
 
     $self->set_tmp_filename( $fname );
     $self->{buffer} = '';
 }
-
-sub DESTROY {
-    my ($self) = @_;
-    my $fname = $self->get_tmp_filename || '';
-    if (-f $fname) {
-        unlink $fname or carp "Cannot unlink $fname";
-    }
-}
-
 
 1;

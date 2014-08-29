@@ -5,7 +5,7 @@ use Test::More;
 use Test::Exception;
 use File::Slurp;
 
-plan tests => 31;
+plan tests => 30;
 
 use lib 't/lib';
 use_ok $_ for qw(
@@ -61,6 +61,3 @@ $overflow = $file_stream->append( 'Hello World' );
 my $lc_stream = new_ok 'Test::Decorator::LowerCasingFilter' => [ name => 'TD-UCF1', component => $file_stream ];
 is $lc_stream->output, 'hello world',       "correct LC buffer";
 is $lc_stream->buffer_size, 11,             "correct LC buffer size";
-
-$file_stream->DESTROY;
-ok !-f $tmp_filename,                       "temp file removed after object destroyed";
