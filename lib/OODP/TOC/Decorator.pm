@@ -49,17 +49,15 @@ is impractical or even impossible.
 
 =item L<OODP::Component>
 
-=item L<OODP::ConcreteComponent>
-
 =item L<OODP::Decorator>
-
-=item L<OODP::ConcreteDecorator>
 
 =back
 
 =head1 SEE ALSO
 
 =over 4
+
+=item L<OODP::TOC>
 
 =item L<OODP::TOC::Structural>
 
