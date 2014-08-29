@@ -5,15 +5,15 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Structural::Decorator - attaches additional responsibilites to
-an object dynamically. Provides a flexible alternative to subclassing.
+Decorator - attaches additional responsibilites to an object dynamically.
+Provides a flexible alternative to subclassing.
 
 =head1 SYNOPSIS
 
-OODP::Structural::Decorator is a design pattern that is useful for
-adding responsibilities to individual objects dynamically and transparently.
-Assigned responsibilities can also be withdrawn dynamically. Also useful
-when extension by subclassing is impractical or even impossible.
+Decorator is a design pattern that is useful for adding responsibilities to
+individual objects dynamically and transparently.  Assigned responsibilities
+can also be withdrawn dynamically. Also useful when extension by subclassing
+is impractical or even impossible.
 
 =head1 STRUCTURE
 

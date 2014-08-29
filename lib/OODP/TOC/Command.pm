@@ -5,13 +5,12 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Behavioral::Command - encapsulates reuqests as objects.
+Command - encapsulates reuqests as objects.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Command is a design pattern that allows you
-to parameterize clients with different requests and support
-undoable opertations.
+Command is a design pattern that allows you to parameterize clients with
+different requests and support undoable opertations.
 
 =head1 PARTICIPANTS
 

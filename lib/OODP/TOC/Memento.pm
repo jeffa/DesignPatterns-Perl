@@ -5,13 +5,13 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Behavioral::Memento - captures and externalizes an
-object's internal state without violating encapsulation, for
-the purpose of serializing the state for later object restoral.
+Memento - captures and externalizes an object's internal state without
+violating encapsulation, for the purpose of serializing the state for
+later object restoral.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Memento is a design pattern
+Memento is a design pattern
 
 =head1 PARTICIPANTS
 

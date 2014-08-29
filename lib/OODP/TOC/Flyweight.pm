@@ -5,12 +5,12 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Structural::Flyweight - supports large numbers of fine-grained
-objects efficiently via sharing.
+Flyweight - supports large numbers of fine-grained objects efficiently
+via sharing.
 
 =head1 SYNOPSIS
 
-OODP::Structural::Flyweight is a design pattern that is useful when you:
+Flyweight is a design pattern that is useful when you:
 
   - have an application that uses a large number of objects
   - have high storage costs due to sheer quantity of objects

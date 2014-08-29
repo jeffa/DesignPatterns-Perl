@@ -5,16 +5,16 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Behavioral::Observer - defines a one-to-many dependency
-between objects so that when one object changes state, all its
-dependents are notified and updated automatically.
+Observer - defines a one-to-many dependency between objects so that
+when one object changes state, all its dependents are notified and
+updated automatically.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Observer is a design pattern that is useful
-when a change to one object requires changing others without knowing
-how many objects need to be changed and no assumptions about who
-the objects are needs to be made. Promotes loose coupling.
+Observer is a design pattern that is useful when a change to one object
+requires changing others without knowing how many objects need to be
+changed and no assumptions about who the objects are needs to be made.
+Promotes loose coupling.
 
 =head1 STRUCTURE
 

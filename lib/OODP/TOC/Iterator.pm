@@ -5,15 +5,14 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Behavioral::Iterator - provides a way to
-access elements of an aggregate object sequentially
-without exposing its underlying representation.
+Iterator - provides a way to access elements of an aggregate object
+sequentially without exposing its underlying representation.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Iterator is a design pattern that is useful
-for supporting multiple traversals of aggregate objects and provides
-a uniform interface that supports polymorphic iteration.
+Iterator is a design pattern that is useful for supporting multiple
+traversals of aggregate objects and provides a uniform interface that
+supports polymorphic iteration.
 
 =head1 PARTICIPANTS
 

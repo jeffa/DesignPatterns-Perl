@@ -5,15 +5,15 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Creational::Builder - Separate the construction of a complex object
-from its representation so that the same construction process can
-create different representations.
+Builder - Separate the construction of a complex object from its
+representation so that the same construction process can create
+different representations.
 
 =head1 SYNOPSIS
 
-OODP::Creational::Builder is a design pattern useful keeping the creation of
-the object independent from the parts that make up the object. It also
-allows different representations for the constructed objects.
+Builder is a design pattern useful keeping the creation of the
+object independent from the parts that make up the object. It
+also allows different representations for the constructed objects.
 
 =head1 PARTICIPANTS
 

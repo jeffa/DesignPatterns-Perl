@@ -5,15 +5,15 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Structural::Adapter - converts the interface of a class into another
-interface clients expect. Overcomes incompatible interfaces to allow classes
-to work together that otherwise could not.
+Adapter - converts the interface of a class into another interface clients
+expect. Overcomes incompatible interfaces to allow classes to work together
+that otherwise could not.
 
 =head1 SYNOPSIS
 
-OODP::Structural::Adapter is a design pattern that is useful when you want
-to use an existing class but its interface does not match the one you need or
-you want to create a class that will cooperate with unrelated or unforeseen classes.
+Adapter is a design pattern that is useful when you want to use an existing
+class but its interface does not match the one you need or you want to
+create a class that will cooperate with unrelated or unforeseen classes.
 
 =head1 PARTICIPANTS
 

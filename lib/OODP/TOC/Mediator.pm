@@ -5,14 +5,13 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Behavioral::Mediator - defines an object that
-encapsulates how a set of objects interact.
+Mediator - defines an object that encapsulates how a set of objects interact.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Mediator is a design pattern that promotes
-loose coupling by preventing objects from referring to each other
-explicitly while allowing their interactions to vary independently.
+Mediator is a design pattern that promotes loose coupling by preventing
+objects from referring to each other explicitly while allowing their
+interactions to vary independently.
 
 =head1 PARTICIPANTS
 

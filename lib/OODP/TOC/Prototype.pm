@@ -5,13 +5,13 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Creational::Prototype - provides a blueprint for creating objects.
+Prototype - provides a blueprint for creating objects.
 
 =head1 SYNOPSIS
 
-OODP::Creational::Prototype is a design pattern that is useful for systems that
-should be independent of product creation, composition and representation.
-Useful when instatiated classes are specified at run-time (dynamic loading).
+Prototype is a design pattern that is useful for systems that should be
+independent of product creation, composition and representation.  Useful when
+instatiated classes are specified at run-time (dynamic loading).
 
 =head1 PARTICIPANTS
 

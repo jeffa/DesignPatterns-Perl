@@ -5,14 +5,14 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Creational::Singleton - ensures one and only one instance with global access.
+Singleton - ensures one and only one instance with global access.
 
 =head1 SYNOPSIS
 
-OODP::Creational::Singleton is a design pattern that is useful when there must be
-exactly one instance of a class and it must be accessible to clients from
-a well-known point of access. Additionally, clients can use an extended
-instance (subclass) without modifying their code.
+Singleton is a design pattern that is useful when there must be exactly one
+instance of a class and it must be accessible to clients from a well-known
+point of access. Additionally, clients can use an extended instance (subclass)
+without modifying their code.
 
 =head1 PARTICIPANTS
 

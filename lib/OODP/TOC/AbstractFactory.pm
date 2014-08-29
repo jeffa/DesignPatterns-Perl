@@ -5,14 +5,13 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Creational::AbstractFactory - provides interface for creating objects without
-specifying their concrete classes.
+AbstractFactory - provides interface for creating objects without specifying
+their concrete classes.
 
 =head1 SYNOPSIS
 
-OODP::Creational::AbstractFactory is a design pattern that can be used for systems
-that should be independent of how their products are created, composed and
-represented. 
+AbstractFactory is a design pattern that can be used for systems that should
+be independent of how their products are created, composed and represented. 
 
 =head1 PARTICIPANTS
 
@@ -20,17 +19,15 @@ represented.
 
 =item L<OODP::AbstractFactory>
 
-=item L<OODP::ConcreteFactory>
-
 =item L<OODP::AbstractProduct>
-
-=item L<OODP::ConcreteProduct>
 
 =back
 
 =head1 SEE ALSO
 
 =over 4
+
+=item L<OODP::TOC>
 
 =item L<OODP::TOC::Creational>
 

@@ -5,14 +5,13 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Structural::Proxy - provides a surrogate or placeholder
-for another object to control access to it.
+Proxy - provides a surrogate or placeholder for another object to control
+access to it.
 
 =head1 SYNOPSIS
 
-OODP::Structural::Proxy is a design pattern that is useful when there
-is a need for a more versatile or sophisticated reference to an object
-than a simple pointer.
+Proxy is a design pattern that is useful when there is a need for a more
+versatile or sophisticated reference to an object than a simple pointer.
 
 =head1 PARTICIPANTS
 

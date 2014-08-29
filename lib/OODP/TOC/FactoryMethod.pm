@@ -5,11 +5,11 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Creational::FactoryMethod - allows classes to defer their instantiation to subclasses.
+FactoryMethod - allows classes to defer their instantiation to subclasses.
 
 =head1 SYNOPSIS
 
-OODP::Creational::FactoryMethod is a design pattern that is useful when a class cannot
+FactoryMethod is a design pattern that is useful when a class cannot
 anticipate the class of objects it must create.
 
 =head1 PARTICIPANTS

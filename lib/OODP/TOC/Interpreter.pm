@@ -5,16 +5,16 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Behavioral::Interpreter - defines a representation for a given
-language's grammar along with an interpreter that uses this representation
-to interpret sentences in the language.
+Interpreter - defines a representation for a given language's grammar along
+with an interpreter that uses this representation to interpret sentences in
+the language.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::Interpreter is a design pattern that is useful for
-interpreting languages whose statements can be represented as abstract
-syntax trees. This pattern works best with simple grammars is not known
-for its efficiency, unless something such as a state machine is utilizied.
+Interpreter is a design pattern that is useful for interpreting languages
+whose statements can be represented as abstract syntax trees. This pattern
+works best with simple grammars is not known for its efficiency, unless
+something such as a state machine is utilizied.
 
 =head1 PARTICIPANTS
 

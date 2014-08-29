@@ -5,14 +5,14 @@ our $VERSION = '0.01';
 __END__
 =head1 NAME
 
-OODP::Behavioral::ChainOfResponsibility - chains receiving objects
-and passes the request along the chain until an object handles it.
+ChainOfResponsibility - chains receiving objects and passes the request along
+the chain until an object handles it.
 
 =head1 SYNOPSIS
 
-OODP::Behavioral::ChainOfResponsibility is a design pattern that is
-useful for avoiding coupling the sender of a request to its receiver
-by giving more than one object a chance to handle the request.
+ChainOfResponsibility is a design pattern that is useful for avoiding
+coupling the sender of a request to its receiver by giving more than one
+object a chance to handle the request.
 
 =head1 PARTICIPANTS
 
