@@ -1,6 +1,6 @@
 language: perl
 before_install:
-    - cpanm --notest MooseX::FollowPBP
+    - cpanm --notest MooseX::FollowPBP File::Slurp
 perl:
   - "5.20"
   - "5.18"
