@@ -1,6 +1,6 @@
 language: perl
 before_install:
-    - cpanm --notest MooseX::FollowPBP XML::Simple File::Slurp
+    - cpanm --notest MooseX::FollowPBP File::Slurp XML::Simple FreezeThaw
 perl:
   - "5.20"
   - "5.18"
