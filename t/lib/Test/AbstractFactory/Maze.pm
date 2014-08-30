@@ -9,13 +9,13 @@ has width  => ( is => 'ro', isa => 'Int', default => 3 );
 has height => ( is => 'ro', isa => 'Int', default => 3 );
 
 sub add_room {
-    my ($self) = @_;
+    my ($self, $factory) = @_;
 
     if ($self->grid_size > $self->get_width * $self->get_height) {
         carp "out of bounds!\n";
         return;
     }
-    push @{ $self->{grid} }, Test::AbstractFactory::Room->new( number => $self->generate_code );
+    push @{ $self->{grid} }, $factory->make_room( number => $self->generate_code );
 }
 
 sub get_room {

@@ -2,30 +2,33 @@
 use strict;
 use warnings FATAL => 'all';
 use Test::More;
-plan tests => 15;
+plan tests => 16;
 
 use lib 't/lib';
 use_ok $_ for qw(
     Test::AbstractFactory::Maze
+    Test::AbstractFactory::MazeFactory
     Test::AbstractFactory::MapSite
     Test::AbstractFactory::Door
     Test::AbstractFactory::Room
     Test::AbstractFactory::Wall
 );
 
+my $factory = new_ok 'Test::AbstractFactory::MazeFactory';
+
 new_ok 'Test::AbstractFactory::Wall';
-new_ok 'Test::AbstractFactory::Room' => [qw( number A1 )];
+new_ok 'Test::AbstractFactory::Room' => [ number => 'A1', factory => $factory ];
 new_ok 'Test::AbstractFactory::Door' => [
-    room1 => Test::AbstractFactory::Room->new( number => 1 ),
-    room2 => Test::AbstractFactory::Room->new( number => 2 ),
+    room1 => Test::AbstractFactory::Room->new( number => 1, factory => $factory ),
+    room2 => Test::AbstractFactory::Room->new( number => 2, factory => $factory ),
 ];
 
-my $maze = new_ok 'Test::AbstractFactory::Maze' => [qw( width 5 )];
+my $maze = $factory->make_maze( width => 5 );
 is $maze->get_width, 5,     "correct width (custom)";
 is $maze->get_height, 3,    "correct height (default)";
 is $maze->grid_size, 0,     "correct grid size before adding rooms";
 
-$maze->add_room for 1 .. 5*3;
+$maze->add_room( $factory ) for 1 .. 5*3;
 is $maze->grid_size, 5*3,   "correct grid size after adding rooms";
 
 is_deeply 
@@ -39,12 +42,12 @@ is_deeply
 ;
 
 #A0 <=> A1 <=> A2 <=> B2 <=> B3 <=> C3 <=> C4
-add_door( $maze->get_room( 'A0' ), 'east',  $maze->get_room( 'A1' ) );
-add_door( $maze->get_room( 'A1' ), 'east',  $maze->get_room( 'A2' ) );
-add_door( $maze->get_room( 'A2' ), 'south', $maze->get_room( 'B2' ) );
-add_door( $maze->get_room( 'B2' ), 'east',  $maze->get_room( 'B3' ) );
-add_door( $maze->get_room( 'B3' ), 'south', $maze->get_room( 'C3' ) );
-add_door( $maze->get_room( 'C3' ), 'east',  $maze->get_room( 'C4' ) );
+add_door( $factory, $maze->get_room( 'A0' ), 'east',  $maze->get_room( 'A1' ) );
+add_door( $factory, $maze->get_room( 'A1' ), 'east',  $maze->get_room( 'A2' ) );
+add_door( $factory, $maze->get_room( 'A2' ), 'south', $maze->get_room( 'B2' ) );
+add_door( $factory, $maze->get_room( 'B2' ), 'east',  $maze->get_room( 'B3' ) );
+add_door( $factory, $maze->get_room( 'B3' ), 'south', $maze->get_room( 'C3' ) );
+add_door( $factory, $maze->get_room( 'C3' ), 'east',  $maze->get_room( 'C4' ) );
 
 # east = 2, south = 1
 is $maze->get_room( 'A0' )
@@ -58,8 +61,8 @@ is $maze->get_room( 'A0' )
 
 
 sub add_door {
-    my ($r1, $side, $r2) = @_;
-    my $door = Test::AbstractFactory::Door->new( room1 => $r1, room2 => $r2 );
+    my ($factory, $r1, $side, $r2) = @_;
+    my $door = $factory->make_door( room1 => $r1, room2 => $r2 );
     $r1->set_side( $side => $door );
     $door->connect_2to1( $side );
 }

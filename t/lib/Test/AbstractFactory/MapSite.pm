@@ -4,8 +4,8 @@ use MooseX::FollowPBP;
 use Carp;
 our $VERSION = '0.01';
 
-sub add_room { }
-sub room_no  { }
+sub enter { croak "Subclass must implement enter()" }
 
+has factory => ( is => 'ro', isa => 'Test::AbstractFactory::MazeFactory' );
 
 1;
