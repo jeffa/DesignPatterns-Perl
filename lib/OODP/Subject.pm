@@ -25,7 +25,8 @@ sub detach {
 
 sub notify {
     my $self = shift;
-    $_->update for @{ $self->get_observers };
+    $_->update( @_ ) for @{ $self->get_observers };
+    return $self;
 }
 
 
