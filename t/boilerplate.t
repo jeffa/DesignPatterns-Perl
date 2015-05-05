@@ -3,7 +3,7 @@ use strict;
 use warnings FATAL => 'all';
 use Test::More;
 
-plan tests => 6;
+plan tests => 2;
 
 sub not_in_file_ok {
     my ($filename, %regex) = @_;
@@ -48,12 +48,6 @@ TODO: {
   not_in_file_ok(Changes =>
     "placeholder date/time"       => qr(Date/time)
   );
-
-  module_boilerplate_ok('lib/OODP/TOC.pm');
-  module_boilerplate_ok('lib/OODP/TOC/Behavioral.pm');
-  module_boilerplate_ok('lib/OODP/TOC/Creational.pm');
-  module_boilerplate_ok('lib/OODP/TOC/Structural.pm');
-
 
 }
 
