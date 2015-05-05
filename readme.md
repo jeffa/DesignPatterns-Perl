@@ -27,4 +27,4 @@ See [docs/readme.md](/docs/readme.md)
 
 License and Copyright
 ---------------------
-See [License.md](/license.md)
+See [License.md](/License.md)
