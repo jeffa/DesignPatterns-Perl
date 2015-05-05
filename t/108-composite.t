@@ -22,14 +22,14 @@ is $cab->get_power, 2,                  "correct power (overriden)";
 is $cab->get_net_price, 50,             "correct net_price";
 is $cab->get_discount_price, 40,        "correct discount_price";
 
-my $ps3 = Test::Composite::Console->new( name => 'Nintendo Wii', net_price => '400' );
-isa_ok $ps3, 'Test::Composite::Console';
-is $ps3->get_name, 'Nintendo Wii',      "correct name";
-is $ps3->get_power, 40,                 "can override defaults";
-is $ps3->get_net_price, 400,            "default net_price";
-is $ps3->get_discount_price, 300,       "default discount_price";
+my $con = Test::Composite::Console->new( name => 'Nintendo Wii', net_price => '400' );
+isa_ok $con, 'Test::Composite::Console';
+is $con->get_name, 'Nintendo Wii',      "correct name";
+is $con->get_power, 40,                 "can override defaults";
+is $con->get_net_price, 400,            "default net_price";
+is $con->get_discount_price, 300,       "default discount_price";
 
-$cab->add( $ps3 );
+$cab->add( $con );
 is scalar keys %{ $cab->get_children }, 1,  "cabinate contains 1 device";
 is $cab->get_total_net_price, 400,          "correct total net price";
 
