@@ -21,9 +21,9 @@ is recommended and then alert perl to the location of the modules:
 Documentation
 -------------
 
-    perldoc [OODP::TOC](lib/OODP/TOC.pm)
+    perldoc [OODP::TOC](/lib/OODP/TOC.pm)
 
 License and Copyright
 ---------------------
 
-See (license.md)
+See (/license.md)
