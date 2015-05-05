@@ -30,7 +30,7 @@ Structure
 
 Participants
 ------------
-* [OODP::Subject](/lib/OODP/Subject.pm)
 * [OODP::Observer](/lib/OODP/Observer.pm)
-* [OODP::ConcreteSubject](/lib/OODP/ConcreteSubject.pm)
-* [OODP::ConcreteObserver](/lib/OODP/ConcreteObserver.pm)
+* [OODP::Subject](/lib/OODP/Subject.pm)
+* Your::ConcreteObservers
+* Your::ConcreteSubjects

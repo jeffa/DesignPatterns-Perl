@@ -35,3 +35,5 @@ and/or AbstractWidgetB, etc.
 Participants
 * [OODP::AbstractFactory](/lib/OODP/AbstractFactory.pm)
 * [OODP::AbstractWidget](/lib/OODP/AbstractWidget.pm)
+* Your::ConcreteFactories
+* Your::ConcreteWidgets

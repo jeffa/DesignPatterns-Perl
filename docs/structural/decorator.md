@@ -41,3 +41,5 @@ Participants
 ------------
 * [OODP::Component](/lib/OODP/Component.pm)
 * [OODP::Decorator](/lib/OODP/Decorator.pm)
+* Your::ConcreteComponents
+* Your::ConcreteDecorators

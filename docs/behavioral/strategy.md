@@ -26,6 +26,7 @@ STRUCTURE
 
 Participants
 ------------
-* OODP::Strategy
-* OODP::ConcreteStrategy
-* OODP::Context
+* [OODP::Strategy](/lib/OODP/Strategy.pm)
+* [OODP::Context](/lib/OODP/Context.pm)
+* Your::ConcreteStrategies
+* Your::ConcreteContexts

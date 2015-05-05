@@ -34,3 +34,5 @@ Participants
 * [OODP::Component](/lib/OODP/Component.pm)
 * [OODP::Leaf](/lib/OODP/Leaf.pm)
 * [OODP::Composite](/lib/OODP/Composite.pm)
+* Your::Leaves
+* Your::Composites
