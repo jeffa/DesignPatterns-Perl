@@ -38,4 +38,4 @@ you to treat the object's state as an object itself.
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>

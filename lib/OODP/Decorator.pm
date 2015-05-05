@@ -32,4 +32,4 @@ objects and not to the classes themselves.
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>

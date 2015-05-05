@@ -37,4 +37,4 @@ create a class that will cooperate with unrelated or unforeseen classes.
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>

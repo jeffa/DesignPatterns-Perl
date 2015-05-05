@@ -39,4 +39,4 @@ should have no impact on clients (i.e. no need to recompile their code).
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>

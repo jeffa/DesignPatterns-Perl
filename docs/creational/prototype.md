@@ -33,4 +33,4 @@ instatiated classes are specified at run-time (dynamic loading).
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>

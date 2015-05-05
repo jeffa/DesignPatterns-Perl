@@ -40,4 +40,4 @@ Flyweight is a design pattern that is useful when you:
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>

@@ -103,4 +103,4 @@ related operations are implemented in the Component interface.
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>

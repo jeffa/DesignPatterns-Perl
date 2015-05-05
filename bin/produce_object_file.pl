@@ -38,4 +38,4 @@ OODP::{$object} is
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>

@@ -39,4 +39,4 @@ also allows different representations for the constructed objects.
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>

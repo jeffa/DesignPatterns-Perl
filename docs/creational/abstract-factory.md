@@ -60,4 +60,4 @@ be independent of how their products are created, composed and represented.
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>

@@ -52,4 +52,4 @@ follow run time control flow away so that object interactivety takes focus.
 License and Copyright
 ---------------------
 
-See [license.md](/license.md)
+See [License.md](/license.md)

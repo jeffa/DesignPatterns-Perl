@@ -59,4 +59,4 @@ Used to attach self to any subject passed in via construction.
 
 =head1 LICENSE AND COPYRIGHT
 
-See L<license.md>
+See L<License.md>
