@@ -6,24 +6,28 @@ Installation
 
 Installation is not recommended, but the usual CPAN process works:
 
-	perl Makefile.PL
-	make
-	make test
-	make install
+```
+perl Makefile.PL
+make
+make test
+make install
+```
 
 Instead of installing this package, downloading or cloning the repository
 is recommended and then alert perl to the location of the modules:
 
-    use lib '/PATH/TO/DesignPatterns-Perl/lib';
-    use OODP::Composite;
-    # etc.
+```
+use lib '/PATH/TO/DesignPatterns-Perl/lib';
+use OODP::Composite;
+# etc.
+```
 
 Documentation
 -------------
 
-    perldoc [OODP::TOC](/lib/OODP/TOC.pm)
+See [OODP::TOC](/lib/OODP/TOC.pm)
 
 License and Copyright
 ---------------------
 
-See (/license.md)
+See [license.md](/license.md)
