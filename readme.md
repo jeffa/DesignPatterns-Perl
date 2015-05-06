@@ -3,7 +3,7 @@ Perl Design Patterns
 
 Installation
 ------------
-Installation is not recommended, but the usual
+Installation is not recommended, but the classic
 [CPAN process](http://perldoc.perl.org/ExtUtils/MakeMaker.html#Default-Makefile-Behaviour) works:
 * perl Makefile.PL
 * make
