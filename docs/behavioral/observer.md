@@ -34,3 +34,10 @@ Participants
 * [OODP::Subject](/lib/OODP/Subject.pm)
 * Your::ConcreteObservers
 * Your::ConcreteSubjects
+
+Tests
+-----
+* (/t/019-observer.t)
+* (/t/119-observer.t)
+  * (Test::Observer::Clock)[/t/lib/Test/Observer/Clock.pm]
+  * (Test::Observer::Time)[/t/lib/Test/Observer/Time.pm]
