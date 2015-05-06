@@ -4,7 +4,7 @@ our $VERSION = '0.01';
 
 extends 'Test::Strategy::List';
 
-sub render {
+sub algorithm {
     my ($self, $list) = @_;
 
     return '<ul>'

@@ -21,10 +21,10 @@ my @data = qw( foo bar baz qux );
 
 my $doc = new_ok( 'Test::Strategy::Document' => [ strategy => $ol, data => \@data ] );
 
-is $doc->print, '<ol><li>foo</li><li>bar</li><li>baz</li><li>qux</li></ol>', "correct output for ordered list";
+is $doc->context, '<ol><li>foo</li><li>bar</li><li>baz</li><li>qux</li></ol>', "correct output for ordered list";
 
 $doc->set_strategy( $ul );
-is $doc->print, '<ul><li>foo</li><li>bar</li><li>baz</li><li>qux</li></ul>', "correct output for unordered list";
+is $doc->context, '<ul><li>foo</li><li>bar</li><li>baz</li><li>qux</li></ul>', "correct output for unordered list";
 
 $doc->set_strategy( $tbl );
-is $doc->print, '<table><tr><td>foo</td><td>bar</td><td>baz</td><td>qux</td></tr></table>', "correct output for table list";
+is $doc->context, '<table><tr><td>foo</td><td>bar</td><td>baz</td><td>qux</td></tr></table>', "correct output for table list";
