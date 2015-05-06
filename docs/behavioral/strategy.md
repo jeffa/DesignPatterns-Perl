@@ -33,10 +33,10 @@ Participants
 
 Tests
 -----
-* (/t/021-strategy.t)
-* (/t/121-strategy.t)
-  * (Test::Strategy::Document)[/t/lib/Test/Strategy/Document.pm]
-  * (Test::Strategy::List)[/t/lib/Test/Strategy/List.pm]
-  * (Test::Strategy::Ordered)[/t/lib/Test/Strategy/Ordered.pm]
-  * (Test::Strategy::Table)[/t/lib/Test/Strategy/Table.pm]
-  * (Test::Strategy::Unordered)[/t/lib/Test/Strategy/Unordered.pm]
+* [/t/021-strategy.t]
+* [/t/121-strategy.t]
+  * [Test::Strategy::Document](/t/lib/Test/Strategy/Document.pm)
+  * [Test::Strategy::List](/t/lib/Test/Strategy/List.pm)
+  * [Test::Strategy::Ordered](/t/lib/Test/Strategy/Ordered.pm)
+  * [Test::Strategy::Table](/t/lib/Test/Strategy/Table.pm)
+  * [Test::Strategy::Unordered](/t/lib/Test/Strategy/Unordered.pm)

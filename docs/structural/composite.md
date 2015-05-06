@@ -39,10 +39,10 @@ Participants
 
 Tests
 -----
-* (/t/008-composite.t)
-* (/t/108-composite.t)
-  * (Test::Composite::Cabinet)[/t/lib/Test/Composite/Cabinet.pm]
-  * (Test::Composite::Chassis)[/t/lib/Test/Composite/Chassis.pm]
-  * (Test::Composite::Console)[/t/lib/Test/Composite/Console.pm]
-  * (Test::Composite::Device)[/t/lib/Test/Composite/Device.pm]
-  * (Test::Composite::Television)[/t/lib/Test/Composite/Television.pm]
+* [/t/008-composite.t]
+* [/t/108-composite.t]
+  * [Test::Composite::Cabinet](/t/lib/Test/Composite/Cabinet.pm)
+  * [Test::Composite::Chassis](/t/lib/Test/Composite/Chassis.pm)
+  * [Test::Composite::Console](/t/lib/Test/Composite/Console.pm)
+  * [Test::Composite::Device](/t/lib/Test/Composite/Device.pm)
+  * [Test::Composite::Television](/t/lib/Test/Composite/Television.pm)

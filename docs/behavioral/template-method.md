@@ -35,10 +35,10 @@ Participants
 
 Tests
 -----
-* (/t/022-template-method.t)
-* (/t/122-template-method.t)
-  * (Test::TemplateMethod::Application)[/t/lib/Test/TemplateMethod/Application.pm]
-  * (Test::TemplateMethod::Document)[/t/lib/Test/TemplateMethod/Document.pm]
-  * (Test::TemplateMethod::JSONDocument)[/t/lib/Test/TemplateMethod/JSONDocument.pm]
-  * (Test::TemplateMethod::TextDocument)[/t/lib/Test/TemplateMethod/TextDocument.pm]
-  * (Test::TemplateMethod::XMLDocument)[/t/lib/Test/TemplateMethod/XMLDocument.pm]
+* [/t/022-template-method.t]
+* [/t/122-template-method.t]
+  * [Test::TemplateMethod::Application](/t/lib/Test/TemplateMethod/Application.pm)
+  * [Test::TemplateMethod::Document](/t/lib/Test/TemplateMethod/Document.pm)
+  * [Test::TemplateMethod::JSONDocument](/t/lib/Test/TemplateMethod/JSONDocument.pm)
+  * [Test::TemplateMethod::TextDocument](/t/lib/Test/TemplateMethod/TextDocument.pm)
+  * [Test::TemplateMethod::XMLDocument](/t/lib/Test/TemplateMethod/XMLDocument.pm)
