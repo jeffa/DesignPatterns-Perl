@@ -46,8 +46,8 @@ Participants
 
 Tests
 -----
-* [/t/009-decorator.t]
-* [/t/109-decorator.t]
+* [/t/009-decorator.t](/t/009-decorator.t)
+* [/t/109-decorator.t](/t/109-decorator.t)
   * [Test::Decorator::FileStream](/t/lib/Test/Decorator/FileStream.pm)
   * [Test::Decorator::LowerCasingFilter](/t/lib/Test/Decorator/LowerCasingFilter.pm)
   * [Test::Decorator::MemoryStream](/t/lib/Test/Decorator/MemoryStream.pm)

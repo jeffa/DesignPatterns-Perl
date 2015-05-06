@@ -41,8 +41,8 @@ Participants
 
 Tests
 -----
-* [/t/001-abstract-factory.t]
-* [/t/101-abstract-factory.t]
+* [/t/001-abstract-factory.t](/t/001-abstract-factory.t)
+* [/t/101-abstract-factory.t](/t/101-abstract-factory.t)
   * [Test::AbstractFactory::BombedMazeFactory](/t/lib/Test/AbstractFactory/BombedMazeFactory.pm)
   * [Test::AbstractFactory::BombedRoom](/t/lib/Test/AbstractFactory/BombedRoom.pm)
   * [Test::AbstractFactory::BombedWall](/t/lib/Test/AbstractFactory/BombedWall.pm)

@@ -39,8 +39,8 @@ Participants
 
 Tests
 -----
-* [/t/008-composite.t]
-* [/t/108-composite.t]
+* [/t/008-composite.t](/t/008-composite.t)
+* [/t/108-composite.t](/t/108-composite.t)
   * [Test::Composite::Cabinet](/t/lib/Test/Composite/Cabinet.pm)
   * [Test::Composite::Chassis](/t/lib/Test/Composite/Chassis.pm)
   * [Test::Composite::Console](/t/lib/Test/Composite/Console.pm)

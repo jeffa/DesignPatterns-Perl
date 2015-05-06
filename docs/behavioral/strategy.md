@@ -33,8 +33,8 @@ Participants
 
 Tests
 -----
-* [/t/021-strategy.t]
-* [/t/121-strategy.t]
+* [/t/021-strategy.t](/t/021-strategy.t)
+* [/t/121-strategy.t](/t/121-strategy.t)
   * [Test::Strategy::Document](/t/lib/Test/Strategy/Document.pm)
   * [Test::Strategy::List](/t/lib/Test/Strategy/List.pm)
   * [Test::Strategy::Ordered](/t/lib/Test/Strategy/Ordered.pm)
