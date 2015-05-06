@@ -3,35 +3,32 @@
 package MyContext;
 use Moose;
 extends 'OODP::Context';
-sub algorithm {
-    my ($self) = @_;
-    return $self->get_strategy->get_data;
-}
+sub context { shift->get_strategy->algorithm( @_ ) }
 
 #------------------------------------------------------
-package ConcreteStrategy;
+package BaseStrategy;
 use Moose;
 use MooseX::FollowPBP;
 extends 'OODP::Strategy';
-has data => ( is => 'ro', isa => 'Str' );
+has data => ( is => 'ro', isa => 'Str', default => 'Hello World' );
 
 #------------------------------------------------------
 package MyStrategy1;
 use Moose;
-extends 'ConcreteStrategy';
-has '+data' => ( default => 'One' );
+extends 'BaseStrategy';
+sub algorithm { return shift->get_data }
 
 #------------------------------------------------------
 package MyStrategy2;
 use Moose;
-extends 'ConcreteStrategy';
-has '+data' => ( default => 'Two' );
+extends 'BaseStrategy';
+sub algorithm { return uc shift->get_data }
 
 #------------------------------------------------------
 package MyStrategy3;
 use Moose;
-extends 'ConcreteStrategy';
-has '+data' => ( default => 'Three' );
+extends 'BaseStrategy';
+sub algorithm { return lc shift->get_data }
 
 #======================================================
 package main;
@@ -40,25 +37,35 @@ use warnings FATAL => 'all';
 use Test::More;
 use Test::Exception;
 
-plan tests => 14;
+plan tests => 12;
 
 use_ok( 'OODP::Context' )           || print "Bail out!\n";
 use_ok( 'OODP::Strategy' )          || print "Bail out!\n";
 
-my @strategies = (
-    MyStrategy1->new,
-    MyStrategy2->new,
-    MyStrategy3->new,
-);
-isa_ok $_, 'ConcreteStrategy' for @strategies;
+my $context = new_ok( 'MyContext' );
+my $strat1  = new_ok( 'MyStrategy1' );
+my $strat2  = new_ok( 'MyStrategy2' );
+my $strat3  = new_ok( 'MyStrategy3' );
 
-my @contexts = map MyContext->new( strategy => $_ ), @strategies;
-isa_ok $_, 'MyContext' for @contexts;
+$context->set_strategy( $strat1 );
+isa_ok $context->get_strategy, 'MyStrategy1';
+is $context->context, 'Hello World';
 
-isa_ok $contexts[0]->get_strategy, 'MyStrategy1';
-isa_ok $contexts[1]->get_strategy, 'MyStrategy2';
-isa_ok $contexts[2]->get_strategy, 'MyStrategy3';
+$context->set_strategy( $strat2 );
+isa_ok $context->get_strategy, 'MyStrategy2';
+is $context->context, 'HELLO WORLD';
 
-is $contexts[0]->algorithm, 'One';
-is $contexts[1]->algorithm, 'Two';
-is $contexts[2]->algorithm, 'Three';
+$context->set_strategy( $strat3 );
+isa_ok $context->get_strategy, 'MyStrategy3';
+is $context->context, 'hello world';
+
+#my @contexts = map MyContext->new( strategy => $_ ), @strategies;
+#isa_ok $_, 'MyContext' for @contexts;
+#
+#isa_ok $contexts[0]->get_strategy, 'MyStrategy1';
+#isa_ok $contexts[1]->get_strategy, 'MyStrategy2';
+#isa_ok $contexts[2]->get_strategy, 'MyStrategy3';
+#
+#is $contexts[0]->context, 'Hello World';
+#is $contexts[1]->context, 'HELLO WORLD';
+#is $contexts[2]->context, 'hello world';

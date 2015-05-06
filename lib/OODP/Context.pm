@@ -6,7 +6,7 @@ use Carp;
 
 use OODP::Strategy;
 
-has strategy => ( is => 'rw', isa => 'OODP::Strategy', required => 1 );
+has strategy => ( is => 'rw', isa => 'OODP::Strategy' );
 
 1;
 __END__
