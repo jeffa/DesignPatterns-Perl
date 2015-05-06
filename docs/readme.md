@@ -32,7 +32,7 @@ being able to unify interfaces.
   * [Flyweight](/docs/structural/flyweight.md)
   * [Proxy](/docs/structural/proxy.md)
 
-3. Behavorial patterns
+3. Behavioral patterns
 abstract control flow by encapsulating alogrithms and 
 responsibities. The result is the ability to abstract complex and hard to
 follow run time control flow away so that object interactivety takes focus.
