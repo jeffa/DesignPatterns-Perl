@@ -4,8 +4,8 @@ use MooseX::FollowPBP;
 use Carp;
 our $VERSION = '0.01';
 
-sub template_method     { croak "Subclass must implement 'template method' function" }
-sub primitive_operation { croak "Subclass must implement 'primitive operation' functions" }
+sub template_method     { croak "Subclass must implement template_method()" }
+sub primitive_operation { croak "Subclass must implement primitive_operation()" }
 
 1;
 __END__

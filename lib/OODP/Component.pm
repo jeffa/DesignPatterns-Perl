@@ -8,10 +8,10 @@ has children => ( is => 'rw', isa => 'Any' );
 has parent   => ( is => 'rw', isa => 'OODP::Composite' );
 has name     => ( is => 'ro', isa => 'Str', required => 1 );
 
-sub add             { croak "Must implement add()" }
-sub remove          { croak "Must implement remove()" }
-sub get_child       { croak "Must implement get_child()" }
-sub is_composite    { croak "Must implement is_composite()" }
+sub add             { croak "Subclass must implement add()" }
+sub remove          { croak "Subclass must implement remove()" }
+sub get_child       { croak "Subclass must implement get_child()" }
+sub is_composite    { croak "Subclass must implement is_composite()" }
 
 1;
 __END__
