@@ -26,7 +26,9 @@ objects and not to the classes themselves.
 
 =item L<OODP::TOC>
 
-=item L<OODP::TOC::Structural>
+=item L<docs/structural/decorator.md>
+
+=item L<OODP::Component>
 
 =back
 

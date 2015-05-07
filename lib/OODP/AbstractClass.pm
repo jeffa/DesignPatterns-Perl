@@ -43,11 +43,7 @@ of the defined algorithm.
 
 =over 4
 
-=item L<OODP::TOC::TemplateMethod>
-
-=item L<OODP::TOC::Behavioral>
-
-=item L<OODP::TOC>
+=item L<docs/behavioral/template-method.md>
 
 =back
 

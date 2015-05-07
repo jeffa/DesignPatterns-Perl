@@ -22,9 +22,7 @@ the operations to create concrete widget objects.
 
 =item L<OODP::AbstractWidget>
 
-=item L<OODP::TOC::AbstractFactory>
-
-=item L<OODP::TOC::Creational>
+=item L<docs/creational/abstract-factory.md>
 
 =back
 

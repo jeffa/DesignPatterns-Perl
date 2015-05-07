@@ -93,7 +93,7 @@ related operations are implemented in the Component interface.
 
 =over 4
 
-=item L<OODP::Structural::Component>
+=item L<docs/structural/composite.md>
 
 =item L<OODP::Component>
 

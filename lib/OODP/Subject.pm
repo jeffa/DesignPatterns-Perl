@@ -5,6 +5,7 @@ use Carp;
 our $VERSION = '0.01';
 
 has state     => ( is => 'rw', isa => 'Any' );
+# TODO: replace with OODP::Iterator
 has observers => ( is => 'ro', isa => 'ArrayRef', default => sub {[]} );
 
 sub attach {
@@ -63,11 +64,9 @@ Calls each observer's update() method.
 
 =over 4
 
-=item L<OODP::Behavioral::Observer>
+=item L<docs/behavioral/observer.md>
 
 =item L<OODP::Observer>
-
-=item L<OODP::Subject>
 
 =back
 

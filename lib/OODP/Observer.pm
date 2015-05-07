@@ -49,9 +49,7 @@ Used to attach self to any subject passed in via construction.
 
 =over 4
 
-=item L<OODP::Behavioral::Observer>
-
-=item L<OODP::Observer>
+=item L<docs/behavioral/observer.md>
 
 =item L<OODP::Subject>
 

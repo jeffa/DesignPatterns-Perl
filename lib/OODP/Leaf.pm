@@ -57,11 +57,11 @@ primitive objects in the composition. A leaf has no children
 
 =over 4
 
-=item L<OODP::Structural::Component>
-
-=item L<OODP::Component>
+=item L<docs/structural/composite.md>
 
 =item L<OODP::Composite>
+
+=item L<OODP::Component>
 
 =back
 
