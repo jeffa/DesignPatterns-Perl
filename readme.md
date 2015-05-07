@@ -1,6 +1,12 @@
 Perl Design Patterns
 ====================
 
+This is my personal study of the Object Oriented patterns described
+in "Design Patterns," by Gamma, Helm, Johnson and Vlissides.
+
+These are not (necessarily) ready for public consumption. A handful of
+these classes are merely package placeholders.
+
 Documentation
 -------------
 See [docs/readme.md](/docs/readme.md)
