@@ -40,4 +40,6 @@ Tests
 * [/t/019-observer.t](/t/019-observer.t)
 * [/t/119-observer.t](/t/119-observer.t)
   * [Test::Observer::Clock](/t/lib/Test/Observer/Clock.pm)
+    * [Test::Observer::Clock::Analog](/t/lib/Test/Observer/Clock/Analog.pm)
+    * [Test::Observer::Clock::Digital](/t/lib/Test/Observer/Clock/Digital.pm)
   * [Test::Observer::Time](/t/lib/Test/Observer/Time.pm)
