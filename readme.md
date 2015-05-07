@@ -1,9 +1,13 @@
 Perl Design Patterns
 ====================
 
+Documentation
+-------------
+See [docs/readme.md](/docs/readme.md)
+
 Installation
 ------------
-Installation is not recommended, but the usual
+Installation is not recommended, but the classic
 [CPAN process](http://perldoc.perl.org/ExtUtils/MakeMaker.html#Default-Makefile-Behaviour) works:
 * perl Makefile.PL
 * make
@@ -20,10 +24,6 @@ use OODP::Composite;
 ```
 
 :warning: Just in case we did not mention this, do not install this package. :warning:
-
-Documentation
--------------
-See [docs/readme.md](/docs/readme.md)
 
 License and Copyright
 ---------------------
