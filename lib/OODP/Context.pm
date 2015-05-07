@@ -6,9 +6,13 @@ use Carp;
 
 use OODP::Strategy;
 
-has strategy => ( is => 'rw', isa => 'OODP::Strategy' );
+has strategy => (
+    is      => 'rw',
+    isa     => 'OODP::Strategy',
+    handles => [qw( algorithm )],
+ );
 
-sub context { shift->get_strategy->algorithm( @_ ) }
+sub context { shift->algorithm( @_ ) }
 
 1;
 __END__
@@ -41,7 +45,7 @@ Calls attached OODP::Strategy subclass's algorithm()
 
 =over 4
 
-=item L<OODP::ConcreteStrategy>
+=item L<docs/behavioral/strategy.md>
 
 =item L<OODP::Strategy>
 
