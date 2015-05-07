@@ -3,7 +3,6 @@
 package MyContext;
 use Moose;
 extends 'OODP::Context';
-sub context { shift->get_strategy->algorithm( @_ ) }
 
 #------------------------------------------------------
 package BaseStrategy;
