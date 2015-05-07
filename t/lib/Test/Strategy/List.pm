@@ -8,6 +8,4 @@ extends 'OODP::Strategy';
 
 has markup => ( is => 'rw', isa => 'Str' );
 
-sub render { croak "Must implement render()" }
-
 1;

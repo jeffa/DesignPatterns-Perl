@@ -4,6 +4,8 @@ use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;
 
+sub algorithm { croak "Subclass must implement algorithm()" }
+
 1;
 __END__
 =head1 NAME

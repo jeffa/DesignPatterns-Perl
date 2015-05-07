@@ -7,9 +7,9 @@ extends 'OODP::Context';
 
 has data => ( is => 'ro', isa => 'ArrayRef', required => 1 );
 
-sub print {
+sub context {
     my ($self) = @_;
-    return $self->get_strategy->render( $self->get_data );
+    return $self->get_strategy->algorithm( $self->get_data );
 }
 
 1;
