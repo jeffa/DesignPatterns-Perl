@@ -26,6 +26,10 @@ Structure
 
 Participants
 ------------
-* OODP::Proxy
+* [OODP::Proxy](/lib/OODP/Proxy.pm)
 * Your::Subjects
 * Your::ConcreteProxies
+
+Tests
+-----
+* [/t/012-proxy.t](/t/012-proxy.t)
