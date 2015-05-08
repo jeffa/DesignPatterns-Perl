@@ -5,8 +5,27 @@ object to control access to it. This is useful when there is a
 need for a more versatile or sophisticated reference to an object
 than a simple pointer.
 
+Structure
+---------
+```
+   +--------+         +----------+
+   | Client |-------->| Subject  |
+   +--------+         +----------+
+                      |Request() |
+                      +----------+
+                           ^
+                           |
+        +------------------^-----. . . . . . .
+        |                  |
++-------+-------+     +----+-------+
+|ConcreteSubject|     |  Proxy     |
++---------------+     +------------+    +--------------------------+
+|Request()      |     |Request() *------|concretesubject->Request()|
++---------------+     +------------+    +--------------------------+
+```
+
 Participants
 ------------
 * OODP::Proxy
-* OODP::Subject
-* OODP::RealSubject
+* Your::Subjects
+* Your::ConcreteProxies
