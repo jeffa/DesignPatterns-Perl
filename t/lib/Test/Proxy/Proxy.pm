@@ -6,8 +6,6 @@ with 'Test::Proxy::Graphic';
 
 has image => ( is => 'rw', isa => 'Test::Proxy::Image' );
 
-sub get_extent { die "should never be called" }
-
 sub draw {
     my $self = shift;
     $self->load unless $self->get_image;
