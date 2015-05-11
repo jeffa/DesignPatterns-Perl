@@ -30,7 +30,7 @@ being able to unify interfaces.
   - [x] [Decorator](/docs/structural/decorator.md)
   - [ ] [Facade](/docs/structural/facade.md)
   - [ ] [Flyweight](/docs/structural/flyweight.md)
-  - [ ] [Proxy](/docs/structural/proxy.md)
+  - [x] [Proxy](/docs/structural/proxy.md)
 
 3. Behavioral patterns
 abstract control flow by encapsulating alogrithms and 

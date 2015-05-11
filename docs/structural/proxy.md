@@ -34,6 +34,6 @@ Tests
 -----
 * [/t/012-proxy.t](/t/012-proxy.t)
 * [/t/112-proxy.t](/t/112-proxy.t)
-  * [Test::Proxy::Graphic](/t/lib/Test/Proxy/Cabinet.pm)
+  * [Test::Proxy::Graphic](/t/lib/Test/Proxy/Graphic.pm)
   * [Test::Proxy::Proxy](/t/lib/Test/Proxy/Proxy.pm)
   * [Test::Proxy::Image](/t/lib/Test/Proxy/Image.pm)
