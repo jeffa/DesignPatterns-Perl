@@ -15,7 +15,11 @@ sub draw {
 sub load {
     my $self = shift;
     unless ($self->get_image) {
-        $self->set_image( Test::Proxy::Image->new( %$self ) )
+        if ($self->get_filename =~ /^http/) {
+            $self->set_image( Test::Proxy::WebImage->new( %$self ) )
+        } else {
+            $self->set_image( Test::Proxy::Image->new( %$self ) )
+        }
     }
 }
 

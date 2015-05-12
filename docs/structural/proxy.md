@@ -37,3 +37,4 @@ Tests
   * [Test::Proxy::Graphic](/t/lib/Test/Proxy/Graphic.pm)
   * [Test::Proxy::Proxy](/t/lib/Test/Proxy/Proxy.pm)
   * [Test::Proxy::Image](/t/lib/Test/Proxy/Image.pm)
+  * [Test::Proxy::WebImage](/t/lib/Test/Proxy/WebImage.pm)

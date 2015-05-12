@@ -5,6 +5,7 @@ use MooseX::FollowPBP;
 requires qw( draw load );
 
 has filename    => ( is => 'rw' );
+has data        => ( is => 'rw' );
 has width       => ( is => 'rw', isa => 'Int' );
 has height      => ( is => 'rw', isa => 'Int' );
 
