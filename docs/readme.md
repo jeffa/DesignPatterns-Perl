@@ -16,7 +16,7 @@ unknown at design time.
   - [ ] [Builder](/docs/creational/builder.md)
   - [ ] [Factory Method](/docs/creational/factory-method.md)
   - [ ] [Prototype](/docs/creational/prototype.md)
-  - [ ] [Singleton](/docs/creational/singleton.md)
+  - [x] [Singleton](/docs/creational/singleton.md)
 
 2. Structural patterns
 abstract composition concerns by describing *how to*
