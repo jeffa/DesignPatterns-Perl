@@ -4,13 +4,14 @@ use warnings FATAL => 'all';
 use Test::More;
 use Capture::Tiny 'capture';
 
-plan tests => 21;
+plan tests => 29;
 
 use lib 't/lib';
 use_ok 'Test::Proxy::Graphic';
 use_ok 'Test::Proxy::Proxy';
 use_ok 'Test::Proxy::Image';
 use_ok 'Test::Proxy::WebImage';
+use_ok 'Test::Proxy::RandImage';
 
 my $proxy = new_ok 'Test::Proxy::Proxy' => [
     filename => 'foo.jpg',
@@ -33,11 +34,27 @@ is $image->get_filename, 'foo.jpg',         "correct filename";
 is $image->get_width, 500,                  "correct width";
 is $image->get_height, 500,                 "correct height";
 
+# Web Image
 my $url = 'http://137.189.35.203/WebUI/CatDatabase/annotation.png';
 $proxy = new_ok 'Test::Proxy::Proxy' => [ filename => $url ];
-
 is $proxy->get_filename, $url,                  "correct filename";
 is $proxy->get_width, undef,                    "correct width";
 is $proxy->get_height, undef,                   "correct height";
 is_deeply $proxy->get_extent, [undef,undef],    "correct extent";
 is $proxy->get_image, undef,                    "image not yet loaded";
+
+# this test actually makes a web call, we don't always need to do this
+#($stdout) = capture { $proxy->draw }; 
+#isa_ok $proxy->get_image, 'Test::Proxy::WebImage';
+
+# Rand Image
+$proxy = new_ok 'Test::Proxy::Proxy'=> [ width => 40, height => 55 ];
+is $proxy->get_filename, undef,                 "correct filename";
+is $proxy->get_width, 40,                       "correct width";
+is $proxy->get_height, 55,                      "correct height";
+is_deeply $proxy->get_extent, [40,55],          "correct extent";
+is $proxy->get_image, undef,                    "image not yet loaded";
+
+($stdout) = capture { $proxy->draw }; 
+isa_ok $proxy->get_image, 'Test::Proxy::RandImage';
+

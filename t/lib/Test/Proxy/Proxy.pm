@@ -17,8 +17,10 @@ sub load {
     unless ($self->get_image) {
         if ($self->get_filename =~ /^http/) {
             $self->set_image( Test::Proxy::WebImage->new( %$self ) )
-        } else {
+        } elsif ($self->get_filename) {
             $self->set_image( Test::Proxy::Image->new( %$self ) )
+        } else {
+            $self->set_image( Test::Proxy::RandImage->new( %$self ) )
         }
     }
 }
