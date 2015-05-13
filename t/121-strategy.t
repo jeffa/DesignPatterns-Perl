@@ -7,11 +7,13 @@ use Test::Exception;
 plan tests => 12;
 
 use lib 't/lib';
-use_ok( 'Test::Strategy::Document' )    || print "Bail out!\n";
-use_ok( 'Test::Strategy::List' )        || print "Bail out!\n";
-use_ok( 'Test::Strategy::Ordered' )     || print "Bail out!\n";
-use_ok( 'Test::Strategy::Table' )       || print "Bail out!\n";
-use_ok( 'Test::Strategy::Unordered' )   || print "Bail out!\n";
+use_ok $_ for qw(
+    Test::Strategy::Document
+    Test::Strategy::List
+    Test::Strategy::Ordered
+    Test::Strategy::Table
+    Test::Strategy::Unordered
+);
 
 my $ol  = new_ok( 'Test::Strategy::Ordered' );
 my $ul  = new_ok( 'Test::Strategy::Unordered' );

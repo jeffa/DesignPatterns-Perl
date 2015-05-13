@@ -7,11 +7,13 @@ use Test::Exception;
 plan tests => 22;
 
 use lib 't/lib';
-use_ok( 'Test::Composite::Chassis' )    || print "Bail out!\n";
-use_ok( 'Test::Composite::Device' )     || print "Bail out!\n";
-use_ok( 'Test::Composite::Cabinet' )    || print "Bail out!\n";
-use_ok( 'Test::Composite::Console' )    || print "Bail out!\n";
-use_ok( 'Test::Composite::Television' ) || print "Bail out!\n";
+use_ok $_ for qw(
+    Test::Composite::Chassis
+    Test::Composite::Device
+    Test::Composite::Cabinet
+    Test::Composite::Console
+    Test::Composite::Television
+);
 
 my $cab = Test::Composite::Cabinet->new( name => 'generic', power => 2 );
 isa_ok $cab, 'Test::Composite::Cabinet';

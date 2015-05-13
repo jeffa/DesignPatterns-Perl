@@ -7,10 +7,12 @@ use Test::Exception;
 plan tests => 13;
 
 use lib 't/lib';
-use_ok( 'Test::Observer::Time' )            || print "Bail out!\n";
-use_ok( 'Test::Observer::Clock' )           || print "Bail out!\n";
-use_ok( 'Test::Observer::Clock::Digital' )  || print "Bail out!\n";
-use_ok( 'Test::Observer::Clock::Analog' )   || print "Bail out!\n";
+use_ok $_ for qw(
+    Test::Observer::Time
+    Test::Observer::Clock
+    Test::Observer::Clock::Digital
+    Test::Observer::Clock::Analog
+);
 
 my $subject = new_ok 'Test::Observer::Time' => [ time => 1378218830 ];
 my $clock_d = new_ok 'Test::Observer::Clock::Digital' => [ subject => $subject ];

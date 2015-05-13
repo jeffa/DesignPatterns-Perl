@@ -7,11 +7,13 @@ use Capture::Tiny 'capture';
 plan tests => 29;
 
 use lib 't/lib';
-use_ok 'Test::Proxy::Graphic';
-use_ok 'Test::Proxy::Proxy';
-use_ok 'Test::Proxy::Image';
-use_ok 'Test::Proxy::WebImage';
-use_ok 'Test::Proxy::RandImage';
+use_ok $_ for qw(
+    Test::Proxy::Graphic
+    Test::Proxy::Proxy
+    Test::Proxy::Image
+    Test::Proxy::WebImage
+    Test::Proxy::RandImage
+);
 
 my $proxy = new_ok 'Test::Proxy::Proxy' => [
     filename => 'foo.jpg',

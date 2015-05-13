@@ -18,8 +18,8 @@ use Test::Exception;
 
 plan tests => 27;
 
-use_ok( 'OODP::Observer' )          || print "Bail out!\n";
-use_ok( 'OODP::Subject' )           || print "Bail out!\n";
+use_ok 'OODP::Observer';
+use_ok 'OODP::Subject';
 
 my $subject = ConcreteSubject->new( state => 'one' );
 isa_ok $subject, 'ConcreteSubject';

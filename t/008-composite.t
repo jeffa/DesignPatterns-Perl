@@ -24,9 +24,9 @@ use Test::Exception;
 
 plan tests => 16;
 
-use_ok( 'OODP::Component' )     || print "Bail out!\n";
-use_ok( 'OODP::Composite' )     || print "Bail out!\n";
-use_ok( 'OODP::Leaf' )          || print "Bail out!\n";
+use_ok 'OODP::Component';
+use_ok 'OODP::Composite';
+use_ok 'OODP::Leaf';
 
 my $comp = MyComposite->new( name => 'Foo' );
 isa_ok $comp, 'MyComposite';
