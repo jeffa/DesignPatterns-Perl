@@ -18,7 +18,7 @@ my $subject = new_ok 'Test::Observer::Time' => [ time => 1378218830 ];
 my $clock_d = new_ok 'Test::Observer::Clock::Digital' => [ subject => $subject ];
 my $clock_a = new_ok 'Test::Observer::Clock::Analog'  => [ subject => $subject ];
 
-is scalar @{$subject->{observers}}, 2, "subject has correct number of observers";
+is $subject->get_count, 2, "subject has correct number of observers";
 is $subject->get_time, 1378218830, "correct time inserted";
 
 is $clock_a->draw, '00:00:00', "analog clock has not been updated";
