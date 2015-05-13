@@ -40,7 +40,7 @@ follow run time control flow away so that object interactivety takes focus.
   - [ ] [Chain of Responsibility](/docs/behavioral/chain-of-responsibility.md)
   - [ ] [Command](/docs/behavioral/command.md)
   - [ ] [Interpreter](/docs/behavioral/interpreter.md)
-  - [ ] [Iterator](/docs/behavioral/iterator.md)
+  - [x] [Iterator](/docs/behavioral/iterator.md)
   - [ ] [Mediator](/docs/behavioral/mediator.md)
   - [ ] [Memento](/docs/behavioral/memento.md)
   - [x] [Observer](/docs/behavioral/observer.md)
