@@ -5,7 +5,7 @@ use Test::Exception;
 
 use Data::Dumper;
 
-plan tests => 19;
+plan tests => 22;
 
 use_ok 'OODP::Aggregate';
 use_ok 'OODP::Iterator';
@@ -33,6 +33,15 @@ while (!$iter->is_done) {
     $i++;
 }
 ok $iter->is_done, "iterator is done";
+
+$iter->add( 11, 12 );
+ok !$iter->is_done, "iterator is not done";
+
+$iter->remove( 11 );
+ok !$iter->is_done, "iterator is not done";
+
+$iter->remove( 12 );
+ok $iter->is_done, "iterator is now done";
 
 $iter->first;
 ok !$iter->is_done, "iterator has been reset";

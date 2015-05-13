@@ -16,7 +16,19 @@ around BUILDARGS => sub {
 sub iterator    { OODP::Iterator->new( _aggregate => shift ) }
 sub get_count   { scalar @{ shift->{_data} } }
 sub add         { push @{ shift->{_data} }, @_ }
-sub remove      { }
+
+sub remove {
+    my $self = shift;
+    my $item = shift;
+
+    for (0 .. $#{ $self->{_data} }) {
+        if ($item == $self->{_data}[$_] ) {
+            splice @{ $self->{_data} }, $_, 1;
+            last;
+        }
+    }
+}
+
 
 1;
 __END__
