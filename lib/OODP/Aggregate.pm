@@ -1,12 +1,11 @@
 package OODP::Aggregate;
-use Moose::Role;
+use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;
+use OODP::Iterator;
 
 has _data => ( is => 'rw', required => 1 );
-
-requires qw( add remove iterator );
 
 around BUILDARGS => sub {
     my $method = shift;
@@ -14,7 +13,10 @@ around BUILDARGS => sub {
     return $class->$method( _data => shift );
 };
 
-sub get_count { scalar @{ shift->{_data} } }
+sub iterator    { OODP::Iterator->new( _aggregate => shift ) }
+sub get_count   { scalar @{ shift->{_data} } }
+sub add         { }
+sub remove      { }
 
 1;
 __END__
@@ -24,28 +26,26 @@ OODP::Aggregate - defines an interface for creating an iterator object.
 
 =head1 SYNOPSIS
 
-  package My::Aggregate;
-  use Moose;
-  with 'OODP::Aggregate';
-  # must implement required methods
+  use OODP::Aggregate;
 
-=head1 PROVIDES
+  my $list = OODP::Aggregate->new( \@array );
+  my $iter = $list->iterator;
+  while (! $iter->is_done) {
+    print $iter->curr_item;
+    $iter->next;
+  }
+
+=head1 METHODS
 
 =over 4
+
+=item iterator()
+
+Will instantiate and return iterator for this aggregate.
 
 =item get_count()
 
 Returns how many elements are in the aggregate.
-
-=back
-
-=head1 REQUIRES
-
-=over 4
-
-=item interator()
-
-Will instantiate and return iterator for this aggregate.
 
 =item add()
 

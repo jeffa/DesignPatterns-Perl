@@ -1,20 +1,3 @@
-#!perl -T
-#------------------------------------------------------
-package My::Aggregate;
-use Moose;
-with 'OODP::Aggregate';
-
-sub add { }
-sub remove { }
-sub iterator { My::Iterator->new( _aggregate => shift ) }
-
-#------------------------------------------------------
-package My::Iterator;
-use Moose;
-with 'OODP::Iterator';
-
-#======================================================
-package main;
 use strict;
 use warnings FATAL => 'all';
 use Test::More;
@@ -27,9 +10,9 @@ plan tests => 12;
 use_ok 'OODP::Aggregate';
 use_ok 'OODP::Iterator';
 
-my $list = new_ok 'My::Aggregate', [ [1 .. 5] ];
+my $list = new_ok 'OODP::Aggregate', [ [1 .. 5] ];
 my $iter = $list->iterator;
-isa_ok $iter, 'My::Iterator';
+isa_ok $iter, 'OODP::Iterator';
 
 ok !$iter->is_done, "iterator is not done";
 

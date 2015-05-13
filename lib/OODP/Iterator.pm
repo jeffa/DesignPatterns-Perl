@@ -1,5 +1,5 @@
 package OODP::Iterator;
-use Moose::Role;
+use Moose;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;
@@ -18,13 +18,6 @@ __END__
 
 OODP::Interator - defines an interface for accessing
 and traversing elements.
-
-=head1 SYNOPSIS
-
-  package My::Iterator;
-  use Moose;
-  with 'OODP::Iterator';
-  # must implement required methods
 
 =head1 METHODS
 
