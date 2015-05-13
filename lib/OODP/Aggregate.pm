@@ -15,7 +15,7 @@ around BUILDARGS => sub {
 
 sub iterator    { OODP::Iterator->new( _aggregate => shift ) }
 sub get_count   { scalar @{ shift->{_data} } }
-sub add         { }
+sub add         { push @{ shift->{_data} }, @_ }
 sub remove      { }
 
 1;
