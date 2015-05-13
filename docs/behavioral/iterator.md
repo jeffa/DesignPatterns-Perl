@@ -39,3 +39,4 @@ Participants
 
 Tests
 -----
+* [/t/016-iterator.t](/t/016-iterator.t)

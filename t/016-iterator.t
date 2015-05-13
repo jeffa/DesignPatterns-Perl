@@ -1,13 +1,17 @@
 #!perl -T
 #------------------------------------------------------
-package MyList;
+package My::Aggregate;
 use Moose;
-extends 'OODP::Aggregate';
+with 'OODP::Aggregate';
+
+sub add { }
+sub remove { }
+sub iterator { My::Iterator->new( _aggregate => shift ) }
 
 #------------------------------------------------------
-package MyIterator;
+package My::Iterator;
 use Moose;
-extends 'OODP::Iterator';
+with 'OODP::Iterator';
 
 #======================================================
 package main;
@@ -16,10 +20,26 @@ use warnings FATAL => 'all';
 use Test::More;
 use Test::Exception;
 
-plan tests => 4;
+use Data::Dumper;
+
+plan tests => 12;
 
 use_ok 'OODP::Aggregate';
 use_ok 'OODP::Iterator';
 
-my $aggr = new_ok 'MyList';
-my $iter = new_ok 'MyIterator';
+my $list = new_ok 'My::Aggregate', [ [1 .. 5] ];
+my $iter = $list->iterator;
+isa_ok $iter, 'My::Iterator';
+
+ok !$iter->is_done, "iterator is not done";
+
+my $i = 1;
+while (!$iter->is_done) {
+    is $iter->curr_item, $i, "correct current item: $i";
+    $iter->next;
+    $i++;
+}
+
+ok $iter->is_done, "iterator is done";
+$iter->first;
+ok !$iter->is_done, "iterator has been reset";

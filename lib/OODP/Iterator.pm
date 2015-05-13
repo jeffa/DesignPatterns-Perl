@@ -1,15 +1,16 @@
 package OODP::Iterator;
-use Moose;
+use Moose::Role;
 use MooseX::FollowPBP;
 our $VERSION = '0.01';
 use Carp;
 
-has list => ( is => 'ro', isa => 'Any' );
+has _index      => ( is => 'ro', isa => 'Int', default => 0 ); 
+has _aggregate  => ( is => 'ro', isa => 'Any' ); 
 
-sub first       { croak "Subclass must implement first()" }
-sub next        { croak "Subclass must implement next()" }
-sub is_done     { croak "Subclass must implement is_done()" }
-sub curr_item   { croak "Subclass must implement curr_item()" }
+sub first       { $_[0]->{_index} = 0 }
+sub next        { $_[0]->{_index}++ }
+sub is_done     { $_[0]->{_index} >= $_[0]->{_aggregate}->get_count }
+sub curr_item   { $_[0]->{_aggregate}{_data}[ $_[0]->{_index} ] }
 
 1;
 __END__
@@ -20,7 +21,10 @@ and traversing elements.
 
 =head1 SYNOPSIS
 
-...
+  package My::Iterator;
+  use Moose;
+  with 'OODP::Iterator';
+  # must implement required methods
 
 =head1 METHODS
 
@@ -28,11 +32,19 @@ and traversing elements.
 
 =item first()
 
+Resets internal index to first item.
+
 =item next()
+
+Advances internal index to next item.
 
 =item is_done()
 
+Returns status of traversal completion.
+
 =item curr_item()
+
+Returns current item from aggregate.
 
 =back
 
