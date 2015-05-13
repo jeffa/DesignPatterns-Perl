@@ -5,7 +5,7 @@ our $VERSION = '0.01';
 use Carp;
 
 has _index      => ( is => 'ro', isa => 'Int', default => 0 ); 
-has _aggregate  => ( is => 'ro', isa => 'OODP::Aggregate', handles => [qw( add  remove )] ); 
+has _aggregate  => ( is => 'ro', isa => 'OODP::Aggregate', handles => [qw( add remove get_count )] ); 
 
 sub first       { $_[0]->{_index} = 0 }
 sub next        { $_[0]->{_index}++ }
