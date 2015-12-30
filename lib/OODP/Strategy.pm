@@ -22,7 +22,7 @@ OODP::Strategy ...
 
 =over 4
 
-=item L<OODP::ConcreteStrategy>
+=item L<docs/behavioral/strategy.md>
 
 =item L<OODP::Context>
 

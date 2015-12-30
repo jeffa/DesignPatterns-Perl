@@ -41,8 +41,8 @@ use Test::Exception;
 
 plan tests => 10;
 
-use_ok( 'OODP::Component' );
-use_ok( 'OODP::Decorator' );
+use_ok 'OODP::Component';
+use_ok 'OODP::Decorator';
 
 my $text_view = TextView->new( name => 'TV1', text => 'Hello World' );
 is $text_view->draw, 'Hello World', "correct text";

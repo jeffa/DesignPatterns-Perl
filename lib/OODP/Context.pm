@@ -6,7 +6,13 @@ use Carp;
 
 use OODP::Strategy;
 
-has strategy => ( is => 'rw', isa => 'OODP::Strategy' );
+has strategy => (
+    is      => 'rw',
+    isa     => 'OODP::Strategy',
+    handles => [qw( algorithm )],
+ );
+
+sub context { shift->algorithm( @_ ) }
 
 1;
 __END__
@@ -15,15 +21,31 @@ __END__
 OODP::Context - declares the interface used by the client to
 defer the decision to the Strategy.
 
-=head1 SYNOPSIS
+=head1 ATTRIBUTES
 
-OODP::Context ...
+=over 4
+
+=item L<strategy>
+
+A reference to a OODP::Strategy subclass.
+
+=back
+
+=head1 METHODS
+
+=over 4
+
+=item L<context>
+
+Calls attached OODP::Strategy subclass's algorithm()
+
+=back
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<OODP::ConcreteStrategy>
+=item L<docs/behavioral/strategy.md>
 
 =item L<OODP::Strategy>
 

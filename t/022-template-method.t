@@ -46,7 +46,7 @@ use Test::Exception;
 
 plan tests => 7;
 
-use_ok( 'OODP::AbstractClass' );
+use_ok 'OODP::AbstractClass';
 
 my $class1 = new_ok 'MyConcreteClass1';
 is $class1->get_result, '',                     "no results for class 1";

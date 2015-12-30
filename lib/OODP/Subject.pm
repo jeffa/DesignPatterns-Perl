@@ -1,34 +1,42 @@
 package OODP::Subject;
 use Moose;
 use MooseX::FollowPBP;
+use OODP::Aggregate;
 use Carp;
 our $VERSION = '0.01';
 
 has state     => ( is => 'rw', isa => 'Any' );
-has observers => ( is => 'ro', isa => 'ArrayRef', default => sub {[]} );
+has observers => ( is => 'ro', isa => 'OODP::Iterator', handles => [qw( add remove get_count )] );
+
+around BUILDARGS => sub {
+    my $orig  = shift;
+    my $class = shift;
+    my $aggr  = OODP::Aggregate->new;
+    return $class->$orig( observers => $aggr->iterator, @_ );
+};
+
 
 sub attach {
     my ($self, $observer) = @_;
     $observer->set_subject( $self );
-    push @{ $self->{observers} }, $observer;
+    $self->add( $observer );
 }
 
 sub detach {
     my ($self, $observer) = @_;
-    for (0 .. $#{ $self->{observers} }) {
-        if ($observer == $self->{observers}[$_] ) {
-            splice @{ $self->{observers} }, $_, 1;
-            last;
-        }
-    }
+    $self->remove( $observer );
 }
 
 sub notify {
     my $self = shift;
-    $_->update( @_ ) for @{ $self->get_observers };
+    my $iter = $self->get_observers;
+    $iter->first;
+    while (! $iter->is_done) {
+        $iter->curr_item->update( @_ );
+        $iter->next;
+    }
     return $self;
 }
-
 
 1;
 __END__
@@ -63,11 +71,9 @@ Calls each observer's update() method.
 
 =over 4
 
-=item L<OODP::Behavioral::Observer>
+=item L<docs/behavioral/observer.md>
 
 =item L<OODP::Observer>
-
-=item L<OODP::Subject>
 
 =back
 

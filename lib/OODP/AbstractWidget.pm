@@ -21,9 +21,7 @@ the corresponding concrete factory.
 
 =item L<OODP::AbstractFactory>
 
-=item L<OODP::TOC::AbstractFactory>
-
-=item L<OODP::TOC::Creational>
+=item L<docs/creational/abstract-factory.md>
 
 =back
 

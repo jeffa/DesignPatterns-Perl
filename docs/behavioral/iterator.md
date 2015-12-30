@@ -6,9 +6,37 @@ representation.  This is useful for supporting multiple traversals
 of aggregate objects and provides a uniform interface that supports
 polymorphic iteration.
 
+Structure
+---------
+```
+   +----------------+    +------+    +--------------+
+   +   Aggregate    |<-->|client|<-->|   Iterator   |
+   +----------------+    +------+    +--------------+
+   |CreateIterator()|                | First()      |
+   +----------------+                | Next()       |
+                                     | IsDone()     |
+                                     | CurrentItem()|
+                                     +--------------
+
++---------------------+          +------------------+
+|  ConcreteAggregate  |--------->| ConcreteIterator |
++---------------------+          +------------------+
+|  CreateIterator() * |                        
++-------------------|-+
+                    |
+   +----------------v----------------
+   |                                 \
+   |return new ConcreteIterator(this)|
+   +---------------------------------+
+```
+
 Participants
 ------------
-* OODP::Iterator
-* OODP::ConcreteIterator
-* OODP::Aggregate
-* OODP::ConcreteAggregate
+* [OODP::Aggregate](/lib/OODP/Aggregate.pm)
+* [OODP::Iterator](/lib/OODP/Iterator.pm)
+* Your::ConcreteAggrates
+* Your::ConcreteIterators
+
+Tests
+-----
+* [/t/016-iterator.t](/t/016-iterator.t)

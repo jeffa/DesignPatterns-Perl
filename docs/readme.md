@@ -16,7 +16,7 @@ unknown at design time.
   - [ ] [Builder](/docs/creational/builder.md)
   - [ ] [Factory Method](/docs/creational/factory-method.md)
   - [ ] [Prototype](/docs/creational/prototype.md)
-  - [ ] [Singleton](/docs/creational/singleton.md)
+  - [x] [Singleton](/docs/creational/singleton.md)
 
 2. Structural patterns
 abstract composition concerns by describing *how to*
@@ -30,7 +30,7 @@ being able to unify interfaces.
   - [x] [Decorator](/docs/structural/decorator.md)
   - [ ] [Facade](/docs/structural/facade.md)
   - [ ] [Flyweight](/docs/structural/flyweight.md)
-  - [ ] [Proxy](/docs/structural/proxy.md)
+  - [x] [Proxy](/docs/structural/proxy.md)
 
 3. Behavioral patterns
 abstract control flow by encapsulating alogrithms and 
@@ -40,7 +40,7 @@ follow run time control flow away so that object interactivety takes focus.
   - [ ] [Chain of Responsibility](/docs/behavioral/chain-of-responsibility.md)
   - [ ] [Command](/docs/behavioral/command.md)
   - [ ] [Interpreter](/docs/behavioral/interpreter.md)
-  - [ ] [Iterator](/docs/behavioral/iterator.md)
+  - [x] [Iterator](/docs/behavioral/iterator.md)
   - [ ] [Mediator](/docs/behavioral/mediator.md)
   - [ ] [Memento](/docs/behavioral/memento.md)
   - [x] [Observer](/docs/behavioral/observer.md)
